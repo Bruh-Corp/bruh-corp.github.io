@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bruh.</title>
+    <link rel="stylesheet" href="BruhCorp.css" />
+  </head>
+  <body>
+    <canvas></canvas>
+  </body>
+  <script>
+    const canvas = document.querySelector("canvas");
+    const ctx = canvas.getContext("2d");
+    const cw = canvas.width;
+    const ch = canvas.height;
+    const defaultMatrix = ctx.getTransform();
+
+    let legAngle = 1;
+    let legDelta = 1;
+
+    function drawScene() {
+      ctx.beginPath();
+      ctx.clearRect(0, 0, cw, ch);
+      ctx.fillText(new Date().getTime().toString(), 10, 20);
+
+      drawCat();
+      requestAnimationFrame(drawScene);
+    }
+
+    const { PI, sin, cos } = Math;
+
+    function drawCat() {
+      if (legAngle < 45 && legAngle > -10) {
+        console.log(legAngle);
+        legAngle += legDelta;
+      } else if (legAngle === 45 || legAngle === -10) {
+        console.log(legAngle);
+        legDelta = -legDelta;
+        legAngle += legDelta;
+      }
+      ctx.strokeStyle = "#a8cd23";
+      ctx.setTransform(
+        cos(toR(legAngle)),
+        sin(toR(legAngle)),
+        -sin(toR(legAngle)),
+        cos(toR(legAngle)),
+        legAngle * 1.3,
+        0
+      );
+      ctx.strokeRect(10, 50, 20, 100);
+      ctx.strokeRect(80, 50, 20, 100);
+      ctx.setTransform(defaultMatrix);
+      ctx.strokeRect(10, 50, 90, 50);
+      ctx.strokeRect(90, 10, 50, 50);
+    }
+
+    function toR(d) {
+      return d * (PI / 180);
+    }
+
+    requestAnimationFrame(drawScene);
+  </script>
+</html>

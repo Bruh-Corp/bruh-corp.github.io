@@ -1,17 +1,21 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    background-color: #4c1130;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  flex-wrap: wrap;
+  background-color: #4c1130;
 }
-
 
 #logo {
-    user-select: none;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 90px;
-    color: #a8cd23;
-    transform: translateX(36px); /* centered relative to text excluding the "." */
+  user-select: none;
+  font-family: "Press Start 2P", cursive;
+  font-size: 90px;
+  color: #a8cd23;
+  transform: translateX(36px); /* centered relative to text excluding the "." */
 }
 
+a {
+  color: #a8cd23;
+  width: 100%;
+}
