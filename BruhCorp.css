@@ -2,6 +2,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
   height: 90vh;
   flex-wrap: wrap;
   background-color: #4c1130;
