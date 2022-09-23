@@ -2,7 +2,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   height: 90vh;
   flex-wrap: wrap;
   background-color: #4c1130;
@@ -11,12 +10,100 @@ body {
 #logo {
   user-select: none;
   font-family: "Press Start 2P", cursive;
-  font-size: 90px;
+  font-size: calc(47px + 3.6vw);
   color: #a8cd23;
+  transition-duration: 170ms;
   transform: translateX(36px); /* centered relative to text excluding the "." */
 }
 
-a {
+#logo:hover {
+  text-shadow: black 1px 1px 2px, #a8cd23 2px 2px 2px, 
+  black 6px 6px 2px, #a8cd23 8px 8px 2px, 
+  black 10px 10px 2px, #a8cd23 12px 12px 2px
+  black 10px 10px 2px, #a8cd23 12px 12px 2px
+  black 14px 14px 2px, #a8cd23 16px 16px 2px
+  black 18px 18px 2px, #a8cd23 20px 20px 2px;
+}
+
+#logo:active {
+  text-shadow: black 1px 1px 2px, #a8cd23 2px 2px 2px, black 6px 6px 2px, #a8cd23 8px 8px 2px, black 10px 10px 2px, #a8cd23 12px 12px 2px;
+}
+
+/* hidden feature oooooooo
+#logo:active {
+  transform: skew(20deg, 30deg);
+}
+*/
+#secret {
+  font-family: "Press Start 2P", cursive;
   color: #a8cd23;
-  width: 100%;
+  width: auto;
+  font-size: 10px;
+  max-block-size: 40px;
+  position: absolute;
+  top: 10px;
+  opacity: 0.5;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.shittingground {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.shitpic {
+  height: 10px;
+  width: auto;
+  transition-duration: 200ms;
+}
+
+.shitpic:hover {
+  height: 50px;
+  width: auto;
+}
+
+#secret:hover {
+  transition: 120ms;
+  text-shadow: black 2px 2px 2px, #a8cd23 4px 4px 4px;
+  transform: skew(10deg, 0deg);
+}
+.footer {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+.footer, p {
+  user-select: none;
+  font-family: "Press Start 2P", cursive;
+  color: #a8cd23;
+  width: 120px;
+  margin: auto;
+  font-size: 10px;
+  bottom: 15px;
+  margin: auto;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
+  transition-duration: 100ms;
+}
+
+p {
+  opacity: 0.5;
+}
+.tal, .abban {
+  height: 40px;
+  width: 40px;
+  opacity: 1 !important;
+}
+
+p:hover {
+  opacity: 1;
+}
+
+p:active {
+  text-shadow: #a8cd23 12em 0 2px, #a8cd23 -12em 0 2px, #a8cd23 0 -4em 2px;
+  font-size: 9px;
 }
