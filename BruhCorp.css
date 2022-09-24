@@ -17,23 +17,13 @@ body {
 }
 
 #logo:hover {
-  text-shadow: black 1px 1px 2px, #a8cd23 2px 2px 2px, 
-  black 6px 6px 2px, #a8cd23 8px 8px 2px, 
-  black 10px 10px 2px, #a8cd23 12px 12px 2px
-  black 10px 10px 2px, #a8cd23 12px 12px 2px
-  black 14px 14px 2px, #a8cd23 16px 16px 2px
-  black 18px 18px 2px, #a8cd23 20px 20px 2px;
+  text-shadow: black 1px 1px 2px, #a8cd23 2px 2px 2px, black 6px 6px 2px, #a8cd23 8px 8px 2px, black 10px 10px 2px, #a8cd23 12px 12px 2px;
 }
-
+/* shut up im trying somehere */
 #logo:active {
   text-shadow: black 1px 1px 2px, #a8cd23 2px 2px 2px, black 6px 6px 2px, #a8cd23 8px 8px 2px, black 10px 10px 2px, #a8cd23 12px 12px 2px;
 }
 
-/* hidden feature oooooooo
-#logo:active {
-  transform: skew(20deg, 30deg);
-}
-*/
 #secret {
   font-family: "Press Start 2P", cursive;
   color: #a8cd23;
