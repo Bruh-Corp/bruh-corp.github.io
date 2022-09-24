@@ -22,7 +22,7 @@ body {
 }
 /* shut up its the same has :hover im trying somehere */
 #logo:active {
-  text-shadow: black 1px 1px 1px, #a8cd23 2px 2px 1px, black 5px 5px 2px, #a8cd23 8px 8px 2px, black 10px 10px 3px, #a8cd23 12px 12px 2px, #a8cd23 0 0 1000px;
+  text-shadow: black 1px 1px 1px, #a8cd23 2px 2px 1px, black 5px 5px 2px, #a8cd23 8px 8px 2px, black 10px 10px 3px, #a8cd23 12px 12px 2px, #a8cd23 0 0 150px;
   filter: brightness(1.3);
 }
 
