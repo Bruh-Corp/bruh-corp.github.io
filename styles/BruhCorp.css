@@ -66,6 +66,17 @@ body {
   width: auto;
 }
 
+.cupboi {
+  position: absolute;
+  user-select: none;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  height: calc(25px + 1vw);
+  width: auto;
+}
+
 #secret:hover {
   transition: 120ms;
   text-shadow: #a8cd23 2px 2px 4px, black 3px 3px 2px;
