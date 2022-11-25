@@ -7,15 +7,17 @@ body {
 }
 
 #logo {
-  height: 80vh;
+  margin: 30vh 0 40vh 0;
+  padding: 55px;
   user-select: none;
   display: flex;
   align-items: center;
   font-family: "Press Start 2P", cursive;
-  font-size: calc(47px + 3.6vw);
+  font-size: calc(30px + 5vw);
   color: #a8cd23;
+  box-shadow:  inset #310b1f 12px 12px 10px,  #310b1f 12px 12px 10px;
+  border-radius: 1%;
   transition-duration: 250ms;
-  transform: translateX(36px); /* centered relative to text excluding the "." */
 }
 
 #logo:hover {
@@ -23,32 +25,60 @@ body {
   text-shadow: black 1px 1px 2px, #a8cd23 2px 2px 2px, black 6px 6px 2px, #a8cd23 8px 8px 2px, black 10px 10px 2px,
     #a8cd23 12px 12px 2px;
 }
-/* shut up its the same has :hover im trying somehere */
+
 #logo:active {
-  text-shadow: black 1px 1px 1px, #a8cd23 2px 2px 1px, black 5px 5px 2px, #a8cd23 8px 8px 2px, black 10px 10px 3px,
-    #a8cd23 12px 12px 2px, #a8cd23 0 0 150px;
-  filter: brightness(1.3);
+  box-shadow: inset #2c0a1c 0 0 500px 500px, #310b1f 12px 12px 10px;
 }
 
+.colhead {
+  width: 100%;
+  font-family: "Press Start 2P", cursive;
+  font-size: calc(15px + 1.6vw);
+  text-align: center;
+  color: #a8cd23;
+  text-decoration: underline;
+  margin: 0px 0 40px 0;
+}
+/* shut up its the same has :hover im trying somehere 
+#logo:active {
+  text-shadow: black 1px 1px 1px, #a8cd23 2px 2px 1px, black 5px 5px 2px, #a8cd23 8px 8px 2px, black 10px 10px 3px,
+    #a8cd23 12px 12px 2px, #a8cd23 0 0 200px;
+  filter: brightness(1.3);
+}
+*/
 /* The text placeholders css */
 #col {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  user-select: text;
+}
+
+#col div::-moz-selection {
+  color: #2c0a1c;
+  background-color: #a8cd23df;
 }
 
 #col div {
   width: 25%;
-  padding: 12px;
-  margin: 12px 0;
+  padding: 20px;
+  margin: 20px 0 20px 0;
   color: #a8cd23;
-  border: #e13514 6px ridge;
+  font-family: 'Roboto Mono', monospace;
+  border: #a8cd2350 20px ;
+  font-size: calc(10px + 0.6vw);
+  transition: 150ms;
+}
+
+#col div:hover {
+  box-shadow:  inset #310b1f 0px 0px 8px 8px;
+
 }
 
 /* Top link */
 #secret {
-  font-family: "Press Start 2P", cursive;
   color: #a8cd23;
+  font-family: "Press Start 2P", cursive;
   width: auto;
   font-size: 10px;
   max-block-size: 40px;
@@ -107,27 +137,27 @@ body {
 footer {
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
+  width: 120px;
+  bottom: 5px;
 }
 footer,
-p {
+ .sec {
   user-select: none;
   font-family: "Press Start 2P", cursive;
   color: #a8cd23;
-  width: 120px;
-  margin: auto;
   font-size: 10px;
-  bottom: 5px;
-  margin: auto;
   text-decoration: none;
   text-transform: capitalize;
   text-align: center;
   transition-duration: 100ms;
+  margin-bottom: -5px;
 }
 
-p {
+.sec {
   opacity: 0.5;
-  margin-bottom: -10px;
 }
+
 .tal,
 .abban {
   height: 40px;
@@ -140,11 +170,43 @@ p {
   filter: brightness(1.5);
 }
 
-p:hover {
+.sec:hover {
   opacity: 1;
 }
 
-p:active {
+.sec:active {
   text-shadow: #a8cd23 12em 0 2px, #a8cd23 -12em 0 2px, #a8cd23 0 -4em 2px;
-  font-size: 9px;
+  font-size: px;
+}
+
+
+#ref {
+  user-select: none;
+  font-family: "Press Start 2P", cursive;
+  color: #a8cd23;
+  font-size: 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: right;
+  transition-duration: 100ms;
+  margin-bottom: -5px;
+}
+
+#ref {
+  opacity: 0.5;
+}
+
+#ref:hover {
+  opacity: 1;
+}
+
+#ref:active {
+  text-shadow: #a8cd23a4 12em 0 2px, #a8cd23a4 -12em 0 2px, #a8cd23a4 0 -2em 2px, #a8cd23a4 0 2em 2px;
+  font-size: px;
+}
+
+@media only screen and (max-width: 600px) {
+  #col div {
+    width: 95%;
+  }
 }
