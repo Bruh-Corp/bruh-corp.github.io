@@ -32,21 +32,36 @@ body {
 }
 
 .colhead {
-  width: 100%;
+  width: fit-content;
+  padding: calc(10px + 1.6vw);
   font-family: "Press Start 2P", cursive;
   font-size: calc(15px + 1.6vw);
   text-align: center;
   margin: 0px 0 40px 0;
-  background-size: 400%;
+  background-size: 700%;
   background-image: -webkit-linear-gradient(left, #61BB46, #FDB827, #F5821F, #E03A3E, #963D97, #009DDC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: bg-animation 20s infinite;
+  animation: bg-animation 7s infinite;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
   transform: translateZ(0);
+  transition: 250ms;
+  border-radius: 10px;
+}
+
+.colhead:hover {
+  transition: 100ms;
+  transform: scale(1.017);
+  box-shadow:   inset #310b1f 0px 0px 8px 10px,
+  #61BB46 0 0 0 5px, 
+  #FDB827 0 0 0 8px, 
+  #F5821F 0 0 0 11px, 
+  #E03A3E 0 0 0 14px, 
+  #963D97 0 0 0 17px, 
+  #009DDC 0 0 0 20px;;
 }
 
 @keyframes bg-animation {
@@ -68,7 +83,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  user-select: text;
+  user-select: none;
 }
 
 *::-moz-selection {
@@ -100,7 +115,14 @@ body {
 
 #col div:active {
   transform: scale(1.02);
-  box-shadow:  inset #310b1f 0px 0px 8px 8px, pink 0 0 8px 8px;
+  /* box-shadow:  inset #310b1f 0px 0px 8px 8px, pink 0 0 8px 8px; */
+  box-shadow: inset #310b1f 0px 0px 8px 8px,
+  #61BB46 0 0 0 5px, 
+  #FDB827 0 0 0 8px, 
+  #F5821F 0 0 0 11px, 
+  #E03A3E 0 0 0 14px, 
+  #963D97 0 0 0 17px, 
+  #009DDC 0 0 0 20px;
 }
 
 /* Top link */
