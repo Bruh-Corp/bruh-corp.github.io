@@ -22,6 +22,7 @@ body {
 
 #logo:hover {
   transition-duration: 190ms;
+  transform: scale(1.04);
   text-shadow: black 1px 1px 2px, #a8cd23 2px 2px 2px, black 6px 6px 2px, #a8cd23 8px 8px 2px, black 10px 10px 2px,
     #a8cd23 12px 12px 2px;
 }
@@ -35,10 +36,26 @@ body {
   font-family: "Press Start 2P", cursive;
   font-size: calc(15px + 1.6vw);
   text-align: center;
-  color: #a8cd23;
-  text-decoration: underline;
   margin: 0px 0 40px 0;
+  background-size: 400%;
+  background-image: -webkit-linear-gradient(left, #61BB46, #FDB827, #F5821F, #E03A3E, #963D97, #009DDC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: bg-animation 20s infinite;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
 }
+
+@keyframes bg-animation {
+  0% {background-position: left}
+  50% {background-position: right}
+  100% {background-position: left}
+}
+
+
 /* shut up its the same has :hover im trying somehere 
 #logo:active {
   text-shadow: black 1px 1px 1px, #a8cd23 2px 2px 1px, black 5px 5px 2px, #a8cd23 8px 8px 2px, black 10px 10px 3px,
@@ -54,7 +71,12 @@ body {
   user-select: text;
 }
 
-#col div::-moz-selection {
+*::-moz-selection {
+  color: #2c0a1c;
+  background-color: #a8cd23df;
+}
+
+*::selection {
   color: #2c0a1c;
   background-color: #a8cd23df;
 }
@@ -68,11 +90,17 @@ body {
   border: #a8cd2350 20px ;
   font-size: calc(10px + 0.6vw);
   transition: 150ms;
+  border-radius: 1.5%;
 }
 
 #col div:hover {
   box-shadow:  inset #310b1f 0px 0px 8px 8px;
+  transform: scale(1.03);
+}
 
+#col div:active {
+  transform: scale(1.02);
+  box-shadow:  inset #310b1f 0px 0px 8px 8px, pink 0 0 8px 8px;
 }
 
 /* Top link */
