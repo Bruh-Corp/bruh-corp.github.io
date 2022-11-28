@@ -134,7 +134,7 @@ body {
   width: 25%;
   height: fit-content;
   padding: 20px;
-  margin: 70px 0 20px 0;
+  margin: 70px 0 70px 0;
   color: #a8cd23;
   font-family: "Press Start 2P", cursive;
   border: #a8cd2350 20px;
@@ -143,7 +143,6 @@ body {
   font-size: calc(10px + 0.6vw);
   transition: 150ms;
   border-radius: 1.5%;
-  animation: WAA 4s infinite;
   background-image: -webkit-linear-gradient(top, #61bb4643,#FDB82743,#F5821F43,#E03A3E43,#963D9743, #009DDC43); 
   animation: border-anime 7s infinite;
   /* box-shadow:  inset #310b1f 0px 0px 8px 8px, pink 0 0 8px 8px; */
@@ -156,10 +155,7 @@ body {
   #009DDC 0 0 0 32px;
 
 }
-@keyframes WAA {
-  
-  
-}
+
 @keyframes border-anime {
     15% {box-shadow:  inset #310b1f 0px 0px 8px 8px,
       #61BB46 0 0 0 7px, 
