@@ -100,8 +100,9 @@ body {
   background-color: #a8cd23df;
 }
 
-#col div {
+.colcon {
   width: 25%;
+  height: fit-content;
   padding: 20px;
   margin: 20px 0 20px 0;
   color: #a8cd23;
@@ -112,12 +113,12 @@ body {
   border-radius: 1.5%;
 }
 
-#col div:hover {
+.colcon:hover {
   box-shadow:  inset #310b1f 0px 0px 8px 8px;
   transform: scale(1.03);
 }
 
-#col div:active {
+.colcon:active {
   transform: scale(1.02);
   /* box-shadow:  inset #310b1f 0px 0px 8px 8px, pink 0 0 8px 8px; */
   box-shadow: inset #310b1f 0px 0px 8px 8px,
@@ -128,6 +129,106 @@ body {
   #963D97 0 0 0 17px, 
   #009DDC 0 0 0 20px;
 }
+
+#tal {
+  width: 25%;
+  height: fit-content;
+  padding: 20px;
+  margin: 70px 0 20px 0;
+  color: #a8cd23;
+  font-family: "Press Start 2P", cursive;
+  border: #a8cd2350 20px;
+  text-align: center;
+  line-height: 150%;
+  font-size: calc(10px + 0.6vw);
+  transition: 150ms;
+  border-radius: 1.5%;
+  animation: WAA 4s infinite;
+  background-image: -webkit-linear-gradient(top, #61bb4643,#FDB82743,#F5821F43,#E03A3E43,#963D9743, #009DDC43); 
+  animation: border-anime 7s infinite;
+  /* box-shadow:  inset #310b1f 0px 0px 8px 8px, pink 0 0 8px 8px; */
+  box-shadow: inset #310b1f 0px 0px 8px 8px,
+  #61BB46 0 0 0 7px, 
+  #FDB827 0 0 0 12px, 
+  #F5821F 0 0 0 17px, 
+  #E03A3E 0 0 0 22px, 
+  #963D97 0 0 0 27px, 
+  #009DDC 0 0 0 32px;
+
+}
+
+#tal:active {
+
+}
+
+@keyframes WAA {
+  
+  
+}
+@keyframes border-anime {
+    15% {box-shadow:  inset #310b1f 0px 0px 8px 8px,
+      #61BB46 0 0 0 7px, 
+      #FDB827 0 0 0 12px, 
+      #F5821F 0 0 0 17px, 
+      #E03A3E 0 0 0 22px, 
+      #963D97 0 0 0 27px, 
+      #009DDC 0 0 0 32px;
+    }
+      
+      30% {box-shadow: inset #310b1f 0px 0px 8px 8px,
+        #009DDC 0 0 0 7px, 
+        #61BB46 0 0 0 12px, 
+        #FDB827 0 0 0 17px, 
+        #F5821F 0 0 0 22px, 
+        #E03A3E 0 0 0 27px, 
+        #963D97 0 0 0 32px;
+      }
+      
+      45% {box-shadow:inset #310b1f 0px 0px 8px 8px,
+        #963D97 0 0 0 7px, 
+        #009DDC 0 0 0 12px, 
+        #61BB46 0 0 0 17px, 
+        #FDB827 0 0 0 22px, 
+        #F5821F 0 0 0 27px, 
+        #E03A3E 0 0 0 32px;
+      }
+
+        60% {box-shadow: inset #310b1f 0px 0px 8px 8px,
+          #E03A3E 0 0 0 7px, 
+          #963D97 0 0 0 12px, 
+          #009DDC 0 0 0 17px, 
+          #61BB46 0 0 0 22px, 
+          #FDB827 0 0 0 27px, 
+          #F5821F 0 0 0 32px;
+        }
+        
+        75% {box-shadow: inset #310b1f 0px 0px 8px 8px,
+          #F5821F 0 0 0 7px, 
+          #E03A3E 0 0 0 12px, 
+          #963D97 0 0 0 17px, 
+          #009DDC 0 0 0 22px, 
+          #61BB46 0 0 0 27px, 
+          #FDB827 0 0 0 32px;
+        }          
+        
+        85% {box-shadow: inset #310b1f 0px 0px 8px 8px,
+          #FDB827 0 0 0 7px, 
+          #F5821F 0 0 0 12px, 
+          #E03A3E 0 0 0 17px, 
+          #963D97 0 0 0 22px, 
+          #009DDC 0 0 0 27px, 
+          #61BB46 0 0 0 32px;
+        }
+        100% {box-shadow: inset #310b1f 0px 0px 8px 8px,
+          #61BB46 0 0 0 7px, 
+          #FDB827 0 0 0 12px, 
+          #F5821F 0 0 0 17px, 
+          #E03A3E 0 0 0 22px, 
+          #963D97 0 0 0 27px, 
+          #009DDC 0 0 0 32px;
+        }
+    }
+
 
 /* Top link */
 #secret {
@@ -259,12 +360,21 @@ footer,
   font-size: px;
 }
 
-@media only screen and (max-width: 600px) {
-  #col div {
-    width: 95%;
-  }
-}
-
 .abbandiv {
   width: 100%;
+}
+
+.talsig {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .colcon {
+    width: 90%;
+  }
+
+  #tal {
+    width: 70%;
+  }
+
 }
