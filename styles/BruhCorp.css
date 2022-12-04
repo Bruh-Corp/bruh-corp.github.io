@@ -27,9 +27,23 @@ body {
 #logo:hover {
   transition-duration: 190ms;
   transform: scale(1.04);
-  text-shadow: black 1px 1px 2px, #a8cd23 2px 2px 2px, black 6px 6px 2px, #a8cd23 8px 8px 2px, black 10px 10px 2px,
+  text-shadow: 
+  black 1px 1px 2px, 
+  #a8cd23 2px 2px 2px, 
+  black 6px 6px 2px, 
+  #a8cd23 8px 8px 2px, 
+  black 10px 10px 2px,
     #a8cd23 12px 12px 2px;
 }
+
+/*
+    #61BB46 0 0 0 7px, 
+    #FDB827 0 0 0 12px, 
+    #F5821F 0 0 0 17px, 
+    #E03A3E 0 0 0 22px, 
+    #963D97 0 0 0 27px, 
+    #009DDC 0 0 0 32px;
+*/
 
 #logo:active {
   box-shadow: inset #2c0a1c 0 0 500px 500px, #310b1f 12px 12px 10px;
@@ -110,7 +124,8 @@ body {
   border: #a8cd2350 20px ;
   font-size: calc(10px + 0.6vw);
   transition: 150ms;
-  border-radius: 1.5%;
+  border-radius: 2%;
+  box-shadow:  inset #310b1f74 0px 0px 8px 8px;
 }
 
 .colcon:hover {
