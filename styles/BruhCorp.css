@@ -19,7 +19,8 @@ body {
   font-family: "Press Start 2P", cursive;
   font-size: calc(30px + 5vw);
   color: #a8cd23;
-  box-shadow:  inset #310b1f 12px 12px 10px,  #310b1f 12px 12px 10px;
+  box-shadow:  inset #310b1f 12px 12px 10px,  
+                     #310b1f 12px 12px 10px;
   border-radius: 1%;
   transition-duration: 250ms;
 }
