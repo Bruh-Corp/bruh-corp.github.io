@@ -7,7 +7,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   max-width: 100vw;
-  background-color: #4c1330;
+  background-color: #4c1140;
 }
 
 #logo {
@@ -19,8 +19,9 @@ body {
   font-family: "Press Start 2P", cursive;
   font-size: calc(30px + 5vw);
   color: #a8cd23;
-  box-shadow:  inset #310b1f 12px 12px 10px,  
-                     #310b1f 12px 12px 10px;
+  box-shadow:  inset 
+  #310b22 12px 12px 10px,  
+  #310b22 12px 12px 10px;
   border-radius: 1%;
   transition-duration: 250ms;
 }
@@ -34,7 +35,7 @@ body {
   black 6px 6px 2px, 
   #a8cd23 8px 8px 2px, 
   black 10px 10px 2px,
-    #a8cd23 12px 12px 2px;
+  #a8cd23 12px 12px 2px;
 }
 
 /*
@@ -47,7 +48,7 @@ body {
 */
 
 #logo:active {
-  box-shadow: inset #2c0a1c 0 0 500px 500px, #310b1f 12px 12px 10px;
+  box-shadow: inset #2c0a23 0 0 500px 500px, #2c0a23 12px 12px 10px;
 }
 
 .colhead {
@@ -74,7 +75,7 @@ body {
 .colhead:hover {
   transition: 100ms;
   transform: scale(1.017);
-  box-shadow:   inset #310b1f 0px 0px 8px 10px,
+  box-shadow:   inset #2f0b31 0px 0px 8px 10px,
   #61BB46 0 0 0 5px, 
   #FDB827 0 0 0 8px, 
   #F5821F 0 0 0 11px, 
@@ -126,18 +127,18 @@ body {
   font-size: calc(10px + 0.6vw);
   transition: 150ms;
   border-radius: 2%;
-  box-shadow:  inset #310b1f74 0px 0px 8px 8px;
+  box-shadow:  inset #2f0b3174 0px 0px 8px 8px;
 }
 
 .colcon:hover {
-  box-shadow:  inset #310b1f 0px 0px 8px 8px;
+  box-shadow:  inset #2f0b31 0px 0px 8px 8px;
   transform: scale(1.03);
 }
 
 .colcon:active {
   transform: scale(1.02);
-  /* box-shadow:  inset #310b1f 0px 0px 8px 8px, pink 0 0 8px 8px; */
-  box-shadow: inset #310b1f 0px 0px 8px 8px,
+  /* box-shadow:  inset #2f0b31 0px 0px 8px 8px, pink 0 0 8px 8px; */
+  box-shadow: inset #2f0b31 0px 0px 8px 8px,
   #61BB46 0 0 0 5px, 
   #FDB827 0 0 0 8px, 
   #F5821F 0 0 0 11px, 
@@ -161,8 +162,8 @@ body {
   border-radius: 1.5%;
   background-image: -webkit-linear-gradient(top, #61bb4643,#FDB82743,#F5821F43,#E03A3E43,#963D9743, #009DDC43); 
   animation: border-anime 7s infinite;
-  /* box-shadow:  inset #310b1f 0px 0px 8px 8px, pink 0 0 8px 8px; */
-  box-shadow: inset #310b1f 0px 0px 8px 8px,
+  /* box-shadow:  inset #2f0b31 0px 0px 8px 8px, pink 0 0 8px 8px; */
+  box-shadow: inset #2f0b31 0px 0px 8px 8px,
   #61BB46 0 0 0 7px, 
   #FDB827 0 0 0 12px, 
   #F5821F 0 0 0 17px, 
@@ -173,7 +174,7 @@ body {
 }
 
 @keyframes border-anime {
-    15% {box-shadow:  inset #310b1f 0px 0px 8px 8px,
+    15% {box-shadow:  inset #2f0b31 0px 0px 8px 8px,
       #61BB46 0 0 0 7px, 
       #FDB827 0 0 0 12px, 
       #F5821F 0 0 0 17px, 
@@ -182,7 +183,7 @@ body {
       #009DDC 0 0 0 32px;
     }
       
-      30% {box-shadow: inset #310b1f 0px 0px 8px 8px,
+      30% {box-shadow: inset #2f0b31 0px 0px 8px 8px,
         #009DDC 0 0 0 7px, 
         #61BB46 0 0 0 12px, 
         #FDB827 0 0 0 17px, 
@@ -191,7 +192,7 @@ body {
         #963D97 0 0 0 32px;
       }
       
-      45% {box-shadow:inset #310b1f 0px 0px 8px 8px,
+      45% {box-shadow:inset #2f0b31 0px 0px 8px 8px,
         #963D97 0 0 0 7px, 
         #009DDC 0 0 0 12px, 
         #61BB46 0 0 0 17px, 
@@ -200,7 +201,7 @@ body {
         #E03A3E 0 0 0 32px;
       }
 
-        60% {box-shadow: inset #310b1f 0px 0px 8px 8px,
+        60% {box-shadow: inset #2f0b31 0px 0px 8px 8px,
           #E03A3E 0 0 0 7px, 
           #963D97 0 0 0 12px, 
           #009DDC 0 0 0 17px, 
@@ -209,7 +210,7 @@ body {
           #F5821F 0 0 0 32px;
         }
         
-        75% {box-shadow: inset #310b1f 0px 0px 8px 8px,
+        75% {box-shadow: inset #2f0b31 0px 0px 8px 8px,
           #F5821F 0 0 0 7px, 
           #E03A3E 0 0 0 12px, 
           #963D97 0 0 0 17px, 
@@ -218,7 +219,7 @@ body {
           #FDB827 0 0 0 32px;
         }          
         
-        85% {box-shadow: inset #310b1f 0px 0px 8px 8px,
+        85% {box-shadow: inset #2f0b31 0px 0px 8px 8px,
           #FDB827 0 0 0 7px, 
           #F5821F 0 0 0 12px, 
           #E03A3E 0 0 0 17px, 
@@ -226,7 +227,7 @@ body {
           #009DDC 0 0 0 27px, 
           #61BB46 0 0 0 32px;
         }
-        100% {box-shadow: inset #310b1f 0px 0px 8px 8px,
+        100% {box-shadow: inset #2f0b31 0px 0px 8px 8px,
           #61BB46 0 0 0 7px, 
           #FDB827 0 0 0 12px, 
           #F5821F 0 0 0 17px, 
