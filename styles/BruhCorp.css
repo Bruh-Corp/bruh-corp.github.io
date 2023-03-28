@@ -30,11 +30,11 @@ body {
   transition-duration: 190ms;
   transform: scale(1.04);
   text-shadow: 
-  black 1px 1px 2px, 
-  #a8cd23 2px 2px 2px, 
+  black 1px 1px 1px, 
+  #a8cd23 2px 2px 1px, 
   black 6px 6px 2px, 
-  #a8cd23 8px 8px 2px, 
-  black 10px 10px 2px,
+  #a8cd23 8px 8px 1px, 
+  black 10px 10px 1px,
   #a8cd23 12px 12px 2px;
 }
 
@@ -127,11 +127,11 @@ body {
   font-size: calc(10px + 0.6vw);
   transition: 150ms;
   border-radius: 2%;
-  box-shadow:  inset #2f0b3174 0px 0px 8px 8px;
+  box-shadow:  inset #310b229a 0px 0px 8px 8px;
 }
 
 .colcon:hover {
-  box-shadow:  inset #2f0b31 0px 0px 8px 8px;
+  box-shadow:  inset #310b22 0px 0px 8px 8px;
   transform: scale(1.03);
 }
 
