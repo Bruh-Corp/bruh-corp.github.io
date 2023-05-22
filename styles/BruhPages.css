@@ -1,0 +1,415 @@
+* {
+    user-select: none;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100vw;
+    background-color: #4c1140;
+    overflow-x: hidden;
+  }
+
+  
+#toggleButton {
+  padding: calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw) calc(30px + 2vw);
+  position: absolute;
+  left: -10px;
+  top: 10vh;
+  width: fit-content;
+  background-color: #310b1f;
+  box-shadow: #310b22ad 6px 6px 10px;
+  border-radius: 10px;
+}
+
+#tri  {
+  position: relative;
+  cursor: pointer;
+  font-family: "Press Start 2P", cursive;
+  color: #FECD17;
+  font-size: calc(10px + .1vw);
+  transition: transform 1s cubic-bezier(.2, 0, .001, 1); 
+  text-decoration: none;
+
+}
+
+
+  
+  #logo {
+    margin: 30vh 0 40vh 0;
+    padding: calc(30px + 1.6vw);
+    user-select: none;
+    display: flex;
+    align-items: center;
+    font-family: "Press Start 2P", cursive;
+    font-size: calc(30px + 3vw);
+    color: #a8cd23;
+    box-shadow:  inset 
+    #310b22 12px 12px 10px,  
+    #310b22 12px 12px 10px;
+    border-radius: 1%;
+    transition-duration: 250ms;
+    text-align: center;
+  }
+  
+  #logo:hover {
+    transition-duration: 190ms;
+    transform: scale(1.04);
+    text-shadow: 
+    black 1px 1px 1px, 
+    #a8cd23 2px 2px 1px, 
+    black 6px 6px 2px, 
+    #a8cd23 8px 8px 1px, 
+    black 10px 10px 1px,
+    #a8cd23 12px 12px 2px;
+  }
+  
+  /*
+      #61BB46 0 0 0 7px, 
+      #FDB827 0 0 0 12px, 
+      #F5821F 0 0 0 17px, 
+      #E03A3E 0 0 0 22px, 
+      #963D97 0 0 0 27px, 
+      #009DDC 0 0 0 32px;
+  */
+  
+  #logo:active {
+    box-shadow: inset #2c0a23 0 0 500px 500px, #2c0a23 12px 12px 10px;
+  }
+  
+  .colhead {
+    width: 90%;
+    padding: calc(10px + 1.6vw);
+    font-family: "Press Start 2P", cursive;
+    font-size: calc(15px + 1.6vw);
+    text-align: center;
+    margin: 0px 0 40px 0;
+    background-size: 700%;
+    background-image: -webkit-linear-gradient(left, #61BB46, #FDB827, #F5821F, #E03A3E, #963D97, #009DDC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: bg-animation 7s infinite;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    transition: 250ms;
+    border-radius: 10px;
+  }
+  
+  .colhead:hover {
+    transition: 100ms;
+    transform: scale(1.017);
+    box-shadow:   inset #2f0b31 0px 0px 8px 10px,
+    #61BB46 0 0 0 5px, 
+    #FDB827 0 0 0 8px, 
+    #F5821F 0 0 0 11px, 
+    #E03A3E 0 0 0 14px, 
+    #963D97 0 0 0 17px, 
+    #009DDC 0 0 0 20px;;
+  }
+  
+  @keyframes bg-animation {
+    0% {background-position: left}
+    50% {background-position: right}
+    100% {background-position: left}
+  }
+  
+  
+  /* shut up its the same has :hover im trying somehere 
+  #logo:active {
+    text-shadow: black 1px 1px 1px, #a8cd23 2px 2px 1px, black 5px 5px 2px, #a8cd23 8px 8px 2px, black 10px 10px 3px,
+      #a8cd23 12px 12px 2px, #a8cd23 0 0 200px;
+    filter: brightness(1.3);
+  }
+  */
+  /* The text placeholders css */
+  #col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    user-select: none;
+  }
+  
+  *::-moz-selection {
+    color: #2c0a1c;
+    background-color: #a8cd23df;
+  }
+  
+  *::selection {
+    color: #2c0a1c;
+    background-color: #a8cd23df;
+  }
+  
+  .colcon {
+    width: 25%;
+    height: fit-content;
+    padding: 20px;
+    margin: 20px 0 20px 0;
+    color: #a8cd23;
+    font-family: 'Roboto Mono', monospace;
+    border: #a8cd2350 20px ;
+    font-size: calc(10px + 0.6vw);
+    transition: 150ms;
+    border-radius: 2%;
+    box-shadow:  inset #310b229a 0px 0px 8px 8px;
+  }
+  
+  .colcon:hover {
+    box-shadow:  inset #310b22 0px 0px 8px 8px;
+    transform: scale(1.03);
+  }
+  
+  .colcon:active {
+    transform: scale(1.02);
+    /* box-shadow:  inset #2f0b31 0px 0px 8px 8px, pink 0 0 8px 8px; */
+    box-shadow: inset #2f0b31 0px 0px 8px 8px,
+    #61BB46 0 0 0 5px, 
+    #FDB827 0 0 0 8px, 
+    #F5821F 0 0 0 11px, 
+    #E03A3E 0 0 0 14px, 
+    #963D97 0 0 0 17px, 
+    #009DDC 0 0 0 20px;
+  }
+  
+  #tal {
+    width: 25%;
+    height: fit-content;
+    padding: 20px;
+    margin: 70px 0 70px 0;
+    color: #a8cd23;
+    font-family: "Press Start 2P", cursive;
+    border: #a8cd2350 20px;
+    text-align: center;
+    line-height: 150%;
+    font-size: calc(10px + 0.6vw);
+    transition: 150ms;
+    border-radius: 6% / 4%;
+    background-image: -webkit-linear-gradient(top, #61bb4643,#FDB82743,#F5821F43,#E03A3E43,#963D9743, #009DDC43); 
+    animation: border-anime 7s infinite;
+    /* box-shadow:  inset #2f0b31 0px 0px 8px 8px, pink 0 0 8px 8px; */
+    box-shadow: inset #2f0b31 0px 0px 8px 8px,
+    #61BB46 0 0 0 7px, 
+    #FDB827 0 0 0 12px, 
+    #F5821F 0 0 0 17px, 
+    #E03A3E 0 0 0 22px, 
+    #963D97 0 0 0 27px, 
+    #009DDC 0 0 0 32px;
+  
+  }
+  
+  @keyframes border-anime {
+      15% {box-shadow:  inset #2f0b31 0px 0px 8px 8px,
+        #61BB46 0 0 0 7px, 
+        #FDB827 0 0 0 12px, 
+        #F5821F 0 0 0 17px, 
+        #E03A3E 0 0 0 22px, 
+        #963D97 0 0 0 27px, 
+        #009DDC 0 0 0 32px;
+      }
+        
+        30% {box-shadow: inset #2f0b31 0px 0px 8px 8px,
+          #009DDC 0 0 0 7px, 
+          #61BB46 0 0 0 12px, 
+          #FDB827 0 0 0 17px, 
+          #F5821F 0 0 0 22px, 
+          #E03A3E 0 0 0 27px, 
+          #963D97 0 0 0 32px;
+        }
+        
+        45% {box-shadow:inset #2f0b31 0px 0px 8px 8px,
+          #963D97 0 0 0 7px, 
+          #009DDC 0 0 0 12px, 
+          #61BB46 0 0 0 17px, 
+          #FDB827 0 0 0 22px, 
+          #F5821F 0 0 0 27px, 
+          #E03A3E 0 0 0 32px;
+        }
+  
+          60% {box-shadow: inset #2f0b31 0px 0px 8px 8px,
+            #E03A3E 0 0 0 7px, 
+            #963D97 0 0 0 12px, 
+            #009DDC 0 0 0 17px, 
+            #61BB46 0 0 0 22px, 
+            #FDB827 0 0 0 27px, 
+            #F5821F 0 0 0 32px;
+          }
+          
+          75% {box-shadow: inset #2f0b31 0px 0px 8px 8px,
+            #F5821F 0 0 0 7px, 
+            #E03A3E 0 0 0 12px, 
+            #963D97 0 0 0 17px, 
+            #009DDC 0 0 0 22px, 
+            #61BB46 0 0 0 27px, 
+            #FDB827 0 0 0 32px;
+          }          
+          
+          85% {box-shadow: inset #2f0b31 0px 0px 8px 8px,
+            #FDB827 0 0 0 7px, 
+            #F5821F 0 0 0 12px, 
+            #E03A3E 0 0 0 17px, 
+            #963D97 0 0 0 22px, 
+            #009DDC 0 0 0 27px, 
+            #61BB46 0 0 0 32px;
+          }
+          100% {box-shadow: inset #2f0b31 0px 0px 8px 8px,
+            #61BB46 0 0 0 7px, 
+            #FDB827 0 0 0 12px, 
+            #F5821F 0 0 0 17px, 
+            #E03A3E 0 0 0 22px, 
+            #963D97 0 0 0 27px, 
+            #009DDC 0 0 0 32px;
+          }
+      }
+  
+  
+  /* Top link */
+  #secret {
+    color: #a8cd23;
+    font-family: "Press Start 2P", cursive;
+    width: auto;
+    font-size: 30px;
+    max-block-size: 40px;
+    position: absolute;
+    top: 10px;
+    opacity: 0.5;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  
+  /* top left stuff */
+  .shittingground {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .shitpic {
+    height: 10px;
+    width: auto;
+    transition-duration: 200ms;
+  }
+  
+  .shitpic:hover {
+    height: 50px;
+    width: auto;
+  }
+  
+  /* random stuff */
+  .cuphead {
+    position: fixed;
+    user-select: none;
+    bottom: 0;
+    right: 0;
+    height: calc(50px + 1vw);
+    width: auto;
+  }
+  
+  .cupboi {
+    position: fixed;
+    user-select: none;
+    bottom: 10px;
+    left: 5px;
+    height: calc(25px + 1vw);
+    width: auto;
+  }
+  
+  #secret:hover {
+    transition: 120ms;
+    text-shadow: #a8cd23 2px 2px 4px, black 3px 3px 2px;
+    transform: skew(20deg, 0deg);
+  }
+  
+  /* footer */
+  footer {
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 120px;
+    bottom: 5px;
+  }
+  footer,
+   .sec {
+    user-select: none;
+    font-family: "Press Start 2P", cursive;
+    color: #a8cd23;
+    font-size: 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+    transition-duration: 100ms;
+    margin-bottom: -5px;
+  }
+  
+  .sec {
+    opacity: 0.5;
+  }
+  
+  .tal,
+  .abban {
+    height: 40px;
+    width: 40px;
+    opacity: 1 !important;
+  }
+  
+  .tal:hover,
+  .abban:hover {
+    filter: brightness(1.5);
+  }
+  
+  .sec:hover {
+    opacity: 1;
+  }
+  
+  .sec:active {
+    text-shadow: #a8cd23 12em 0 2px, #a8cd23 -12em 0 2px, #a8cd23 0 -4em 2px;
+    font-size: px;
+  }
+  
+  
+  #ref {
+    user-select: none;
+    font-family: "Press Start 2P", cursive;
+    color: #a8cd23;
+    font-size: 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: right;
+    transition-duration: 100ms;
+    margin-bottom: -5px;
+  }
+  
+  #ref {
+    opacity: 0.5;
+  }
+  
+  #ref:hover {
+    opacity: 1;
+  }
+  
+  #ref:active {
+    text-shadow: #a8cd23a4 12em 0 2px, #a8cd23a4 -12em 0 2px, #a8cd23a4 0 -2em 2px, #a8cd23a4 0 2em 2px;
+    font-size: px;
+  }
+  
+  .abbandiv {
+    width: 100%;
+  }
+  
+  .talsig {
+    width: 100%;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .colcon {
+      width: 90%;
+    }
+  
+    #tal {
+      width: 70%;
+    }
+  
+  }
