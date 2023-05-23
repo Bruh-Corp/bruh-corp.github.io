@@ -14,3 +14,16 @@ navbar.addEventListener('click', function() {
  box3.classList.toggle('visible');
   navtri.classList.toggle('rotate');
 });
+
+const buttons = document.querySelectorAll('.btn');
+const nav3 = document.getElementById('box3');
+
+buttons.forEach((button, index) => {
+  button.addEventListener('mouseover', () => {
+    nav3.classList.add(`bg${index + 1}`);
+  });
+
+  button.addEventListener('mouseout', () => {
+    nav3.classList.remove(`bg${index + 1}`);
+  });
+});

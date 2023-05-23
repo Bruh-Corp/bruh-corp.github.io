@@ -130,6 +130,7 @@ body {
   font-family: "Press Start 2P", cursive;
   color: #a8cd23;
   font-size: calc(7px + .4vw);
+  text-shadow: #fecc1794 1px 1px 3px;
 }
 
 #tri  {
@@ -186,6 +187,19 @@ body {
   background-color: #a8cd23;
   margin: auto 10px 0 10px;
   bottom: 0;
+  animation: pulse 1.3s infinite;
+}
+
+@keyframes pulse {
+  0% {
+  }
+  50% {
+    text-shadow: 
+    #310b22 0px 0px 3px;  
+  }
+  100% {
+
+  }
 }
 
 .btn {
@@ -197,6 +211,8 @@ body {
   width: 100%;
   text-align: center;
   margin: 10px 0 10px 0;
+  border:#a8cd23 1px solid;
+
 }
 .aSyle {
   font-family: "Press Start 2P", cursive;
@@ -204,6 +220,7 @@ body {
   color: #a8cd23;
   text-align: center;
   text-decoration: none;
+  border:#a8cd23 1px solid;
 }
 .btn::before {
   content: "";
@@ -455,3 +472,57 @@ footer,
 .talsig {
   width: 100%;
 }
+
+@media only screen and (max-width: 800px) {
+
+  .box3 {
+    width: 90%;
+    height: 75vh;
+    transform: translate(-50%, -200%);
+  }
+
+}
+
+
+/* CODE I NEED FOR LATER
+
+
+.box3.bg1, .box3.bg2, .box3.bg3, .box3.bg4 {
+  background-repeat: no-repeat;
+}
+
+.box3.bg1 {
+  background-image: url('../pics&shit/HOF.png');  
+  background-size: 50%;
+  background-position: top;
+  background-position: left;
+}
+
+
+.box3.bg2 {
+  background-image: url('../pics&shit/cupboi.png');
+}
+
+.box3.bg3 {
+  background-image: url('../pics&shit/THUNDER.png');
+}
+
+.box3.bg4 {
+  background-image: url('../pics&shit/signature.png');
+}
+
+javascript
+const buttons = document.querySelectorAll('.btn');
+const nav3 = document.getElementById('box3');
+
+buttons.forEach((button, index) => {
+  button.addEventListener('mouseover', () => {
+    nav3.classList.add(`bg${index + 1}`);
+  });
+
+  button.addEventListener('mouseout', () => {
+    nav3.classList.remove(`bg${index + 1}`);
+  });
+});
+
+*/
