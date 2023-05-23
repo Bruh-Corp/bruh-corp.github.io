@@ -19,7 +19,7 @@ body {
   display: flex;
   align-items: center;
   overflow: hidden;
-  max-height: fit-content;
+  max-height: 100vh;
   max-width: 100%;
 }
 
