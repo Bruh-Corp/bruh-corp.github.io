@@ -1,4 +1,4 @@
-*:focus {
+html {
   -webkit-tap-highlight-color: transparent;
   outline: none;
   -ms-touch-action: manipulation;
