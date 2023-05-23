@@ -2,10 +2,15 @@
   user-select: none;
 }
 
+
+html {
+  overflow: hidden;
+  max-width: 100%;
+}
+
 body {
   background-color: #4c1140;
-  display: flex;
-  align-items: center;
+  overflow: hidden;
   overflow: hidden;
 }
 
@@ -14,7 +19,10 @@ body {
   display: flex;
   align-items: center;
   overflow: hidden;
+  max-height: fit-content;
+  max-width: 100%;
 }
+
 .box2 {
   position: absolute;
   height: 65vh;
@@ -25,28 +33,7 @@ body {
   margin: 5px 20px 5px 20px;
   border-radius: 10px;
   display: flex;
-  justify-items: center;
-  align-items: center;
-  flex-direction: column;
-  transition: transform 1s cubic-bezier(.2, 0, .001, 1); 
-  padding: calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw);  
-}
-
-
-.box3 {
-  z-index: 100;
-  overflow: hidden;
-  right: 0;
-  transform: translateX(130%);
-  position: absolute;
-  height: 90vh;
-  width: 20em;
-  background-color: #310b1f;
-  box-shadow:  #310b1fd8 9px 9px 10px;
-  margin: 5px 20px 5px 20px;
-  border-radius: 10px;
-  display: flex;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   transition: transform 1s cubic-bezier(.2, 0, .001, 1); 
@@ -63,9 +50,32 @@ body {
   transform: translateX(0);
 }
 
+
+.box3 {
+  z-index: 100;
+  overflow: hidden;
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -170%);
+  height: 90vh;
+  width: 60%;
+  background-color: #310b1fd2;
+  box-shadow:  #310b1fd8 9px 9px 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 1s cubic-bezier(.2, 0, .001, 1); 
+  padding: calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw); 
+  backdrop-filter: blur(20px);
+}
+
 .box3.visible {
-  right: 0; 
-  transform: translateX(0);
+  inset: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 1s cubic-bezier(.2, 0, .001, 1);
 }
 
 #toggleButton {
@@ -81,10 +91,10 @@ body {
 
 
 #navbar {
-  padding: calc(3px + .5vw) calc(30px + 2vw) calc(3px + .5vw) calc(3px + .5vw);
+  padding: calc(30px + 1.5vw) calc(3px + .25vw) calc(3px + .25vw) calc(3px + .25vw);
   position: absolute;
-  right: -10px;
-  top: 5vh;
+  right: 5vw  ;
+  top: -10px;
   width: fit-content;
   background-color: #310b1f;
   box-shadow: #310b22ad 6px 6px 10px;
@@ -98,14 +108,29 @@ body {
   cursor: pointer;
   font-family: "Press Start 2P", cursive;
   color: #FECD17;
-  font-size: calc(18px + .1vw);
+  font-size: calc(18px + .4vw);
   transition: transform 1s cubic-bezier(.2, 0, .001, 1); 
 }
 
-#navtri.rotate {
-  transform: rotate(180deg);
+#navtri:hover {
+  text-shadow: #FECD17 0 0 10px;
+  scale: 1.01;
 }
 
+#navtri:active {
+  text-shadow: #FECD17 0 0 15px;
+  scale: .98;
+}
+
+#navtri.rotate {
+  transform: rotate(-180deg);
+}
+
+.bannerNav {
+  font-family: "Press Start 2P", cursive;
+  color: #a8cd23;
+  font-size: calc(7px + .4vw);
+}
 
 #tri  {
   position: relative;
@@ -118,6 +143,21 @@ body {
 
 #tri.rotate {
   transform: rotate(180deg);
+}
+
+
+#tri:hover {
+  text-shadow: #FECD17 0 0 7.5px;
+  scale: 1.01;
+}
+
+#tri:active {
+  text-shadow: #FECD17 0 0 10px;
+  scale: .98;
+}
+
+#tri.rotate {
+  transform: rotate(-180deg);
 }
 
 .spect {
@@ -253,7 +293,7 @@ body {
   box-shadow:  inset 
   #310b22 12px 12px 10px,  
   #310b22 12px 12px 10px;
-  border-radius: 1%;
+  border-radius: 7.5px;
   transition-duration: 250ms;
 }
 
@@ -415,5 +455,3 @@ footer,
 .talsig {
   width: 100%;
 }
-
-@media only screen and (max-width: 600px) {}
