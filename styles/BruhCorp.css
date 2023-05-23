@@ -8,6 +8,13 @@ body {
   align-items: center;
   overflow: hidden;
 }
+
+.wrapper {
+  background-color: #4c1140;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
 .box2 {
   position: absolute;
   height: 65vh;
