@@ -302,7 +302,7 @@ body {
 }
 
 .gitBox {
-  padding: calc(3px + .5vw);
+  padding: calc(10px + .1vw);
   background-color: #0D1117;
   width: 90%;
   margin: 6px auto 6px auto;
@@ -326,7 +326,7 @@ div.gitBox > a {
 
 
 .googleBox {
-  padding: calc(3px + .5vw);
+  padding: calc(10px + .1vw);
   background-color: white;
   width: 90%;
   border-radius: 10px;
@@ -362,7 +362,7 @@ div.googleBox > a {
   margin: 5px 0 5px 0;
 }
 .talBoxGit {
-  padding: calc(3px + .5vw);
+  padding: calc(10px + .1vw);
   background-color: #0D1117;
   width: 65%;
   margin: 6px 0 0 auto;
@@ -386,7 +386,7 @@ div.talBoxGit > a {
 
 
 .talBoxGmail {
-  padding: calc(3px + .5vw);
+  padding: calc(10px + .1vw);
   background-color: white;
   width: 65%;
   border-radius: 0 0 10px 10px;
@@ -423,7 +423,7 @@ div.talBoxGmail > a {
 
 }
 .appleBoxGit {
-  padding: calc(3px + .5vw);
+  padding: calc(10px + .1vw);
   background-color: #0D1117;
   width: 65%;
   margin: 6px auto 0 0;
@@ -447,7 +447,7 @@ div.appleBoxGit > a {
 
 
 .appleBoxGmail {
-  padding: calc(3px + .5vw);
+  padding: calc(10px + .1vw);
   background-color: white;
   width: 65%;
   border-radius: 0 0 10px 10px;
