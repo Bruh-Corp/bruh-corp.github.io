@@ -39,23 +39,23 @@ body {
   max-height: 100vh;
   max-width: 100%;
 }
-
+/*  NOT USING AS OF NOW
 .box2 {
   position: absolute;
-  height: 80vh;
-  max-width: 13em;
+  height: 70%;
+  max-width: 15em;
   overflow: hidden;
   background-color: #310b1f;
-  box-shadow:  #310b1fd8 9px 9px 10px;
+  box-shadow:  #00000042 9px 9px 10px;
   margin: 1.2em;
-  border-radius: 10px;
+  border-radius: calc(7.5px + .1vw);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   transition: transform 1s cubic-bezier(.2, 0, .001, 1); 
-  padding: calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw);  
-  bottom: 0;
+  padding: calc(20px + .3vw);  
+  display: none;
 }
 
 .box2 {
@@ -68,14 +68,13 @@ body {
   left: 0; 
   transform: translateX(0);
 }
-
+*/
 .box2b {
   position: absolute;
   height: fit-content;
   width: calc(11em + 8vw);
   overflow: hidden;
   margin: 1.2em;
-  border-radius: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -84,8 +83,11 @@ body {
   right: 0;
   transition: transform .6s cubic-bezier(.2, 0, .001, 1); 
   background-color: #310b1f;
-  box-shadow:  #310b1fd8 9px 9px 10px;
+  box-shadow:  #00000042 9px 9px 10px;
   bottom: 0;
+  transform: translateY(92%);
+  border-radius: calc(7.5px + .1vw);
+
 }
 
 .box2b:hover {
@@ -106,25 +108,26 @@ body {
 
 .box2a {
   position: absolute;
-  height: 80vh;
-  max-width: 16em;
+  height: 60%;
+  width: 19em;
   overflow: hidden;
   background-color: #310b1f;
-  box-shadow:  #310b1fd8 9px 9px 10px;
+  box-shadow:  #00000042 9px 9px 10px;
   margin: 1.2em;
-  border-radius: 10px;
+  border-radius: calc(7.5px + .1vw);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   transition: transform 1s cubic-bezier(.2, 0, .001, 1); 
-  padding: calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw);  
-  bottom: 0;
+  padding: calc(15px + .3vw);  
+  background-size: 120%;
 }
+
 
 .box2a {
   left: 0;
-  transform: translateX(0%);
+  transform: translateX(0);
 }
 
 .box2a.hidden {
@@ -132,7 +135,59 @@ body {
   transform: translateX(-150%);
 }
 
+@media (min-width: 760px) and (max-width: 1190px) {
+  .box2a {
+    width: 16em;
+    transform: translateX(-150%);
+  }
+  
+.box2a.hidden {
+  left: 0; 
+  transform: translateX(0);
+}
+}
 
+@media only screen and (max-width: 760px) {
+  .box2a {
+    width: 80%;
+    transform: translateX(-150%);
+  }
+  
+.box2a.hidden {
+  left: 0; 
+  transform: translateX(0);
+}
+}
+
+
+.purpose {
+  width: 95%;
+  border-radius: calc(7.5px + .1vw);
+  font-family: "Press Start 2P", cursive;
+  font-size: calc(11px + .06vw);
+  line-height: 150%;
+  color: #a8cd23;
+  margin: auto 0 auto 0;
+  text-align: left;
+  text-shadow: #fecc1794 1px 1px 3px;
+  background-color: #a8cd231c;
+  padding: calc(10px + .1vw);
+}
+
+.box2aLoco {
+  font-family: "Press Start 2P", cursive;
+  font-size: 30px;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 
+  #310b22 0px 0px 2px;  
+  background-color: #a8cd23;
+  margin: 0 auto auto 0;
+  animation: pulse 1.3s infinite;
+  display: none;
+}
 
 
 .box3 {
@@ -146,7 +201,7 @@ body {
   width: 60%;
   background-color: #310b1fd2;
   box-shadow:  #00000042 0px 0px 10px 10px;
-  border-radius: 10px;
+  border-radius: calc(7.5px + .1vw);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,7 +223,7 @@ body {
   padding: calc(5px + .25vw) calc(5px + .25vw) calc(5px + .25vw) calc(30px + 2vw);
   position: absolute;
   left: -10px;
-  top: 5vh;
+  top: 3vh;
   width: fit-content;
   background-color: #310b1f;
   box-shadow: #310b22ad 6px 6px 10px;
@@ -224,7 +279,7 @@ body {
   cursor: pointer;
   font-family: "Press Start 2P", cursive;
   color: #FECD17;
-  font-size: calc(18px + .1vw);
+  font-size: calc(10px + .4vw);
   transition: transform 1s cubic-bezier(.2, 0, .001, 1); 
 }
 
@@ -260,6 +315,7 @@ body {
   text-align: center;
   text-shadow: #fecc1794 1px 1px 3px;
 }
+
 
 .navtitle {
   padding: calc(3px + .5vw) 0px calc(3px + .5vw) calc(3px + .5vw);  
@@ -304,7 +360,7 @@ body {
   background-color: #0D1117;
   width: 90%;
   margin: 6px auto 6px auto;
-  border-radius: 10px;
+  border-radius: calc(7.5px + .1vw);
   font-family: 'Hubot Sans';
   color: #E6EDF3;
   text-decoration: none;
@@ -327,7 +383,7 @@ div.gitBox > a {
   padding: calc(10px + .1vw);
   background-color: white;
   width: 90%;
-  border-radius: 10px;
+  border-radius: calc(7.5px + .1vw);
   font-family: 'Roboto', sans-serif;
   color: black;
   text-decoration: none;
@@ -364,7 +420,7 @@ div.googleBox > a {
   background-color: #0D1117;
   width: 65%;
   margin: 6px 0 0 auto;
-  border-radius: 10px 10px 0 0;
+  border-radius: calc(7.5px + .1vw) calc(7.5px + .1vw) 0 0;
   font-family: 'Hubot Sans';
   color: #E6EDF3;
   text-decoration: none;
@@ -387,7 +443,7 @@ div.talBoxGit > a {
   padding: calc(10px + .1vw);
   background-color: white;
   width: 65%;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 calc(7.5px + .1vw) calc(7.5px + .1vw);
   font-family: 'Roboto', sans-serif;
   color: black;
   text-decoration: none;
@@ -425,7 +481,7 @@ div.talBoxGmail > a {
   background-color: #0D1117;
   width: 65%;
   margin: 6px auto 0 0;
-  border-radius: 10px 10px 0 0;
+  border-radius: calc(7.5px + .1vw) calc(7.5px + .1vw) 0 0;
   font-family: 'Hubot Sans';
   color: #E6EDF3;
   text-decoration: none;
@@ -448,7 +504,7 @@ div.appleBoxGit > a {
   padding: calc(10px + .1vw);
   background-color: #282828;
   width: 65%;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 calc(7.5px + .1vw) calc(7.5px + .1vw);
   font-family: 'Roboto', sans-serif;
   color: white;
   text-decoration: none;
@@ -493,10 +549,10 @@ div.box2b > .bannerNav {
   width: 50%;
   text-align: center;
   margin: 10px 0 10px 0;
-  border-radius: 10px;
-  transition: 100ms; 
+  border-radius: calc(7.5px + .1vw);
   border: #a8cd23af 1px solid;
   background-color: #310b1f;
+  transition: 50ms;
 }
 .aSyle {
   font-family: "Press Start 2P", cursive;
@@ -512,12 +568,11 @@ div.box2b > .bannerNav {
 }
 
 .btn:hover {
-  box-shadow: #270919 0 0 300px 100px;
   width: 100%;
   color: #a8cd23;
-  border: #a8cd23 1px solid;
   scale: 1.9;
-  transition: 0;
+  text-shadow: black 0.6px 0.6px 1.2px, #a8cd23 1.2px 1.2px 1.2px, black 3.6px 3.6px 1.2px, #a8cd23 4.8px 4.8px 1.2px, black 6px 6px 1.2px, #a8cd23 7.2px 7.2px 1.2px;
+
 }
 
 .btn:active {
@@ -542,7 +597,7 @@ div.box2b > .bannerNav {
   text-shadow: 
   #310b1f 0px 0px 5px;  
   background-color: #a8cd23;
-  margin: auto 10px 0 10px;
+  margin: auto;
   transition-duration: 190ms;
   animation: bruhoverthetime 7s infinite;
 }
@@ -596,7 +651,7 @@ div.box2b > .bannerNav {
   box-shadow:  inset 
   #310b22 12px 12px 10px,  
   #310b22 12px 12px 10px;
-  border-radius: 7.5px;
+  border-radius: calc(7.5px + .1vw);
   transition-duration: 250ms;
 }
 
@@ -774,7 +829,7 @@ footer,
     padding: calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw) calc(30px + 2vw);
     position: absolute;
     left: -10px;
-    top: 10vh;
+    top: 7vh;
     color: #FECD17;
     font-family: "Press Start 2P", cursive;
     width: fit-content;
@@ -788,7 +843,7 @@ footer,
       width: 90%;
       overflow: hidden;
       margin: auto;
-      border-radius: 10px;
+      border-radius: calc(7.5px + .1vw);
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -801,6 +856,7 @@ footer,
       left: 0;
       bottom: 5%;
     }
+    
     
 
 .box2b.abc {
@@ -854,24 +910,8 @@ footer,
 
 }
 
-@media only screen and (max-width: 1000px) {
-  .box2a {
-    display: none;
-  }
-}
-
 
 @media (hover: none) and (min-width: 767px) {
-  .box2b {
-    /* Reset hover styles for touch screens */
-    bottom: 0vh; 
-    transform: translateY(91%);
-  }
-
-  .box2.visible {
-    bottom: 0;
-    transform: translateY(0%);
-  }
 
   .contactWrap {
     height: 40px;

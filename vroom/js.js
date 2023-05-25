@@ -1,9 +1,9 @@
 const toggleButton = document.getElementById('toggleButton');
-const box2 = document.getElementById('box2');
+//const box2 = document.getElementById('box2');
 const box2a = document.getElementById('box2a');
 const tri = document.getElementById('tri');
 toggleButton.addEventListener('click', function() {
-  box2.classList.toggle('visible');
+  //box2.classList.toggle('visible');
   box2a.classList.toggle('hidden');
   tri.classList.toggle('rotate');
 });
