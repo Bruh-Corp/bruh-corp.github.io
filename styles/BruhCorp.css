@@ -72,7 +72,7 @@ body {
 .box2b {
   position: absolute;
   height: fit-content;
-  max-width: calc(11em + 10vw);
+  width: calc(11em + 8vw);
   overflow: hidden;
   margin: 1.2em;
   border-radius: 10px;
@@ -82,11 +82,9 @@ body {
   transition: transform 1s cubic-bezier(.2, 0, .001, 1); 
   padding: calc(5px + .5vw);  
   right: 0;
-  bottom: -56vh;
   transition: transform .6s cubic-bezier(.2, 0, .001, 1); 
   background-color: #310b1f;
   box-shadow:  #310b1fd8 9px 9px 10px;
-  transform: translateY(89%);
   bottom: 0;
 }
 
@@ -448,14 +446,14 @@ div.appleBoxGit > a {
 
 .appleBoxGmail {
   padding: calc(10px + .1vw);
-  background-color: white;
+  background-color: #282828;
   width: 65%;
   border-radius: 0 0 10px 10px;
   font-family: 'Roboto', sans-serif;
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 12px;
-  background-image: url('../pics&shit/gmaillogo.png');
+  background-image: url('../pics&shit/');
   background-repeat: no-repeat;
   background-position: 95%;
   background-size: 15%;
@@ -787,9 +785,9 @@ footer,
     .box2b {
       position: absolute;
       height: fit-content;
-      max-width: 90%;
+      width: 90%;
       overflow: hidden;
-      margin: 1.2em;
+      margin: auto;
       border-radius: 10px;
       display: flex;
       align-items: center;
@@ -867,7 +865,7 @@ footer,
   .box2b {
     /* Reset hover styles for touch screens */
     bottom: 0vh; 
-    transform: translateY(89%);
+    transform: translateY(91%);
   }
 
   .box2.visible {
