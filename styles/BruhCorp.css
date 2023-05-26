@@ -167,7 +167,7 @@ body {
   font-size: calc(11px + .06vw);
   line-height: 150%;
   color: #a8cd23;
-  margin: auto 0 auto 0;
+  margin: auto 0 0 0;
   text-align: left;
   text-shadow: #fecc1794 1px 1px 3px;
   background-color: #a8cd231c;
@@ -404,8 +404,8 @@ div.googleBox > a {
 }
 
 .talBox {
-  width: 100%;
-  background-color: hwb(328 4% 85%);
+  width: 101%;
+  background-color: #a8cd231c;
   display: flex;
   flex-direction: column;
   padding: calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw);  
@@ -464,8 +464,8 @@ div.talBoxGmail > a {
 }
 
 .appleBox {
-  width: 100%;
-  background-color: hwb(328 4% 85%);
+  width: 101%;
+  background-color: #a8cd231c;
   display: flex;
   flex-direction: column;
   padding: calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw);  
@@ -571,7 +571,7 @@ div.box2b > .bannerNav {
   width: 100%;
   color: #a8cd23;
   scale: 1.9;
-  text-shadow: black 0.6px 0.6px 1.2px, #a8cd23 1.2px 1.2px 1.2px, black 3.6px 3.6px 1.2px, #a8cd23 4.8px 4.8px 1.2px, black 6px 6px 1.2px, #a8cd23 7.2px 7.2px 1.2px;
+text-shadow: #fecc1794 0 0 20px, black 0.4px 0.4px 0.8px, #a8cd23 0.8px 0.8px 0.8px, black 3.6px 3.6px 0.8px, #a8cd23 4.8px 4.8px 0.8px, black 6px 6px 0.8px, #a8cd23 7.2px 7.2px 0.8px;
 
 }
 
@@ -597,7 +597,7 @@ div.box2b > .bannerNav {
   text-shadow: 
   #310b1f 0px 0px 5px;  
   background-color: #a8cd23;
-  margin: auto;
+  margin: auto 0 0 0;  
   transition-duration: 190ms;
   animation: bruhoverthetime 7s infinite;
 }

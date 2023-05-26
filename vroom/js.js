@@ -26,18 +26,6 @@ navbar.addEventListener('click', function() {
   navtri.classList.toggle('rotate');
 });
 
-const buttons = document.querySelectorAll('.btn');
-const nav3 = document.getElementById('box3');
-
-buttons.forEach((button, index) => {
-  button.addEventListener('mouseover', () => {
-    nav3.classList.add(`bg${index + 1}`);
-  });
-
-  button.addEventListener('mouseout', () => {
-    nav3.classList.remove(`bg${index + 1}`);
-  });
-});
 
 const box2About = document.querySelector('.contactWrap');
 const box2b = document.querySelector('.box2b');
@@ -51,3 +39,8 @@ document.addEventListener('click', function(event) {
     box2b.classList.remove('visible');
   }
 });
+
+function sound(){
+  var snd = new Audio("./pics&shit/hover.mp3")//wav is also supported
+  snd.play()//plays the sound
+}

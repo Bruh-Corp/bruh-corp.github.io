@@ -151,7 +151,7 @@
     color: #a8cd23;
     font-family: 'Roboto Mono', monospace;
     border: #a8cd2350 20px ;
-    font-size: calc(10px + 0.6vw);
+    font-size: calc(12px + .3vw);
     transition: 150ms;
     border-radius: 2%;
     box-shadow:  inset #310b229a 0px 0px 8px 8px;
@@ -298,29 +298,11 @@
     width: auto;
   }
   
-  /* random stuff */
-  .cuphead {
-    position: fixed;
-    user-select: none;
-    bottom: 0;
-    right: 0;
-    height: calc(50px + 1vw);
-    width: auto;
-  }
-  
-  .cupboi {
-    position: fixed;
-    user-select: none;
-    bottom: 10px;
-    left: 5px;
-    height: calc(25px + 1vw);
-    width: auto;
-  }
   
   #secret:hover {
     transition: 120ms;
     text-shadow: #a8cd23 2px 2px 4px, black 3px 3px 2px;
-    transform: skew(20deg, 0deg);
+    transform: skew(15deg, 0deg);
   }
   
   /* footer */
@@ -413,3 +395,159 @@
     }
   
   }
+
+  
+
+#navbar {
+  padding: calc(30px + .5vw) calc(5px + .25vw) calc(5px + .25vw) calc(5px + .25vw);
+  position: absolute;
+  right: 5vw;
+  top: -10px;
+  width: fit-content;
+  background-color: #310b1f;
+  box-shadow: #310b22ad 6px 6px 10px;
+  border-radius: calc(5px + .1vw);
+  z-index: 10000;
+}
+
+
+#navtri  {
+  position: relative;
+  cursor: pointer;
+  font-family: "Press Start 2P", cursive;
+  color: #FECD17;
+  font-size: calc(18px + .4vw);
+  transition: transform 1s cubic-bezier(.2, 0, .001, 1); 
+}
+
+#navtri:hover {
+  text-shadow: #FECD17 0 0 10px;
+  scale: 1.01;
+}
+
+#navtri:active {
+  text-shadow: #FECD17 0 0 15px;
+  scale: .98;
+}
+
+#navtri.rotate {
+  transform: rotate(-180deg);
+}
+
+.bannerNav {
+  font-family: "Press Start 2P", cursive;
+  color: #a8cd23;
+  font-size: calc(7px + .4vw);
+  text-shadow: #fecc1794 1px 1px 3px;
+}
+
+
+.box3 {
+  z-index: 100;
+  overflow: hidden;
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -170%);
+  height: 90vh;
+  width: 60%;
+  background-color: #310b1fd2;
+  box-shadow:  #00000042 0px 0px 10px 10px;
+  border-radius: calc(7.5px + .1vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 1s cubic-bezier(.2, 0, .001, 1); 
+  padding: calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw); 
+  -moz-backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+
+.box3.visible {
+  inset: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 1s cubic-bezier(.2, 0, .001, 1);
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+
+  .box3 {
+    width: 90%;
+    height: 69vh;
+    transform: translate(-50%, -200%);
+  }
+
+  .btn:active {
+    scale: 1.4;
+  }
+
+  .btn:hover {
+    scale: 1.5;
+  }
+
+}
+
+
+.btn {
+  padding: calc(8px + .5vw) calc(30px + .5vw) calc(3.5px + .5vw) calc(30px + .5vw);
+  user-select: none;
+  font-family: "Press Start 2P", cursive;
+  font-size: calc(20px + .2vw);
+  color: #a8cd23;
+  width: 50%;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  border-radius: calc(7.5px + .1vw);
+  border: #a8cd23af 1px solid;
+  background-color: #310b1f;
+  transition: 50ms;
+}
+.aSyle {
+  font-family: "Press Start 2P", cursive;
+  font-size: calc(20px + .2vw);
+  text-align: center;
+  text-decoration: none;
+  color: #a8cd23;
+
+}
+
+.btn:nth-child(1) {
+  margin-top: auto;
+}
+
+.btn:hover {
+  width: 100%;
+  color: #a8cd23;
+  scale: 1.9;
+  text-shadow: #fecc1794 0 0 20px, black 0.4px 0.4px 0.8px, #a8cd23 0.8px 0.8px 0.8px, black 3.6px 3.6px 0.8px, #a8cd23 4.8px 4.8px 0.8px, black 6px 6px 0.8px, #a8cd23 7.2px 7.2px 0.8px;
+
+}
+
+.btn:active {
+  scale: 1.83;
+  width: 100%;
+  color: #a8cd23;
+  border: #a8cd23 1px solid;
+  box-shadow: #a8cd2356 0 0 100px 50px;
+}
+
+
+.navtitle {
+  padding: calc(3px + .5vw) 0px calc(3px + .5vw) calc(3px + .5vw);  
+  user-select: none;
+  font-family: "Press Start 2P", cursive;
+  font-size: calc(30px + .2vw);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 
+  #310b22 0px 0px 2px;  
+  background-color: #a8cd23;
+  margin: auto 10px 0 10px;
+  bottom: 0;
+  animation: pulse 1.3s infinite;
+  z-index: 1000000;
+}
