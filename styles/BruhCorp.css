@@ -32,12 +32,12 @@ body {
 }
 
 .wrapper {
-  background-color: #4c1140;
   display: flex;
   align-items: center;
   overflow: hidden;
   max-height: 100vh;
   max-width: 100%;
+
 }
 /*  NOT USING AS OF NOW
 .box2 {
@@ -87,7 +87,6 @@ body {
   bottom: 0;
   transform: translateY(92%);
   border-radius: calc(7.5px + .1vw);
-
 }
 
 .box2b:hover {
@@ -552,7 +551,12 @@ div.box2b > .bannerNav {
   border-radius: calc(7.5px + .1vw);
   border: #a8cd23af 1px solid;
   background-color: #310b1f;
-  transition: 50ms;
+  transition-duration: 250ms;
+  background-image: url('../pics&shit/letroll.png');
+
+  background-repeat: no-repeat;
+  background-position: 140%;
+  background-size: contain;
 }
 .aSyle {
   font-family: "Press Start 2P", cursive;
@@ -570,9 +574,8 @@ div.box2b > .bannerNav {
 .btn:hover {
   width: 100%;
   color: #a8cd23;
-  scale: 1.9;
 text-shadow: #fecc1794 0 0 20px, black 0.4px 0.4px 0.8px, #a8cd23 0.8px 0.8px 0.8px, black 3.6px 3.6px 0.8px, #a8cd23 4.8px 4.8px 0.8px, black 6px 6px 0.8px, #a8cd23 7.2px 7.2px 0.8px;
-
+background-position: 70%;
 }
 
 .btn:active {
@@ -581,6 +584,8 @@ text-shadow: #fecc1794 0 0 20px, black 0.4px 0.4px 0.8px, #a8cd23 0.8px 0.8px 0.
   color: #a8cd23;
   border: #a8cd23 1px solid;
   box-shadow: #a8cd2356 0 0 100px 50px;
+  transition-duration: 90ms;
+
 }
 
 .changingBruh {
