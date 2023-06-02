@@ -403,7 +403,7 @@ div.googleBox > a {
 }
 
 .talBox {
-  width: 101%;
+  width: 102%;
   background-color: #a8cd231c;
   display: flex;
   flex-direction: column;
@@ -463,7 +463,7 @@ div.talBoxGmail > a {
 }
 
 .appleBox {
-  width: 101%;
+  width: 102%;
   background-color: #a8cd231c;
   display: flex;
   flex-direction: column;
