@@ -213,7 +213,7 @@ body {
   #310b22 12px 12px 10px;
   border-radius: calc(7.5px + .1vw);
   transition-duration: 250ms;
-  margin: 30vh 0 40vh 0;
+  margin: 30vh 0 20vh 0;
   text-align: center;
 }
 
@@ -234,7 +234,7 @@ body {
   width: 90%;
   border-radius: calc(7.5px + .1vw);
   font-family: "Press Start 2P", cursive;
-  font-size: calc(11px + 1vw);
+  font-size: calc(10px + .5vw);
   line-height: 150%;
   color: #a8cd23;
   margin: auto 0 0 0;
@@ -264,53 +264,40 @@ body {
 }
 
 .colcon {
-  width: 25%;
+  width: fit-content;
   height: fit-content;
-  padding: 20px;
-  margin: 20px 0 20px 0;
+  padding: calc(25px + 1.2vw);
+  margin: 20px 40px 20px 40px;
   color: #a8cd23;
-  font-family: 'Roboto Mono', monospace;
   border: #a8cd2350 20px ;
   font-size: calc(12px + .3vw);
-  transition: 90ms;
+  transition-duration: 150ms;
   border-radius: calc(7.5px + .1vw);
   box-shadow:  inset #310b229a 0px 0px 8px 8px;
-  overflow: hidden;
-}
-
-p {
-  user-select: text;
-}
-
-#ref {
   user-select: none;
   font-family: "Press Start 2P", cursive;
+  font-size: calc(20px + 1.5vw);
   color: #a8cd23;
-  font-size: 12px;
-  width: fit-content;
+  text-align: center;
   text-decoration: none;
-  text-transform: capitalize;
-  text-align: right;
-  transition-duration: 100ms;
-  margin-bottom: -5px;
+  line-height: 120%;
 }
 
-#ref {
-  opacity: 0.5;
-}
-
-#ref:hover {
-  opacity: 1;
-}
 
 .colcon:hover {
-  box-shadow:  inset #310b22 0px 0px 8px 8px;
-  transform: scale(1.03);
+    transition-duration: 120ms;
+    transform: scale(1.04);
+    text-shadow: black 0.6px 0.6px 1.2px, #a8cd23 1.2px 1.2px 1.2px, black 3.6px 3.6px 1.2px, #a8cd23 4.8px 4.8px 1.2px, black 6px 6px 1.2px, #a8cd23 7.2px 7.2px 1.2px;
+    background-color: transparent;
 }
 
 .colcon:active {
   transform: scale(1.02);
+  box-shadow: inset #2c0a23 0 0 250px 250px, #2c0a23 6px 6px 10px;
+
 }
+
+
 footer {
   align-items: center;
   justify-content: center;
@@ -357,13 +344,6 @@ footer,
 }
 
 @media only screen and (max-width: 600px) {
-  .colcon {
-    width: 80%;
-  }
-
-  #tal {
-    width: 70%;
-  }
 
 }
 
@@ -387,13 +367,4 @@ footer,
   transition: 120ms;
   text-shadow: #a8cd23 2px 2px 4px, black 3px 3px 2px;
   transform: skew(15deg, 0deg);
-}
-
-.colTitle {
-  user-select: none;
-  font-family: "Press Start 2P", cursive;
-  font-size: calc(20px + .2vw);
-  color: #a8cd23;
-  text-shadow: #FECD17 0px 0px 10px;
-  text-align: center;
 }
