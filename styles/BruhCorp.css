@@ -174,6 +174,7 @@ nav h2 {
   color: var(--green);
   font-size: calc(7px + 0.4vw);
   text-shadow: #fecc1794 1px 1px 3px;
+  margin: 0;
 }
 
 #arrow {
@@ -196,8 +197,8 @@ nav h2 {
   transform: rotate(-180deg);
 }
 
-#toggleButton {
-  padding: calc(5px + 0.25vw) calc(5px + 0.25vw) calc(5px + 0.25vw) calc(30px + 2vw);
+#toggleButton, #contactToggleButton {
+  padding: calc(4px + 0.15vw) calc(4px + 0.15vw) calc(4px + 0.15vw) calc(30px + 2vw);
   position: absolute;
   left: -10px;
   top: 3vh;
@@ -206,27 +207,36 @@ nav h2 {
   box-shadow: #310b22ad 6px 6px 10px;
   border-radius: calc(5px + 0.2vw);
 }
-#toggleButton h1 {
+
+#contactToggleButton {
+  top: 10vh;
+  display: none;
+}
+
+#toggleButton h1, #contactToggleButton h1 {
   position: relative;
   cursor: pointer;
   font-family: "Press Start 2P", cursive;
   color: #fecd17;
-  font-size: calc(10px + 0.4vw);
+  font-size: calc(10px + 0.3vw);
   transition: transform 1s var(--smooth-anim);
+  display: block;
 }
-#toggleButton h1.rotate {
-  transform: rotate(180deg);
+
+#contactToggleButton h1 {
+  font-size: calc(7px + 0.2vw);
 }
-#toggleButton h1:hover {
+
+#toggleButton h1.rotate, #contactToggleButton.rotate {
+  transform: rotate(-360deg);
+}
+#toggleButton h1:hover, #contactToggleButton:hover {
   text-shadow: #fecd17 0 0 7.5px;
   scale: 1.01;
 }
-#toggleButton h1:active {
+#toggleButton h1:active, #contactToggleButton:active {
   text-shadow: #fecd17 0 0 10px;
   scale: 0.98;
-}
-#toggleButton h1.rotate {
-  transform: rotate(-360deg);
 }
 
 /* ! TF IS THIS */
@@ -286,8 +296,9 @@ nav h2 {
 #contacts h2 {
   font-family: "Press Start 2P", cursive;
   color: var(--green);
-  font-size: calc(7px + 0.4vw);
+  font-size: calc(15px + 0.4vw);
   text-shadow: #fecc1794 1px 1px 3px;
+  margin-bottom: 0;
 }
 #contacts a {
   color: #2f81f7;
@@ -513,31 +524,36 @@ nav h2 {
 }
 
 /* * footer */
+
 footer {
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
   width: 120px;
   bottom: 5px;
-  margin-top: auto;
-  margin-bottom: 10px;
   position: absolute;
+}
+footer,
+ .footerTitle {
   user-select: none;
   font-family: "Press Start 2P", cursive;
-  color: var(--green);
+  color: #a8cd23;
   font-size: 10px;
   text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
   transition-duration: 100ms;
 }
 
-footer h3 {
-  opacity: 0.5;
+.footerTitle {
+  opacity: .5;
 }
-footer h3:hover {
+
+.footerTitle:hover {
   opacity: 1;
 }
-footer h3:active {
+.footerTitle:active {
   text-shadow: var(--green) 12em 0 2px, var(--green) -12em 0 2px, var(--green) 0 -4em 2px;
-  font-size: px;
 }
 
 footer img {
@@ -585,21 +601,20 @@ footer img:hover {
     bottom: 5%;
   }
 
-  #toggleButton h1 {
+  #toggleButton h1{
     position: relative;
     cursor: pointer;
     font-family: "Press Start 2P", cursive;
     color: #fecd17;
     font-size: 10px;
     transition: transform 1s var(--smooth-anim);
-    display: block;
   }
 
-  #toggleButton h1.rotate {
+  #toggleButton h1.rotate  {
     transform: rotate(180deg);
   }
 
-  #toggleButton h1:hover {
+  #toggleButton h1:hover  {
     text-shadow: #fecd17 0 0 7.5px;
     scale: 1.01;
   }
@@ -609,6 +624,9 @@ footer img:hover {
     scale: 0.98;
   }
 }
+
+
+
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   #nav-list {
@@ -638,10 +656,28 @@ footer img:hover {
   }
 }
 
-@media only screen and (min-width: 760px) {
-  #toggleButton h1 {
-    display: none;
+@media only screen and (max-width: 760px) {
+
+  #contactToggleButton {
+    display: block;
   }
+
+  #contactToggleButton h1.rotate {
+    transform: rotate(-360deg);
+  }
+
+  #contacts {
+    transform: translateY(0);
+    transform: translateX(-150%);
+    left: 0;
+    bottom: 10%;
+  }
+
+  #contacts.visible {
+    transform: translateX(0);
+    left: 0;
+  }
+
 }
 
 /* ! CODE I NEED FOR LATER

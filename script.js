@@ -8,13 +8,13 @@ toggleButton.addEventListener("click", function () {
   tri.classList.toggle("rotate");
 });
 
-// const triContact = document.getElementById("triContact");
-// const contactButton = document.getElementById("contactButton");
-// const contactBox = document.getElementById("contact");
-// contactButton.addEventListener("click", function () {
-//   contactBox.classList.toggle("abc");
-//   triContact.classList.toggle("rotate");
-// });
+const contactButton = document.querySelector('#contactToggleButton');
+const contactH1 = contactButton.querySelector('h1');
+const contactBox = document.getElementById("contacts");
+contactButton.addEventListener("click", function () {
+   contactBox.classList.toggle("visible");
+   contactH1.classList.toggle("rotate");
+ });
 
 const navbar = document.querySelector("nav");
 const navList = document.getElementById("nav-list");
