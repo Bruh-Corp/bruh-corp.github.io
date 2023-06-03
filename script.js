@@ -1,31 +1,30 @@
 const toggleButton = document.getElementById("toggleButton");
 //const box2 = document.getElementById('box2');
-const box2a = document.getElementById("box2a");
-const tri = document.getElementById("tri");
+const aboutBox = document.getElementById("about");
+const tri = document.querySelector("#toggleButton>h1");
 toggleButton.addEventListener("click", function () {
   //box2.classList.toggle('visible');
-  box2a.classList.toggle("hidden");
+  aboutBox.classList.toggle("hidden");
   tri.classList.toggle("rotate");
 });
 
 const triContact = document.getElementById("triContact");
 const contactButton = document.getElementById("contactButton");
-const contactBox = document.querySelector(".box2b");
+const contactBox = document.getElementById("contact");
 contactButton.addEventListener("click", function () {
   contactBox.classList.toggle("abc");
   triContact.classList.toggle("rotate");
 });
 
-const navbar = document.getElementById("navbar");
-const box3 = document.getElementById("box3");
-const navtri = document.getElementById("navtri");
-
+const navbar = document.querySelector("nav");
+const navList = document.getElementById("nav-list");
+const arrow = document.getElementById("arrow");
 navbar.addEventListener("click", function () {
-  box3.classList.toggle("visible");
-  navtri.classList.toggle("rotate");
+  navList.classList.toggle("visible");
+  arrow.classList.toggle("rotate");
 });
 
-function sound() {
-  var snd = new Audio("./pics&shit/hover.mp3"); //wav is also supported
+function playSound(fileName) {
+  var snd = new Audio(fileName);
   snd.play(); //plays the sound
 }
