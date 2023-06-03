@@ -3,14 +3,13 @@ html {
   outline: none;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
-  font-family: 'Hubot Sans';
+  font-family: "Hubot Sans";
 }
 
 @font-face {
-  font-family: 'Hubot Sans';
-  src:
-    url('../fonts/Hubot-Sans.woff2') format('woff2 supports variations'),
-    url('../fonts/Hubot-Sans.woff2') format('woff2-variations');
+  font-family: "Hubot Sans";
+  src: url("../fonts/Hubot-Sans.woff2") format("woff2 supports variations"),
+    url("../fonts/Hubot-Sans.woff2") format("woff2-variations");
   font-weight: 600 100;
   font-stretch: 75% 125%;
 }
@@ -19,25 +18,13 @@ html {
   user-select: none;
 }
 
-
-html {
-  overflow: hidden;
-  max-width: 100%;
-}
-
 body {
   background-color: #4c1140;
   overflow: hidden;
-  overflow: hidden;
-}
-
-.wrapper {
   display: flex;
   align-items: center;
-  overflow: hidden;
-  max-height: 100vh;
   max-width: 100%;
-
+  max-height: 100vh;
 }
 /*  NOT USING AS OF NOW
 .box2 {
@@ -69,144 +56,110 @@ body {
   transform: translateX(0);
 }
 */
-.box2b {
-  position: absolute;
-  height: fit-content;
-  width: calc(11em + 8vw);
-  overflow: hidden;
-  margin: 1.2em;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  transition: transform 1s cubic-bezier(.2, 0, .001, 1); 
-  padding: calc(5px + .5vw);  
-  right: 0;
-  transition: transform .6s cubic-bezier(.2, 0, .001, 1); 
-  background-color: #310b1f;
-  box-shadow:  #00000042 9px 9px 10px;
-  bottom: 0;
-  transform: translateY(92%);
-  border-radius: calc(7.5px + .1vw);
-}
-
-.box2b:hover {
-  bottom: 0; 
-  transform: translateY(0);
-}
-
-.box2b.visible {
-  bottom: 0;
-  transform: translateY(0);
-}
-
 @media only screen and (min-width: 760px) {
   #triContact {
     display: none;
   }
 }
 
-.box2a {
+#about {
   position: absolute;
   height: 60%;
   width: 19em;
   overflow: hidden;
   background-color: #310b1f;
-  box-shadow:  #00000042 9px 9px 10px;
+  box-shadow: #00000042 9px 9px 10px;
   margin: 1.2em;
-  border-radius: calc(7.5px + .1vw);
+  border-radius: calc(7.5px + 0.1vw);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transition: transform 1s cubic-bezier(.2, 0, .001, 1); 
-  padding: calc(15px + .3vw);  
+  transition: transform 1s cubic-bezier(0.2, 0, 0.001, 1);
+  padding: calc(15px + 0.3vw);
   background-size: 120%;
 }
 
-
-.box2a {
+#about {
   left: 0;
   transform: translateX(0);
 }
 
-.box2a.hidden {
-  left: 0; 
+#about.hidden {
+  left: 0;
   transform: translateX(-150%);
 }
 
 @media (min-width: 760px) and (max-width: 1190px) {
-  .box2a {
+  #about {
     width: 16em;
     transform: translateX(-150%);
   }
-  
-.box2a.hidden {
-  left: 0; 
-  transform: translateX(0);
-}
+
+  #about.hidden {
+    left: 0;
+    transform: translateX(0);
+  }
 }
 
 @media only screen and (max-width: 760px) {
-  .box2a {
+  #about {
     width: 80%;
     transform: translateX(-150%);
   }
-  
-.box2a.hidden {
-  left: 0; 
-  transform: translateX(0);
-}
+
+  #about.hidden {
+    left: 0;
+    transform: translateX(0);
+  }
 }
 
-
-.purpose {
+#about p {
   width: 95%;
-  border-radius: calc(7.5px + .1vw);
+  border-radius: calc(7.5px + 0.1vw);
   font-family: "Press Start 2P", cursive;
-  font-size: calc(11px + .06vw);
+  font-size: calc(11px + 0.06vw);
   line-height: 150%;
   color: #a8cd23;
   margin: auto 0 0 0;
   text-align: left;
   text-shadow: #fecc1794 1px 1px 3px;
   background-color: #a8cd231c;
-  padding: calc(10px + .1vw);
+  padding: calc(10px + 0.1vw);
 }
 
-.box2aLoco {
+#aboutLoco {
   font-family: "Press Start 2P", cursive;
   font-size: 30px;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-shadow: 
-  #310b22 0px 0px 2px;  
+  text-shadow: #310b22 0px 0px 2px;
   background-color: #a8cd23;
   margin: 0 auto auto 0;
   animation: pulse 1.3s infinite;
   display: none;
 }
 
-
 .box3 {
   z-index: 100;
   overflow: hidden;
   position: absolute;
-  top: 50%; 
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -170%);
   height: 90vh;
   width: 60%;
   background-color: #310b1fd2;
-  box-shadow:  #00000042 0px 0px 10px 10px;
-  border-radius: calc(7.5px + .1vw);
+  box-shadow: #00000042 0px 0px 10px 10px;
+  border-radius: calc(7.5px + 0.1vw);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transition: transform 1s cubic-bezier(.2, 0, .001, 1); 
-  padding: calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw); 
+  transition: transform 1s cubic-bezier(0.2, 0, 0.001, 1);
+  padding: calc(3px + 0.5vw) calc(3px + 0.5vw) calc(3px + 0.5vw) calc(3px + 0.5vw);
   -moz-backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
@@ -215,71 +168,62 @@ body {
 .box3.visible {
   inset: 50%;
   transform: translate(-50%, -50%);
-  transition: transform 1s cubic-bezier(.2, 0, .001, 1);
+  transition: transform 1s cubic-bezier(0.2, 0, 0.001, 1);
 }
 
 #toggleButton {
-  padding: calc(5px + .25vw) calc(5px + .25vw) calc(5px + .25vw) calc(30px + 2vw);
+  padding: calc(5px + 0.25vw) calc(5px + 0.25vw) calc(5px + 0.25vw) calc(30px + 2vw);
   position: absolute;
   left: -10px;
   top: 3vh;
   width: fit-content;
   background-color: #310b1f;
   box-shadow: #310b22ad 6px 6px 10px;
-  border-radius: calc(5px + .2vw);
+  border-radius: calc(5px + 0.2vw);
 }
 
-
-#navbar {
-  padding: calc(30px + .5vw) calc(5px + .25vw) calc(5px + .25vw) calc(5px + .25vw);
+nav {
+  padding: calc(30px + 0.5vw) calc(5px + 0.25vw) calc(5px + 0.25vw) calc(5px + 0.25vw);
   position: absolute;
   right: 5vw;
   top: -10px;
   width: fit-content;
   background-color: #310b1f;
   box-shadow: #310b22ad 6px 6px 10px;
-  border-radius: calc(5px + .1vw);
+  border-radius: calc(5px + 0.1vw);
   z-index: 10000;
 }
 
-
-#navtri  {
+#navtri {
   position: relative;
   cursor: pointer;
   font-family: "Press Start 2P", cursive;
-  color: #FECD17;
-  font-size: calc(18px + .4vw);
-  transition: transform 1s cubic-bezier(.2, 0, .001, 1); 
+  color: #fecd17;
+  font-size: calc(18px + 0.4vw);
+  transition: transform 1s cubic-bezier(0.2, 0, 0.001, 1);
 }
 
 #navtri:hover {
-  text-shadow: #FECD17 0 0 10px;
+  text-shadow: #fecd17 0 0 10px;
   scale: 1.01;
 }
 
 #navtri:active {
-  text-shadow: #FECD17 0 0 15px;
-  scale: .98;
+  text-shadow: #fecd17 0 0 15px;
+  scale: 0.98;
 }
 
 #navtri.rotate {
   transform: rotate(-180deg);
 }
 
-.bannerNav {
-  font-family: "Press Start 2P", cursive;
-  color: #a8cd23;
-  font-size: calc(7px + .4vw);
-  text-shadow: #fecc1794 1px 1px 3px;
-}
-
-#tri  {
+#tri {
   position: relative;
   cursor: pointer;
   font-family: "Press Start 2P", cursive;
-  color: #FECD17;
-  font-size: calc(10px + .4vw);
-  transition: transform 1s cubic-bezier(.2, 0, .001, 1); 
+  color: #fecd17;
+  font-size: calc(10px + 0.4vw);
+  transition: transform 1s cubic-bezier(0.2, 0, 0.001, 1);
 }
 
 #tri.rotate {
@@ -287,27 +231,25 @@ body {
 }
 
 #tri:hover {
-  text-shadow: #FECD17 0 0 7.5px;
+  text-shadow: #fecd17 0 0 7.5px;
   scale: 1.01;
 }
 
 #tri:active {
-  text-shadow: #FECD17 0 0 10px;
-  scale: .98;
+  text-shadow: #fecd17 0 0 10px;
+  scale: 0.98;
 }
 
 #tri.rotate {
   transform: rotate(-360deg);
 }
 
-
-
 .spect {
   height: 10px;
   width: 100%;
   border-radius: 10px;
   font-family: "Press Start 2P", cursive;
-  font-size: calc(10px + .1vw);
+  font-size: calc(10px + 0.1vw);
   line-height: 150%;
   color: #a8cd23;
   margin: auto 0 auto 0;
@@ -315,18 +257,16 @@ body {
   text-shadow: #fecc1794 1px 1px 3px;
 }
 
-
 .navtitle {
-  padding: calc(3px + .5vw) 0px calc(3px + .5vw) calc(3px + .5vw);  
+  padding: calc(3px + 0.5vw) 0px calc(3px + 0.5vw) calc(3px + 0.5vw);
   user-select: none;
   font-family: "Press Start 2P", cursive;
-  font-size: calc(30px + .2vw);
+  font-size: calc(30px + 0.2vw);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-shadow: 
-  #310b22 0px 0px 2px;  
+  text-shadow: #310b22 0px 0px 2px;
   background-color: #a8cd23;
   margin: auto 10px 0 10px;
   bottom: 0;
@@ -334,9 +274,34 @@ body {
   z-index: 1000000;
 }
 
+/* Contacts box in bottom left */
+#contacts {
+  position: absolute;
+  height: fit-content;
+  width: calc(11em + 8vw);
+  overflow: hidden;
+  margin: 1.2em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 1s cubic-bezier(0.2, 0, 0.001, 1);
+  padding: calc(5px + 0.5vw);
+  right: 0;
+  transition: transform 0.6s cubic-bezier(0.2, 0, 0.001, 1);
+  background-color: #310b1f;
+  box-shadow: #00000042 9px 9px 10px;
+  bottom: 0;
+  transform: translateY(92%);
+  border-radius: calc(7.5px + 0.1vw);
+}
 
-.box2bAbout {
-  padding: 10px 10px 10px 10px;  
+#contacts:hover {
+  bottom: 0;
+  transform: translateY(0);
+}
+
+#contacts h1 {
+  padding: 10px 10px 10px 10px;
   user-select: none;
   text-align: center;
   width: 100%;
@@ -346,227 +311,129 @@ body {
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-shadow: 
-  #310b22 0px 0px 2px;  
+  text-shadow: #310b22 0px 0px 2px;
   background-color: #a8cd23;
   margin: 0;
-  top: 0;
   animation: pulse 1.3s infinite;
 }
 
-.gitBox {
-  padding: calc(10px + .1vw);
-  background-color: #0D1117;
-  width: 90%;
-  margin: 6px auto 6px auto;
-  border-radius: calc(7.5px + .1vw);
-  font-family: 'Hubot Sans';
-  color: #E6EDF3;
-  text-decoration: none;
-  font-size: 15px;
-  background-image: url('../pics&shit/github-mark/github-mark.png');
-  background-repeat: no-repeat;
-  background-position: 95%;
-  background-size: 15%;
+#contacts h2 {
+  font-family: "Press Start 2P", cursive;
+  color: #a8cd23;
+  font-size: calc(7px + 0.4vw);
+  text-shadow: #fecc1794 1px 1px 3px;
 }
 
-
-div.gitBox > a {
-  font-family: 'Hubot Sans';
-  color: #2F81F7;
+#contacts a {
+  color: #2f81f7;
   text-decoration: none;
 }
 
-
-.googleBox {
-  padding: calc(10px + .1vw);
-  background-color: white;
-  width: 90%;
-  border-radius: calc(7.5px + .1vw);
-  font-family: 'Roboto', sans-serif;
-  color: black;
-  text-decoration: none;
-  font-size: 15px;
-  background-image: url('../pics&shit/gmaillogo.png');
-  background-repeat: no-repeat;
-  background-position: 95%;
-  background-size: 15%;
-  margin: 6px auto 6px auto;
-
-}
-
-
-div.googleBox > a {
-  font-family: 'Roboto', sans-serif;
-  color: #2F81F7;
-  text-decoration: none;
-}
-
-.talBox {
+.contactBox {
   width: 102%;
   background-color: #a8cd231c;
   display: flex;
   flex-direction: column;
-  padding: calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw);  
-  background-image: url('../pics&shit/bruhtal.svg');
+  padding: calc(3px + 0.5vw);
   background-repeat: no-repeat;
+  margin: 5px 0 5px 0;
+}
+.talha {
+  background-image: url("../pics&shit/bruhtal.svg");
   background-position: left;
   background-size: 30%;
-  margin: 5px 0 5px 0;
 }
-.talBoxGit {
-  padding: calc(10px + .1vw);
-  background-color: #0D1117;
-  width: 65%;
-  margin: 6px 0 0 auto;
-  border-radius: calc(7.5px + .1vw) calc(7.5px + .1vw) 0 0;
-  font-family: 'Hubot Sans';
-  color: #E6EDF3;
-  text-decoration: none;
-  font-size: 12px;
-  background-image: url('../pics&shit/github-mark/github-mark.png');
-  background-repeat: no-repeat;
-  background-position: 95%;
-  background-size: 15%;
-}
-
-
-div.talBoxGit > a {
-  font-family: 'Hubot Sans';
-  color: #2F81F7;
-  text-decoration: none;
-}
-
-
-.talBoxGmail {
-  padding: calc(10px + .1vw);
-  background-color: white;
-  width: 65%;
-  border-radius: 0 0 calc(7.5px + .1vw) calc(7.5px + .1vw);
-  font-family: 'Roboto', sans-serif;
-  color: black;
-  text-decoration: none;
-  font-size: 12px;
-  background-image: url('../pics&shit/gmaillogo.png');
-  background-repeat: no-repeat;
-  background-position: 95%;
-  background-size: 15%;
-  margin: 0 0 6px auto;
-
-}
-
-
-div.talBoxGmail > a {
-  font-family: 'Roboto', sans-serif;
-  color: #2F81F7;
-  text-decoration: none;
-}
-
-.appleBox {
-  width: 102%;
-  background-color: #a8cd231c;
-  display: flex;
-  flex-direction: column;
-  padding: calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw);  
-  background-image: url('../pics&shit/abbanlogo.svg');
-  background-repeat: no-repeat;
+.abban {
+  background-image: url("../pics&shit/abbanlogo.svg");
   background-position: 95%;
   background-size: 20%;
-  margin: 5px 0 5px 0;
-
 }
-.appleBoxGit {
-  padding: calc(10px + .1vw);
-  background-color: #0D1117;
-  width: 65%;
-  margin: 6px auto 0 0;
-  border-radius: calc(7.5px + .1vw) calc(7.5px + .1vw) 0 0;
-  font-family: 'Hubot Sans';
-  color: #E6EDF3;
-  text-decoration: none;
-  font-size: 12px;
-  background-image: url('../pics&shit/github-mark/github-mark.png');
-  background-repeat: no-repeat;
-  background-position: 95%;
-  background-size: 15%;
+.talha > div {
+  margin: 6px 0 0 auto;
 }
-
-
-div.appleBoxGit > a {
-  font-family: 'Hubot Sans';
-  color: #2F81F7;
-  text-decoration: none;
-}
-
-
-.appleBoxGmail {
-  padding: calc(10px + .1vw);
-  background-color: #282828;
-  width: 65%;
-  border-radius: 0 0 calc(7.5px + .1vw) calc(7.5px + .1vw);
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  text-decoration: none;
-  font-size: 12px;
-  background-image: url('../pics&shit/latroll.png');
-  background-repeat: no-repeat;
-  background-position: 95%;
-  background-size: 15%;
+.abban > div {
   margin: 0 auto 6px 0;
-
 }
 
-
-div.appleBoxGmail > a {
-  font-family: 'Roboto', sans-serif;
-  color: #2F81F7;
+.gitBox {
+  padding: calc(10px + 0.1vw);
+  background-color: #0d1117;
+  width: 90%;
+  margin: 6px auto 6px auto;
+  border-radius: calc(7.5px + 0.1vw);
+  font-family: "Hubot Sans";
+  color: #e6edf3;
   text-decoration: none;
+  font-size: 15px;
+  background-image: url("../pics&shit/github-mark/github-mark.png");
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-size: 15%;
 }
 
-div.box2b > .bannerNav {
-  margin: 14px auto 20px auto;
-  font-size: 20px;
+.contactBox .gitBox {
+  width: 65%;
+  border-radius: calc(7.5px + 0.1vw) calc(7.5px + 0.1vw) 0 0;
+  font-size: 12px;
 }
+
+.googleBox {
+  padding: calc(10px + 0.1vw);
+  background-color: white;
+  width: 90%;
+  border-radius: calc(7.5px + 0.1vw);
+  font-family: "Roboto", sans-serif;
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  background-image: url("../pics&shit/gmaillogo.png");
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-size: 15%;
+  margin: 6px auto 6px auto;
+}
+
+.contactBox .googleBox {
+  width: 65%;
+  border-radius: 0 0 calc(7.5px + 0.1vw) calc(7.5px + 0.1vw);
+  font-size: 12px;
+}
+
 @keyframes pulse {
   0% {
   }
   50% {
-    text-shadow: 
-    #310b22 0px 0px 3px;  
+    text-shadow: #310b22 0px 0px 3px;
   }
   100% {
-
   }
 }
 
 .btn {
-  padding: calc(8px + .5vw) calc(30px + .5vw) calc(3.5px + .5vw) calc(30px + .5vw);
+  padding: calc(8px + 0.5vw) calc(30px + 0.5vw) calc(3.5px + 0.5vw) calc(30px + 0.5vw);
   user-select: none;
   font-family: "Press Start 2P", cursive;
-  font-size: calc(20px + .2vw);
+  font-size: calc(20px + 0.2vw);
   color: #a8cd23;
   width: 50%;
   text-align: center;
   margin: 10px 0 10px 0;
-  border-radius: calc(7.5px + .1vw);
+  border-radius: calc(7.5px + 0.1vw);
   border: #a8cd23af 1px solid;
   background-color: #310b1f;
   transition: 50ms;
-  background-image: url('../pics&shit/latroll.png');
+  background-image: url("../pics&shit/latroll.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 140%;
 }
 
-
-
 .aSyle {
   font-family: "Press Start 2P", cursive;
-  font-size: calc(20px + .2vw);
+  font-size: calc(20px + 0.2vw);
   text-align: center;
   text-decoration: none;
   color: #a8cd23;
-
 }
 
 .btn:nth-child(1) {
@@ -577,7 +444,8 @@ div.box2b > .bannerNav {
   width: 100%;
   color: #a8cd23;
   scale: 1.9;
-  text-shadow: #fecc1794 0 0 20px, black 0.4px 0.4px 0.8px, #a8cd23 0.8px 0.8px 0.8px, black 3.6px 3.6px 0.8px, #a8cd23 4.8px 4.8px 0.8px, black 6px 6px 0.8px, #a8cd23 7.2px 7.2px 0.8px;
+  text-shadow: #fecc1794 0 0 20px, black 0.4px 0.4px 0.8px, #a8cd23 0.8px 0.8px 0.8px, black 3.6px 3.6px 0.8px,
+    #a8cd23 4.8px 4.8px 0.8px, black 6px 6px 0.8px, #a8cd23 7.2px 7.2px 0.8px;
   background-position: 70%;
 }
 
@@ -588,44 +456,41 @@ div.box2b > .bannerNav {
   border: #a8cd23 1px solid;
   box-shadow: #a8cd2356 0 0 100px 50px;
 }
-.changingBruh {
-  padding: calc(3px + .5vw) 0px calc(3px + .5vw) calc(3px + .5vw);  
+#about h1 {
+  padding: calc(3px + 0.5vw) 0px calc(3px + 0.5vw) calc(3px + 0.5vw);
   user-select: none;
   width: fit-content;
   height: fit-content;
   font-family: "Press Start 2P", cursive;
-  font-size: calc(30px + .2vw);
+  font-size: calc(30px + 0.2vw);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-shadow: 
-  #310b1f 0px 0px 5px;  
+  text-shadow: #310b1f 0px 0px 5px;
   background-color: #a8cd23;
-  margin: auto 0 0 0;  
+  margin: auto 0 0 0;
   transition-duration: 190ms;
   animation: bruhoverthetime 7s infinite;
 }
 
 @keyframes bruhoverthetime {
-
   0% {
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 
-    #4c1140 0px 0px 5px;  
+    text-shadow: #4c1140 0px 0px 5px;
     background-color: #a8cd23;
   }
-10% {
-  color: #a8cd23;
-}
-
+  10% {
+    color: #a8cd23;
+  }
 
   45% {
     color: #a8cd23;
-    text-shadow: black 0.6px 0.6px 1.2px, #a8cd23 1.2px 1.2px 1.2px, black 3.6px 3.6px 1.2px, #a8cd23 4.8px 4.8px 1.2px, black 6px 6px 1.2px, #a8cd23 7.2px 7.2px 1.2px;
+    text-shadow: black 0.6px 0.6px 1.2px, #a8cd23 1.2px 1.2px 1.2px, black 3.6px 3.6px 1.2px, #a8cd23 4.8px 4.8px 1.2px,
+      black 6px 6px 1.2px, #a8cd23 7.2px 7.2px 1.2px;
     background-color: transparent;
   }
 
@@ -653,10 +518,8 @@ div.box2b > .bannerNav {
   font-family: "Press Start 2P", cursive;
   font-size: calc(30px + 4vw);
   color: #a8cd23;
-  box-shadow:  inset 
-  #310b22 12px 12px 10px,  
-  #310b22 12px 12px 10px;
-  border-radius: calc(7.5px + .1vw);
+  box-shadow: inset #310b22 12px 12px 10px, #310b22 12px 12px 10px;
+  border-radius: calc(7.5px + 0.1vw);
   transition-duration: 250ms;
 }
 
@@ -745,11 +608,11 @@ footer {
   width: 120px;
   bottom: 5px;
   margin-top: auto;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
   position: absolute;
 }
 footer,
- .sec {
+.sec {
   user-select: none;
   font-family: "Press Start 2P", cursive;
   color: #a8cd23;
@@ -765,14 +628,14 @@ footer,
 }
 
 .tal,
-.abban {
+.abb {
   height: 40px;
   width: 40px;
   opacity: 1 !important;
 }
 
 .tal:hover,
-.abban:hover {
+.abb:hover {
   filter: brightness(1.5);
 }
 
@@ -784,7 +647,6 @@ footer,
   text-shadow: #a8cd23 12em 0 2px, #a8cd23 -12em 0 2px, #a8cd23 0 -4em 2px;
   font-size: px;
 }
-
 
 #ref {
   user-select: none;
@@ -819,86 +681,72 @@ footer,
   width: 100%;
 }
 
-
 @media only screen and (max-width: 760px) {
-
-
-  #navbar {
-    background-image: url('../pics&shit/latroll.png');
+  nav {
+    background-image: url("../pics&shit/latroll.png");
     background-repeat: no-repeat;
     background-size: 30%;
     background-position: bottom;
   }
 
   #contactButton {
-    padding: calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw) calc(30px + 2vw);
+    padding: calc(3px + 0.5vw) calc(3px + 0.5vw) calc(3px + 0.5vw) calc(30px + 2vw);
     position: absolute;
     left: -10px;
     top: 7vh;
-    color: #FECD17;
+    color: #fecd17;
     font-family: "Press Start 2P", cursive;
     width: fit-content;
     background-color: #310b1f;
     box-shadow: #310b22ad 6px 6px 10px;
-    border-radius: calc(5px + .1vw);
+    border-radius: calc(5px + 0.1vw);
   }
-    .box2b {
-      position: absolute;
-      height: fit-content;
-      width: 90%;
-      overflow: hidden;
-      margin: auto;
-      border-radius: calc(7.5px + .1vw);
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      transition: transform 1s cubic-bezier(.2, 0, .001, 1); 
-      padding: calc(5px + .5vw);  
-      background-color: #310b1f;
-      box-shadow:  #310b1fd8 9px 9px 10px;
-      transform: translateY(0);
-      transform: translateX(-150%);
-      left: 0;
-      bottom: 5%;
-    }
-    
-    
+  #contacts {
+    position: absolute;
+    height: fit-content;
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+    border-radius: calc(7.5px + 0.1vw);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 1s cubic-bezier(0.2, 0, 0.001, 1);
+    padding: calc(5px + 0.5vw);
+    background-color: #310b1f;
+    box-shadow: #310b1fd8 9px 9px 10px;
+    transform: translateY(0);
+    transform: translateX(-150%);
+    left: 0;
+    bottom: 5%;
+  }
 
-.box2b.abc {
-  transform: translateX(0);
-  left: 0;
+  #triContact {
+    position: relative;
+    cursor: pointer;
+    font-family: "Press Start 2P", cursive;
+    color: #fecd17;
+    font-size: 10px;
+    transition: transform 1s cubic-bezier(0.2, 0, 0.001, 1);
+    display: block;
+  }
+
+  #triContact.rotate {
+    transform: rotate(180deg);
+  }
+
+  #triContact:hover {
+    text-shadow: #fecd17 0 0 7.5px;
+    scale: 1.01;
+  }
+
+  #triContact:active {
+    text-shadow: #fecd17 0 0 10px;
+    scale: 0.98;
+  }
 }
-
-
-#triContact  {
-  position: relative;
-  cursor: pointer;
-  font-family: "Press Start 2P", cursive;
-  color: #FECD17;
-  font-size: 10px;
-  transition: transform 1s cubic-bezier(.2, 0, .001, 1); 
-  display: block;
-}
-
-#triContact.rotate {
-  transform: rotate(180deg);
-}
-
-#triContact:hover {
-  text-shadow: #FECD17 0 0 7.5px;
-  scale: 1.01;
-}
-
-#triContact:active {
-  text-shadow: #FECD17 0 0 10px;
-  scale: .98;
-}
-
-}
-
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {
-
   .box3 {
     width: 90%;
     height: 69vh;
@@ -912,12 +760,9 @@ footer,
   .btn:hover {
     scale: 1.5;
   }
-
 }
 
-
 @media (hover: none) and (min-width: 767px) {
-
   .contactWrap {
     height: 40px;
     width: 100%;
