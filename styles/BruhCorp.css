@@ -6,16 +6,15 @@
   font-stretch: 75% 125%;
 }
 
+/* * Main html styles */
 :root {
   --smooth-anim: cubic-bezier(0.2, 0, 0.001, 1);
   --green: #a8cd23;
   --dark-green: #a8cd23af;
 }
-
 * {
   user-select: none;
 }
-
 html {
   -webkit-tap-highlight-color: transparent;
   outline: none;
@@ -23,7 +22,6 @@ html {
   touch-action: manipulation;
   font-family: "Hubot Sans";
 }
-
 body {
   background-color: #4c1140;
   overflow: hidden;
@@ -32,7 +30,7 @@ body {
   max-width: 100%;
   max-height: 100vh;
 }
-/*  NOT USING AS OF NOW
+/* ! NOT USING AS OF NOW
 .box2 {
   position: absolute;
   height: 70%;
@@ -60,13 +58,7 @@ body {
 }
 */
 
-@media only screen and (min-width: 760px) {
-  #toggleButton h1 {
-    display: none;
-  }
-}
-
-/* About section on left */
+/* * About section on left */
 #about {
   position: absolute;
   height: 60%;
@@ -83,40 +75,12 @@ body {
   transition: transform 1s var(--smooth-anim);
   padding: calc(15px + 0.3vw);
   background-size: 120%;
-}
-
-#about {
   left: 0;
   transform: translateX(0);
 }
-
 #about.hidden {
   left: 0;
   transform: translateX(-150%);
-}
-
-@media (min-width: 760px) and (max-width: 1190px) {
-  #about {
-    width: 16em;
-    transform: translateX(-150%);
-  }
-
-  #about.hidden {
-    left: 0;
-    transform: translateX(0);
-  }
-}
-
-@media only screen and (max-width: 760px) {
-  #about {
-    width: 80%;
-    transform: translateX(-150%);
-  }
-
-  #about.hidden {
-    left: 0;
-    transform: translateX(0);
-  }
 }
 
 #about p {
@@ -129,10 +93,11 @@ body {
   margin: auto 0 0 0;
   text-align: left;
   text-shadow: #fecc1794 1px 1px 3px;
-  background-color: var(--green) 1c;
+  background-color: #a8cd231c;
   padding: calc(10px + 0.1vw);
 }
 
+/* ! TF IS THIS */
 #aboutLoco {
   font-family: "Press Start 2P", cursive;
   font-size: 30px;
@@ -147,6 +112,7 @@ body {
   display: none;
 }
 
+/* * Navbar styles */
 #nav-list {
   z-index: 100;
   overflow: hidden;
@@ -169,13 +135,28 @@ body {
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
 }
-
 #nav-list.visible {
   inset: 50%;
   transform: translate(-50%, -50%);
 }
 
-/* Navbar styles */
+#nav-list h1 {
+  padding: calc(3px + 0.5vw) 0px calc(3px + 0.5vw) calc(3px + 0.5vw);
+  user-select: none;
+  font-family: "Press Start 2P", cursive;
+  font-size: calc(30px + 0.2vw);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: #310b22 0px 0px 2px;
+  background-color: var(--green);
+  margin: auto 10px 0 10px;
+  bottom: 0;
+  animation: pulse 1.3s infinite;
+  z-index: 1000000;
+}
+
 nav {
   padding: calc(30px + 0.5vw) calc(5px + 0.25vw) calc(5px + 0.25vw) calc(5px + 0.25vw);
   position: absolute;
@@ -203,17 +184,14 @@ nav h2 {
   font-size: calc(18px + 0.4vw);
   transition: transform 1s var(--smooth-anim);
 }
-
 #arrow:hover {
   text-shadow: #fecd17 0 0 10px;
   scale: 1.01;
 }
-
 #arrow:active {
   text-shadow: #fecd17 0 0 15px;
   scale: 0.98;
 }
-
 #arrow.rotate {
   transform: rotate(-180deg);
 }
@@ -228,7 +206,6 @@ nav h2 {
   box-shadow: #310b22ad 6px 6px 10px;
   border-radius: calc(5px + 0.2vw);
 }
-
 #toggleButton h1 {
   position: relative;
   cursor: pointer;
@@ -237,25 +214,22 @@ nav h2 {
   font-size: calc(10px + 0.4vw);
   transition: transform 1s var(--smooth-anim);
 }
-
 #toggleButton h1.rotate {
   transform: rotate(180deg);
 }
-
 #toggleButton h1:hover {
   text-shadow: #fecd17 0 0 7.5px;
   scale: 1.01;
 }
-
 #toggleButton h1:active {
   text-shadow: #fecd17 0 0 10px;
   scale: 0.98;
 }
-
 #toggleButton h1.rotate {
   transform: rotate(-360deg);
 }
 
+/* ! TF IS THIS */
 .spect {
   height: 10px;
   width: 100%;
@@ -269,24 +243,7 @@ nav h2 {
   text-shadow: #fecc1794 1px 1px 3px;
 }
 
-.navtitle {
-  padding: calc(3px + 0.5vw) 0px calc(3px + 0.5vw) calc(3px + 0.5vw);
-  user-select: none;
-  font-family: "Press Start 2P", cursive;
-  font-size: calc(30px + 0.2vw);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  text-shadow: #310b22 0px 0px 2px;
-  background-color: var(--green);
-  margin: auto 10px 0 10px;
-  bottom: 0;
-  animation: pulse 1.3s infinite;
-  z-index: 1000000;
-}
-
-/* Contacts box in bottom left */
+/* * Contacts box in bottom left */
 #contacts {
   position: absolute;
   height: fit-content;
@@ -306,12 +263,10 @@ nav h2 {
   transform: translateY(92%);
   border-radius: calc(7.5px + 0.1vw);
 }
-
 #contacts:hover {
   bottom: 0;
   transform: translateY(0);
 }
-
 #contacts h1 {
   padding: 10px 10px 10px 10px;
   user-select: none;
@@ -328,14 +283,12 @@ nav h2 {
   margin: 0;
   animation: pulse 1.3s infinite;
 }
-
 #contacts h2 {
   font-family: "Press Start 2P", cursive;
   color: var(--green);
   font-size: calc(7px + 0.4vw);
   text-shadow: #fecc1794 1px 1px 3px;
 }
-
 #contacts a {
   color: #2f81f7;
   text-decoration: none;
@@ -355,13 +308,13 @@ nav h2 {
   background-position: left;
   background-size: 30%;
 }
+.talha > div {
+  margin: 6px 0 0 auto;
+}
 .abban {
   background-image: url("../pics&shit/abbanlogo.svg");
   background-position: 95%;
   background-size: 20%;
-}
-.talha > div {
-  margin: 6px 0 0 auto;
 }
 .abban > div {
   margin: 0 auto 6px 0;
@@ -382,7 +335,6 @@ nav h2 {
   background-position: 95%;
   background-size: 15%;
 }
-
 .contactBox .gitBox {
   width: 65%;
   border-radius: calc(7.5px + 0.1vw) calc(7.5px + 0.1vw) 0 0;
@@ -404,7 +356,6 @@ nav h2 {
   background-size: 15%;
   margin: 6px auto 6px auto;
 }
-
 .contactBox .googleBox {
   width: 65%;
   border-radius: 0 0 calc(7.5px + 0.1vw) calc(7.5px + 0.1vw);
@@ -439,7 +390,6 @@ nav h2 {
   background-size: contain;
   background-position: 140%;
 }
-
 .btn a {
   font-family: "Press Start 2P", cursive;
   font-size: calc(20px + 0.2vw);
@@ -447,11 +397,9 @@ nav h2 {
   text-decoration: none;
   color: var(--green);
 }
-
 .btn:nth-child(1) {
   margin-top: auto;
 }
-
 .btn:hover {
   width: 100%;
   color: var(--green);
@@ -460,7 +408,6 @@ nav h2 {
     var(--green) 4.8px 4.8px 0.8px, black 6px 6px 0.8px, var(--green) 7.2px 7.2px 0.8px;
   background-position: 70%;
 }
-
 .btn:active {
   scale: 1.83;
   width: 100%;
@@ -511,7 +458,8 @@ nav h2 {
   }
 }
 
-.box {
+/* * Main box w/ logo and our icons */
+#box {
   background-color: #4c1140;
   display: flex;
   justify-content: center;
@@ -534,28 +482,17 @@ nav h2 {
   border-radius: calc(7.5px + 0.1vw);
   transition-duration: 250ms;
 }
-
 #logo:hover {
   transition-duration: 190ms;
   transform: scale(1.04);
   text-shadow: black 1px 1px 2px, var(--green) 2px 2px 2px, black 6px 6px 2px, var(--green) 8px 8px 2px,
     black 10px 10px 2px, var(--green) 12px 12px 2px;
 }
-
-/*
-    #61BB46 0 0 0 7px, 
-    #FDB827 0 0 0 12px, 
-    #F5821F 0 0 0 17px, 
-    #E03A3E 0 0 0 22px, 
-    #963D97 0 0 0 27px, 
-    #009DDC 0 0 0 32px;
-*/
-
 #logo:active {
   box-shadow: inset #2c0a23 0 0 500px 500px, #2c0a23 12px 12px 10px;
 }
 
-/* Top link */
+/* * Top link */
 #secret {
   color: var(--green);
   font-family: "Press Start 2P", cursive;
@@ -569,51 +506,13 @@ nav h2 {
   text-transform: capitalize;
   text-align: center;
 }
-
-/* top left stuff */
-.shittingground {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.shitpic {
-  height: 10px;
-  width: auto;
-  transition-duration: 200ms;
-}
-
-.shitpic:hover {
-  height: 50px;
-  width: auto;
-}
-
-/* random stuff */
-.cuphead {
-  position: fixed;
-  user-select: none;
-  bottom: 0;
-  right: 0;
-  height: calc(50px + 1vw);
-  width: auto;
-}
-
-.cupboi {
-  position: fixed;
-  user-select: none;
-  bottom: 10px;
-  left: 5px;
-  height: calc(25px + 1vw);
-  width: auto;
-}
-
 #secret:hover {
   transition: 120ms;
   text-shadow: var(--green) 2px 2px 4px, black 3px 3px 2px;
   transform: skew(20deg, 0deg);
 }
 
-/* footer */
+/* * footer */
 footer {
   align-items: center;
   justify-content: center;
@@ -622,79 +521,44 @@ footer {
   margin-top: auto;
   margin-bottom: 10px;
   position: absolute;
-}
-footer,
-.sec {
   user-select: none;
   font-family: "Press Start 2P", cursive;
   color: var(--green);
   font-size: 10px;
   text-decoration: none;
-  text-transform: capitalize;
-  text-align: center;
   transition-duration: 100ms;
 }
 
-.sec {
+footer h3 {
   opacity: 0.5;
 }
-
-.tal,
-.abb {
-  height: 40px;
-  width: 40px;
-  opacity: 1 !important;
-}
-
-.tal:hover,
-.abb:hover {
-  filter: brightness(1.5);
-}
-
-.sec:hover {
+footer h3:hover {
   opacity: 1;
 }
-
-.sec:active {
+footer h3:active {
   text-shadow: var(--green) 12em 0 2px, var(--green) -12em 0 2px, var(--green) 0 -4em 2px;
   font-size: px;
 }
 
-#ref {
-  user-select: none;
-  font-family: "Press Start 2P", cursive;
-  color: var(--green);
-  font-size: 10px;
-  text-decoration: none;
-  text-transform: capitalize;
-  text-align: right;
-  transition-duration: 100ms;
-  margin-bottom: -5px;
+footer img {
+  height: 40px;
+  width: 40px;
+  opacity: 1 !important;
+}
+footer img:hover {
+  filter: brightness(1.5);
 }
 
-#ref {
-  opacity: 0.5;
-}
-
-#ref:hover {
-  opacity: 1;
-}
-
-#ref:active {
-  text-shadow: var(--green) a4 12em 0 2px, var(--green) a4 -12em 0 2px, var(--green) a4 0 -2em 2px,
-    var(--green) a4 0 2em 2px;
-  font-size: px;
-}
-
-.abbandiv {
-  width: 100%;
-}
-
-.talsig {
-  width: 100%;
-}
-
+/* * MEdia queries */
 @media only screen and (max-width: 760px) {
+  #about {
+    width: 80%;
+    transform: translateX(-150%);
+  }
+  #about.hidden {
+    left: 0;
+    transform: translateX(0);
+  }
   nav {
     background-image: url("../pics&shit/latroll.png");
     background-repeat: no-repeat;
@@ -762,7 +626,25 @@ footer,
   }
 }
 
-/* CODE I NEED FOR LATER
+@media (min-width: 760px) and (max-width: 1190px) {
+  #about {
+    width: 16em;
+    transform: translateX(-150%);
+  }
+
+  #about.hidden {
+    left: 0;
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  #toggleButton h1 {
+    display: none;
+  }
+}
+
+/* ! CODE I NEED FOR LATER
 
 .btn::before {
   content: "";
