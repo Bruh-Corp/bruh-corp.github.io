@@ -16,6 +16,23 @@ contactButton.addEventListener("click", function () {
    contactH1.classList.toggle("rotate");
  });
 
+ 
+ const boxtouch = document.getElementById("contacts");
+ const touchContact = document.getElementById("touchListener")
+
+  touchContact.addEventListener("click", function () {
+    boxtouch.classList.toggle("visi");
+  });
+
+const contactsBoxSeeker = document.getElementById("contacts")
+document.addEventListener('click', function(event) {
+  if (!contactsBoxSeeker.contains(event.target) && !contactsBoxSeeker.contains(event.target)) {
+    contactsBoxSeeker.classList.remove('visi');
+  }
+});
+
+
+
 const navbar = document.querySelector("nav");
 const navList = document.getElementById("nav-list");
 const arrow = document.getElementById("arrow");

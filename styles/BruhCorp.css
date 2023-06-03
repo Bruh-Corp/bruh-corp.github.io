@@ -264,7 +264,7 @@ nav h2 {
   align-items: center;
   flex-direction: column;
   transition: transform 1s var(--smooth-anim);
-  padding: calc(5px + 0.5vw);
+  padding: calc(10px + 0.5vw);
   right: 0;
   transition: transform 0.6s var(--smooth-anim);
   background-color: #310b1f;
@@ -596,7 +596,6 @@ footer img:hover {
     background-color: #310b1f;
     box-shadow: #310b1fd8 9px 9px 10px;
     transform: translateY(0);
-    transform: translateX(-150%);
     left: 0;
     bottom: 5%;
   }
@@ -623,6 +622,28 @@ footer img:hover {
     text-shadow: #fecd17 0 0 10px;
     scale: 0.98;
   }
+
+  
+  #contactToggleButton {
+    display: block;
+  }
+
+  #contactToggleButton h1.rotate {
+    transform: rotate(-360deg);
+  }
+
+  #contacts {
+    transform: translateY(0);
+    transform: translateX(-150%);
+    left: 0;
+    bottom: 10%;
+  }
+
+  #contacts.visible {
+    transform: translateY(0);
+    transform: translateX(0);
+    left: 0;
+  }
 }
 
 
@@ -644,7 +665,7 @@ footer img:hover {
   }
 }
 
-@media (min-width: 760px) and (max-width: 1190px) {
+@media (min-width: 761px) and (max-width: 1190px) {
   #about {
     width: 16em;
     transform: translateX(-150%);
@@ -654,31 +675,28 @@ footer img:hover {
     left: 0;
     transform: translateX(0);
   }
+  
+#touchListener {
+  height: 20%;
+  width: 100%;
+  top: -10px;
+  position: absolute;
 }
 
-@media only screen and (max-width: 760px) {
-
-  #contactToggleButton {
-    display: block;
-  }
-
-  #contactToggleButton h1.rotate {
-    transform: rotate(-360deg);
-  }
-
-  #contacts {
-    transform: translateY(0);
-    transform: translateX(-150%);
-    left: 0;
-    bottom: 10%;
-  }
-
-  #contacts.visible {
-    transform: translateX(0);
-    left: 0;
-  }
-
+#contacts {
+  right: 0;
+  transform: translateX(0);
+  transform: translateY(91%);
 }
+
+#contacts.visi {
+  right: 0;
+  transform: translateX(0);
+  transform: translateY(0%);
+}
+}
+
+
 
 /* ! CODE I NEED FOR LATER
 
