@@ -22,13 +22,23 @@ html {
   touch-action: manipulation;
   font-family: "Hubot Sans";
 }
+
 body {
   background-color: #4c1140;
   overflow: hidden;
+  background-image: url("../pics&shit/latroll.png");
+  background-repeat: no-repeat;
+  background-position: 5%;
+  background-size: 12%;
+}
+
+.wrapper {
   display: flex;
   align-items: center;
-  max-width: 100%;
-  max-height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  width: 100%;
+  max-height: 100vh
 }
 /* ! NOT USING AS OF NOW
 .box2 {
@@ -78,6 +88,7 @@ body {
   left: 0;
   transform: translateX(0);
 }
+
 #about.hidden {
   left: 0;
   transform: translateX(-150%);
@@ -95,6 +106,7 @@ body {
   text-shadow: #fecc1794 1px 1px 3px;
   background-color: #a8cd231c;
   padding: calc(10px + 0.1vw);
+  
 }
 
 /* ! TF IS THIS */
@@ -149,12 +161,14 @@ body {
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-shadow: #310b22 0px 0px 2px;
+  text-shadow: #310b22 0px 0px .2rem;
   background-color: var(--green);
   margin: auto 10px 0 10px;
   bottom: 0;
   animation: pulse 1.3s infinite;
   z-index: 1000000;
+  font-weight: lighter;
+
 }
 
 nav {
@@ -175,6 +189,7 @@ nav h2 {
   font-size: calc(7px + 0.4vw);
   text-shadow: #fecc1794 1px 1px 3px;
   margin: 0;
+  font-weight: lighter;
 }
 
 #arrow {
@@ -184,6 +199,7 @@ nav h2 {
   color: #fecd17;
   font-size: calc(18px + 0.4vw);
   transition: transform 1s var(--smooth-anim);
+  font-weight: lighter;
 }
 #arrow:hover {
   text-shadow: #fecd17 0 0 10px;
@@ -209,7 +225,7 @@ nav h2 {
 }
 
 #contactToggleButton {
-  top: 10vh;
+  top: 8vh;
   display: none;
 }
 
@@ -270,7 +286,7 @@ nav h2 {
   background-color: #310b1f;
   box-shadow: #00000042 9px 9px 10px;
   bottom: 0;
-  transform: translateY(92%);
+  transform: translateY(90%);
   border-radius: calc(7.5px + 0.1vw);
 }
 #contacts:hover {
@@ -288,10 +304,11 @@ nav h2 {
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-shadow: #310b22 0px 0px 2px;
+  text-shadow: #310b22 0px 0px .2rem;
   background-color: var(--green);
   margin: 0;
   animation: pulse 1.3s infinite;
+  font-weight: lighter;
 }
 #contacts h2 {
   font-family: "Press Start 2P", cursive;
@@ -299,6 +316,8 @@ nav h2 {
   font-size: calc(15px + 0.4vw);
   text-shadow: #fecc1794 1px 1px 3px;
   margin-bottom: 0;
+  font-weight: lighter;
+
 }
 #contacts a {
   color: #2f81f7;
@@ -320,15 +339,15 @@ nav h2 {
   background-size: 30%;
 }
 .talha > div {
-  margin: 6px 0 0 auto;
+  margin: 0px 0 0 auto;
 }
 .abban {
   background-image: url("../pics&shit/abbanlogo.svg");
   background-position: 95%;
-  background-size: 20%;
+  background-size: 21%;
 }
 .abban > div {
-  margin: 0 auto 6px 0;
+  margin: 0 auto 0px 0;
 }
 
 .gitBox {
@@ -377,7 +396,7 @@ nav h2 {
   0% {
   }
   50% {
-    text-shadow: #310b22 0px 0px 3px;
+    text-shadow: #310b22 0px 0px .4rem;
   }
   100% {
   }
@@ -471,12 +490,11 @@ nav h2 {
 
 /* * Main box w/ logo and our icons */
 #box {
-  background-color: #4c1140;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 95vh;
+  height: 100vh;
   width: fit-content;
   margin: 0 auto;
 }
@@ -493,6 +511,7 @@ nav h2 {
   border-radius: calc(7.5px + 0.1vw);
   transition-duration: 250ms;
 }
+
 #logo:hover {
   transition-duration: 190ms;
   transform: scale(1.04);
@@ -520,7 +539,7 @@ nav h2 {
 #secret:hover {
   transition: 120ms;
   text-shadow: var(--green) 2px 2px 4px, black 3px 3px 2px;
-  transform: skew(20deg, 0deg);
+  transform: skew(5deg, 0deg);
 }
 
 /* * footer */
@@ -666,6 +685,12 @@ footer img:hover {
 }
 
 @media (min-width: 761px) and (max-width: 1190px) {
+
+
+  body {
+    background-image: none;
+  }
+
   #about {
     width: 16em;
     transform: translateX(-150%);
