@@ -290,10 +290,19 @@ a {
 .colcon:nth-child(1) {
  background-image: url('../pics&shit/cringebridge.png');
  background-repeat: no-repeat;
- background-size: 7.5%;
+ background-size: 8.5%;
  background-position: 95% 90%;  
 }
 
+
+.colcon:nth-child(2) {
+  background-image: url('../pics&shit/working.png');
+  background-repeat: no-repeat;
+  background-size: 95%;
+  background-position: 50% 95%;  
+  opacity: .5;
+ }
+ 
 
 .colcon:hover {
     transition-duration: 120ms;
