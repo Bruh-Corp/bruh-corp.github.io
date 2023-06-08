@@ -456,7 +456,7 @@ nav h2 {
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-shadow: #310b1f 0px 0px 5px;
+  text-shadow: #310b22 0px 0px .4rem;
   background-color: var(--green);
   margin: auto 0 0 0;
   transition-duration: 190ms;
@@ -469,7 +469,7 @@ nav h2 {
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: #4c1140 0px 0px 5px;
+    text-shadow: #310b22 0px 0px .4rem;
     background-color: var(--green);
   }
   10% {
