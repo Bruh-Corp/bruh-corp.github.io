@@ -297,6 +297,11 @@ body {
 
 }
 
+.colcon:nth-child(1), 
+.colcon:nth-child(2) {
+  opacity: .5;
+}
+
 
 footer {
   align-items: center;
