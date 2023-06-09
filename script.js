@@ -36,7 +36,7 @@ document.addEventListener('click', function(event) {
 const navbar = document.querySelector("nav");
 const navList = document.getElementById("nav-list");
 const arrow = document.getElementById("arrow");
-navbar.addEventListener("click", function () {
+arrow.addEventListener("click", function () {
   navList.classList.toggle("visible");
   arrow.classList.toggle("rotate");
 });

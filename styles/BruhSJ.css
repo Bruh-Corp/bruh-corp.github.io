@@ -418,6 +418,8 @@
   color: #FECD17;
   font-size: calc(18px + .4vw);
   transition: transform 1s cubic-bezier(.2, 0, .001, 1); 
+  width: fit-content;
+
 }
 
 #navtri:hover {
