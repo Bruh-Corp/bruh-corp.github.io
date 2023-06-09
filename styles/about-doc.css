@@ -103,7 +103,6 @@ body {
 
 }
 
-
 .btn {
   padding: calc(8px + .5vw) calc(30px + .5vw) calc(3.5px + .5vw) calc(30px + .5vw);
   user-select: none;
@@ -153,7 +152,6 @@ body {
   border: #a8cd23 1px solid;
   box-shadow: #a8cd2356 0 0 100px 50px;
 }
-
 
 .navtitle {
   padding: calc(3px + .5vw) 0px calc(3px + .5vw) calc(3px + .5vw);  
@@ -206,7 +204,7 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "Press Start 2P", cursive;
-  font-size: calc(30px + 3vw);
+  font-size: calc(30px + 4vw);
   color: #a8cd23;
   box-shadow:  inset 
   #310b22 12px 12px 10px,  
@@ -230,27 +228,124 @@ body {
 }
 
 
+
+@keyframes pulse {
+    0% {
+    }
+    50% {
+      text-shadow: #310b22 0px 0px .4rem;
+    }
+    100% {
+    }
+  }
+  
+
+@keyframes pulse2 {
+    0% {
+    }
+    50% {
+      text-shadow: #4c1140 0px 0px .4rem;
+    }
+    100% {
+    }
+  }
+  
+
 .colhead {
-  width: 90%;
+  width: 100%;
   border-radius: calc(7.5px + .1vw);
-  font-family: "Press Start 2P", cursive;
-  font-size: calc(10px + .5vw);
+  font-family: 'Roboto Mono', monospace;
+  font-size: calc(12px + .3vw);
   line-height: 150%;
   color: #a8cd23;
-  margin: auto 0 0 0;
-  text-align:  center;
-  text-shadow: #fecc1794 1px 1px 3px;
+  text-align:  left;
   background-color: #310b1f;
-  padding: calc(10px + .1vw);
+  padding: calc(10px + .1vw) calc(10px + .1vw) calc(10px + .16vw) calc(10px + .1vw);
   box-shadow:  #00000042 9px 9px 10px;
-  margin: 2em;
+  margin: 2em 0 0em 0;
+  line-height: 150%;
 }
+
+.colhead.note {
+    width: 100%;
+    margin: 0 0 0 0;
+    height: fit-content;
+}
+
+.colTitle {
+    padding: calc(3px + .5vw) 0px calc(3px + .5vw) calc(3px + .5vw);  
+    user-select: none;
+    font-family: "Press Start 2P", cursive;
+    font-size: calc(30px + .5vw);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 
+    #4c1140 0px 0px 2px;  
+    background-color: #a8cd23;
+    margin: 1em auto 1em auto;
+    animation: pulse2 1.3s infinite;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px)  {
+
+}
+
+
+.colhead.talhaijaz, .abbanfahim, .none {
+    width: 95%;
+    margin: 0em 0 2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colhead.none {
+    opacity: .5;
+}
+
+.colhead h1 {
+    font-family: "Press Start 2P", cursive;
+    text-shadow: #fecc1794 1px 1px 3px;
+    font-size: calc(15px + 1vw);
+    margin: 1em 1em 1em 1em;
+    line-height: 150%;
+}
+
+.colhead span {
+    font-family: "Press Start 2P", cursive;
+    text-shadow: #fecc1794 1px 1px 3px;
+    font-size: calc(10px + 1vw);
+    color: #310b1f;
+    padding: 5px 5px 1px 5px;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-image: url('../pics&shit/synapticBattalion.png');
+    background-size: contain;
+    margin: auto 0 auto auto;
+    text-shadow: #fecc1794 .5px .5px 1.5px;
+}
+.colhead img {
+    height: calc(3.5em + 2vw);
+    border-radius: calc(7.5px + .1vw);
+    margin: auto auto auto 0;
+}
+
+.colhead.talhaijaz img {
+    height: calc(8em + 0.1vw);
+}
+
 #col {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   user-select: none;
-  width: 100%;
+  width: 95%;
+  padding: 2em;
 }
 
 *::-moz-selection {
@@ -268,19 +363,30 @@ body {
   height: fit-content;
   padding: calc(25px + 1.2vw);
   margin: 20px 40px 20px 40px;
-  color: #a8cd23;
-  border: #a8cd2350 20px ;
-  font-size: calc(12px + .3vw);
   transition-duration: 150ms;
   border-radius: calc(7.5px + .1vw);
   box-shadow:  inset #310b229a 0px 0px 8px 8px;
   user-select: none;
   font-family: "Press Start 2P", cursive;
-  font-size: calc(20px + 1.5vw);
+  font-size: calc(20px + .7vw);
   color: #a8cd23;
   text-align: center;
   text-decoration: none;
   line-height: 120%;
+  color: #a8cd23;
+  border: #a8cd2350 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.colcon:nth-child(1) {
+ background-image: url('../pics&shit/cringebridge.png');
+ background-repeat: no-repeat;
+ background-size: 7.5%;
+ background-position: 95% 90%;  
 }
 
 
@@ -295,10 +401,6 @@ body {
   transform: scale(1.02);
   box-shadow: inset #2c0a23 0 0 250px 250px, #2c0a23 6px 6px 10px;
 
-}
-
-.colcon:nth-child(2) {
-  opacity: .5;
 }
 
 
@@ -347,16 +449,13 @@ footer,
   font-size: px;
 }
 
-@media only screen and (max-width: 600px) {
-
-}
-
+  
 
 #secret {
   color: #a8cd23;
   font-family: "Press Start 2P", cursive;
   width: auto;
-  font-size: 30px;
+  font-size: 10px;
   max-block-size: 40px;
   position: absolute;
   top: 10px;
