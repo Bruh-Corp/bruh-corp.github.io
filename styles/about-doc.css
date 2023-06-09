@@ -302,7 +302,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: 10em;
+    background-repeat: no-repeat;
+    transition: 1s;
 }
+
+.talhaijaz {
+  background-image: url('../pics&shit/signature.png');
+  background-position: 95%;
+}
+
+.abbanfahim {
+  background-image: url('');
+}
+
+.none {
+  background-image: url('');
+}
+
+.colhead.talhaijaz:hover, .abbanfahim:hover, .none:hover {
+
+
+}
+
 
 .colhead.none {
     opacity: .5;
