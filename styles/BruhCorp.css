@@ -124,31 +124,35 @@ body {
 }
 
 /* * Navbar styles */
+
+
 #nav-list {
   z-index: 100;
   overflow: hidden;
-  position: absolute;
-  top: 50%;
+  position: fixed;
+  top: 50%; 
   left: 50%;
   transform: translate(-50%, -170%);
   height: 90vh;
   width: 60%;
   background-color: #310b1fd2;
-  box-shadow: #00000042 0px 0px 10px 10px;
-  border-radius: calc(7.5px + 0.1vw);
+  box-shadow:  #00000042 0px 0px 10px 10px;
+  border-radius: calc(7.5px + .1vw);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transition: transform 1s var(--smooth-anim);
-  padding: calc(3px + 0.5vw);
-  -moz-backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
+  transition: transform 1s cubic-bezier(.2, 0, .001, 1); 
+  padding: calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw); 
+  -moz-backdrop-filter: blur(1em);
+  -webkit-backdrop-filter: blur(1em);
+  backdrop-filter: blur(1em);
 }
+
 #nav-list.visible {
   inset: 50%;
   transform: translate(-50%, -50%);
+  transition: transform 1s cubic-bezier(.2, 0, .001, 1);
 }
 
 #nav-list h1 {
@@ -430,21 +434,24 @@ nav h2 {
 .btn:nth-child(1) {
   margin-top: auto;
 }
+
 .btn:hover {
   width: 100%;
-  color: var(--green);
+  color: #a8cd23;
   scale: 1.9;
-  text-shadow: #fecc1794 0 0 20px, black 0.4px 0.4px 0.8px, var(--green) 0.8px 0.8px 0.8px, black 3.6px 3.6px 0.8px,
-    var(--green) 4.8px 4.8px 0.8px, black 6px 6px 0.8px, var(--green) 7.2px 7.2px 0.8px;
+  text-shadow: #fecc1794 0 0 20px, black 0.4px 0.4px 0.8px, #a8cd23 0.8px 0.8px 0.8px, black 3.6px 3.6px 0.8px, #a8cd23 4.8px 4.8px 0.8px, black 6px 6px 0.8px, #a8cd23 7.2px 7.2px 0.8px;
   background-position: 70%;
 }
+
 .btn:active {
   scale: 1.83;
   width: 100%;
-  color: var(--green);
-  border: var(--green) 1px solid;
-  box-shadow: var(--green) 56 0 0 100px 50px;
+  color: #a8cd23;
+  border: #a8cd23 1px solid;
+  box-shadow: #a8cd2356 0 0 100px 50px;
 }
+
+
 #about h1 {
   padding: calc(3px + 0.5vw) 0px calc(3px + 0.5vw) calc(3px + 0.5vw);
   user-select: none;

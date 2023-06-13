@@ -58,6 +58,7 @@ body {
 }
 
 
+
 .box3 {
   z-index: 100;
   overflow: hidden;
@@ -76,9 +77,9 @@ body {
   flex-direction: column;
   transition: transform 1s cubic-bezier(.2, 0, .001, 1); 
   padding: calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw); 
-  -moz-backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
+  -moz-backdrop-filter: blur(1em);
+  -webkit-backdrop-filter: blur(1em);
+  backdrop-filter: blur(1em);
 }
 
 .box3.visible {
@@ -302,9 +303,22 @@ a {
   background-repeat: no-repeat;
   background-size: 95%;
   background-position: 50% 95%;  
-  opacity: .5;
+  color: #feed17;
  }
  
+.colcon:nth-child(2):hover {
+  text-shadow: black 0.6px 0.6px 1.2px, 
+  #feed17 1.2px 1.2px 1.2px, 
+  black 3.6px 3.6px 1.2px, 
+  #feed17 4.8px 4.8px 1.2px, 
+  black 6px 6px 1.2px, 
+  #feed17 7.2px 7.2px 1.2px;
+}
+
+ .colcon:nth-child(2) img {
+  width: 5em;
+ }
+
 
 .colcon:hover {
     transition-duration: 120ms;

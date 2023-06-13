@@ -58,6 +58,7 @@ body {
 }
 
 
+
 .box3 {
   z-index: 100;
   overflow: hidden;
@@ -76,9 +77,9 @@ body {
   flex-direction: column;
   transition: transform 1s cubic-bezier(.2, 0, .001, 1); 
   padding: calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw); 
-  -moz-backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
+  -moz-backdrop-filter: blur(1em);
+  -webkit-backdrop-filter: blur(1em);
+  backdrop-filter: blur(1em);
 }
 
 .box3.visible {
