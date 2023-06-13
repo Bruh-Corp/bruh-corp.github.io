@@ -303,16 +303,16 @@ a {
   background-repeat: no-repeat;
   background-size: 95%;
   background-position: 50% 95%;  
-  color: #feed17;
+  color: #FECD17;
  }
  
 .colcon:nth-child(2):hover {
   text-shadow: black 0.6px 0.6px 1.2px, 
-  #feed17 1.2px 1.2px 1.2px, 
+  #FECD17 1.2px 1.2px 1.2px, 
   black 3.6px 3.6px 1.2px, 
-  #feed17 4.8px 4.8px 1.2px, 
+  #FECD17 4.8px 4.8px 1.2px, 
   black 6px 6px 1.2px, 
-  #feed17 7.2px 7.2px 1.2px;
+  #FECD17 7.2px 7.2px 1.2px;
 }
 
  .colcon:nth-child(2) img {

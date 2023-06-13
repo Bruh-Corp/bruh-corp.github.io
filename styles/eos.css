@@ -206,7 +206,7 @@ body {
   justify-content: center;
   font-family: "Press Start 2P", cursive;
   font-size: calc(30px + 4vw);
-  color: #feec17;
+  color: #FECD17;
   box-shadow:  inset 
   #310b22 12px 12px 10px,  
   #310b22 12px 12px 10px;
@@ -219,8 +219,8 @@ body {
 #logo:hover {
   transition-duration: 190ms;
   transform: scale(1.04);
-  text-shadow: black 1px 1px 2px, #feec17 2px 2px 2px, black 6px 6px 2px, #feec17 8px 8px 2px, black 10px 10px 2px,
-    #feec17 12px 12px 2px;
+  text-shadow: black 1px 1px 2px, #FECD17 2px 2px 2px, black 6px 6px 2px, #FECD17 8px 8px 2px, black 10px 10px 2px,
+    #FECD17 12px 12px 2px;
 }
 
 
