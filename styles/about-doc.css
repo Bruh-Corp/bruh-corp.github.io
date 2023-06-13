@@ -310,7 +310,7 @@ body {
 
 .talhaijaz {
   background-image: url('../pics&shit/signature.png');
-  background-position: 95%;
+  background-position: 96%;
 }
 
 .abbanfahim {
@@ -321,10 +321,6 @@ body {
   background-image: url('');
 }
 
-.colhead.talhaijaz:hover, .abbanfahim:hover, .none:hover {
-
-
-}
 
 
 .colhead.none {
