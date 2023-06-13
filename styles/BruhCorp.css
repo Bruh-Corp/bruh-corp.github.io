@@ -233,6 +233,21 @@ nav h2 {
   display: none;
 }
 
+#toggleButton a, #toggleButton button, #toggleButton [role="button"], #toggleButton input[type="button"], #toggleButton input[type="submit"], #toggleButton input[type="reset"] {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+#contactToggleButton a, #contactToggleButton button, #contactToggleButton [role="button"], #contactToggleButton input[type="button"], #contactToggleButton input[type="submit"], #contactToggleButton input[type="reset"] {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+#arrow a, #arrow button, #arrow [role="button"], #arrow input[type="button"], #arrow input[type="submit"], #arrow input[type="reset"] {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
 #toggleButton h1, #contactToggleButton h1 {
   position: relative;
   cursor: pointer;
