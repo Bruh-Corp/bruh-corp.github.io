@@ -43,5 +43,5 @@ arrow.addEventListener("click", function () {
 
 function playSound(fileName) {
   var snd = new Audio(fileName);
-  snd.play(); //plays the sound
+  snd.play();
 }
