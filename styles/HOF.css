@@ -441,3 +441,9 @@ footer,
   text-shadow: #a8cd23 2px 2px 4px, black 3px 3px 2px;
   transform: skew(15deg, 0deg);
 }
+
+
+#navtri a, #navtri button, #navtri [role="button"], #navtri input[type="button"], #navtri input[type="submit"], #navtri input[type="reset"] {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}

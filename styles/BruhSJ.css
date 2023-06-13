@@ -558,3 +558,9 @@
   animation: pulse 1.3s infinite;
   z-index: 1000000;
 }
+
+
+#navtri a, #navtri button, #navtri [role="button"], #navtri input[type="button"], #navtri input[type="submit"], #navtri input[type="reset"] {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
