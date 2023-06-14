@@ -273,7 +273,7 @@ body {
   width: 25%;
   height: fit-content;
   padding: 20px;
-  margin: 20px 0 20px 0;
+  margin: 20px 20px 20px 20px;
   color: #a8cd23;
   font-family: 'Roboto Mono', monospace;
   border: #a8cd2350 20px ;
@@ -285,6 +285,7 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 
@@ -339,6 +340,43 @@ body {
 }
 p {
   user-select: text;
+}
+
+.badge {
+  font-size: 1em;
+  font-family: "Press Start 2P", cursive;
+  text-shadow: #fecc1794 .05em .05em .1em;
+  color: #310b1f;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-image: url('../pics&shit/synapticBattalion.png');
+  background-size: contain;
+  padding: .1em 3em .1em 3em;
+}
+
+
+.mitsi img {
+  width: 6em;
+  border-radius: calc(7.5px + .1vw);
+
+}
+
+.mitsi {
+  background-image: url('../pics&shit/mitsi.png'), url('../pics&shit/mutsi.png');
+  background-repeat: no-repeat;
+  background-size: 10em, 13em;
+  background-position: 5% 103%, 115% 110%;
+}
+
+
+.badgediv {
+  position: absolute;
+  top: 1em;
+  right: -3em;
+  background-color: #252525;
+  transform: rotate(45deg);
 }
 
 #ref {
@@ -435,8 +473,11 @@ footer,
     width: 80%;
   }
 
-  #tal {
-    width: 70%;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  .colcon {
+    width: 35%;
   }
 
 }
