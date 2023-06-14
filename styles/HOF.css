@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     user-select: none;
 }
@@ -299,6 +301,7 @@ body {
   box-shadow:  #00000042 9px 9px 10px;
   padding: 5px;
 }
+/*hall of fame items here */
 
 
 .t4e img {
@@ -362,7 +365,25 @@ p {
 }
 
 .colcon:hover {
-  box-shadow:  inset #310b22 0px 0px 8px 8px;
+  box-shadow:  inset #310b22d8 0px 0px 8px 8px;
+}
+/*hall of shame items here */
+.mars {
+  background-image: url('../pics&shit/mars_why.jpg');
+  background-size: cover;
+  background-position: 50%;
+}
+
+.mars p {
+  color: white;
+  font-weight: 400;
+}
+
+.marsX {
+  -moz-backdrop-filter: blur(.7em);
+  -webkit-backdrop-filter: blur(.7em);
+  backdrop-filter: blur(.7em);
+  background-color: #310b1f92;
 }
 
 footer {
