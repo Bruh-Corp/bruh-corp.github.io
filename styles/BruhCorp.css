@@ -90,6 +90,7 @@ body {
   transform: translateX(0);
 }
 
+
 #about.hidden {
   left: 0;
   transform: translateX(-150%);

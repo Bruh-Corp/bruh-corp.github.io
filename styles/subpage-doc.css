@@ -282,6 +282,21 @@ body {
   background-size: 4.2em;
 }
 
+.second {
+  background-image: none;
+  padding: calc(10px + .1vw);
+  width: fit-content;
+}
+
+.second p {
+  text-shadow: #fecc1794 1px 1px 3px;
+  background-color: #a8cd231c;
+  padding: calc(10px + 0.1vw);
+  border-radius: calc(7.5px + .1vw);
+  font-family: "Press Start 2P", cursive;
+  margin: 0;
+}
+
 #col {
   display: flex;
   flex-wrap: wrap;

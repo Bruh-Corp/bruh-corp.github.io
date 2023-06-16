@@ -362,6 +362,22 @@ body {
     height: calc(7em + 0.1vw);
 }
 
+.bebruh {
+  padding: calc(10px + .1vw);
+  width: fit-content;
+}
+
+.bebruh p {
+  width: fit-content;
+  text-shadow: #fecc1794 1px 1px 3px;
+  background-color: #a8cd231c;
+  padding: calc(15px + 0.5vw);
+  border-radius: calc(7.5px + .1vw);
+  font-family: "Press Start 2P", cursive;
+  font-size: calc(30px + .8vw);
+  margin: 0;
+}
+
 #col {
   display: flex;
   flex-wrap: wrap;
