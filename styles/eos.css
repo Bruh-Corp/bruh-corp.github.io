@@ -60,13 +60,14 @@ body {
 }
 
 
+
 .box3 {
   z-index: 100;
   overflow: hidden;
   position: fixed;
   top: 50%; 
   left: 50%;
-  transform: translate(-50%, -170%);
+  transform: translate(-50%, -170%) rotateY(100deg) rotateX(00deg);
   height: 90vh;
   width: 60%;
   background-color: #310b1fd2;
@@ -85,18 +86,23 @@ body {
 
 .box3.visible {
   inset: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) rotateY(0deg) rotateX(0deg);
   transition: transform 1s cubic-bezier(.2, 0, .001, 1);
+
 }
+
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {
 
   .box3 {
     width: 90%;
     height: 69vh;
-    transform: translate(-50%, -200%);
+    transform: translate(-50%, -200%) rotateY(100deg) rotateX(0deg);
   }
 
+  .box3.visible {
+    transform: translate(-50%, -50%) rotateY(00deg) rotateX(0deg);
+  }
   .btn:active {
     scale: 1.4;
   }

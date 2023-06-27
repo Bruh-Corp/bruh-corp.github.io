@@ -87,13 +87,13 @@ body {
   padding: calc(15px + 0.3vw);
   background-size: 120%;
   left: 0;
-  transform: translateX(0);
+  transform: translateX(0) rotateX(0deg);
 }
 
 
 #about.hidden {
   left: 0;
-  transform: translateX(-150%);
+  transform: translateX(-150%) rotateX(100deg);
 }
 
 #about p {
@@ -135,7 +135,7 @@ body {
   position: fixed;
   top: 50%; 
   left: 50%;
-  transform: translate(-50%, -170%);
+  transform: translate(-50%, -170%) rotateY(100deg) rotateX(00deg);
   height: 90vh;
   width: 60%;
   background-color: #310b1fd2;
@@ -154,8 +154,9 @@ body {
 
 #nav-list.visible {
   inset: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) rotateY(0deg) rotateX(0deg);
   transition: transform 1s cubic-bezier(.2, 0, .001, 1);
+
 }
 
 #nav-list h1 {
@@ -217,7 +218,7 @@ nav h2 {
   scale: 0.98;
 }
 #arrow.rotate {
-  transform: rotate(-180deg);
+  transform: rotateX(-180deg);
 }
 
 #toggleButton, #contactToggleButton {
@@ -613,12 +614,15 @@ footer img:hover {
 @media only screen and (max-width: 760px) {
   #about {
     width: 80%;
-    transform: translateX(-150%);
+    transform: translateX(-150%) rotateX(100deg);
   }
+  
+  
   #about.hidden {
     left: 0;
-    transform: translateX(0);
+    transform: translateX(0) rotateX(0deg);
   }
+  
   nav {
     background-image: url("../pics&shit/latroll.png");
     background-repeat: no-repeat;
@@ -677,15 +681,13 @@ footer img:hover {
   }
 
   #contacts {
-    transform: translateY(0);
-    transform: translateX(-150%);
+    transform: translateX(-150%) translateY(0) rotateX(100deg);
     left: 0;
     bottom: 10%;
   }
 
   #contacts.visible {
-    transform: translateY(0);
-    transform: translateX(0);
+    transform: translateX(0) translateY(0) rotateX(00deg);
     left: 0;
   }
 }
@@ -697,7 +699,11 @@ footer img:hover {
   #nav-list {
     width: 90%;
     height: 69vh;
-    transform: translate(-50%, -200%);
+    transform: translate(-50%, -200%) rotateY(100deg) rotateX(0deg);
+  }
+
+  #nav-list.visible {
+    transform: translate(-50%, -50%) rotateY(00deg) rotateX(0deg);
   }
 
   .btn:active {
@@ -718,12 +724,13 @@ footer img:hover {
 
   #about {
     width: 16em;
-    transform: translateX(-150%);
+    transform: translateX(-150%) rotateX(100deg);
   }
-
+  
+  
   #about.hidden {
     left: 0;
-    transform: translateX(0);
+    transform: translateX(0) rotateX(0deg);
   }
   
 #touchListener {
