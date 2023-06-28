@@ -293,6 +293,10 @@ body {
 }
 
 
+.colcon:hover {
+  box-shadow:  inset #310b22d8 0px 0px 8px 8px;
+}
+
 .colTitle {
   user-select: none;
   font-family: "Press Start 2P", cursive;
@@ -374,6 +378,37 @@ p {
   background-position: 5% 103%, 115% 110%;
 }
 
+.ferrari {
+  background-image: linear-gradient(to top, black, #F72700);
+  box-shadow:  inset rgb(0, 0, 0) 0px 0px 5px 3px; 
+}
+
+.ferrari:hover {
+  box-shadow:  inset #FFF200 0px 0px 5px 3px; 
+}
+
+.ferrari > #ref {
+  margin: 0;
+}
+
+.ferrari-logo {
+  width: 60%;
+}
+
+.ferrari-499p {
+  width: 100%;
+}
+
+
+.ferrari p {
+  color: #FFF200;
+  text-shadow: black .125em .125em .07em;
+}
+
+.lemans {
+  background-color: #310b1fc2;
+}
+
 
 .badgediv {
   position: absolute;
@@ -406,9 +441,6 @@ p {
   color: #a8cd23;
 }
 
-.colcon:hover {
-  box-shadow:  inset #310b22d8 0px 0px 8px 8px;
-}
 /*hall of shame items here */
 .mars {
   background-image: url('../pics&shit/mars_why.jpg');
