@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+  font-family: "Hubot Sans";
+  src: url("../fonts/Hubot-Sans.woff2") format("woff2 supports variations"),
+    url("../fonts/Hubot-Sans.woff2") format("woff2-variations");
+  font-weight: 600 100;
+  font-stretch: 75% 125%;
+}
 
 * {
     user-select: none;
@@ -12,7 +19,6 @@ body {
     flex-direction: column;
 }
 
-
 #navbar {
   padding: calc(30px + .5vw) calc(5px + .25vw) calc(5px + .25vw) calc(5px + .25vw);
   position: fixed;
@@ -25,6 +31,7 @@ body {
   z-index: 10000;
 
 }
+
 
 
 #navtri  {
@@ -58,9 +65,6 @@ body {
   font-size: calc(7px + .4vw);
   text-shadow: #fecc1794 1px 1px 3px;
 }
-
-
-
 
 .box3 {
   z-index: 100;
@@ -310,6 +314,37 @@ body {
   box-shadow:  #00000042 9px 9px 10px;
   padding: 5px;
 }
+
+.label {
+  font-family: "Hubot Sans";
+  font-size: calc(15px + .2vw);
+  color: #a8cd23;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: -20px;
+  font-weight: 500;
+  font-stretch: 75%;
+  text-transform: uppercase;
+  background-color: #310b1f;
+  padding: calc(7px + .1vw);
+  border-radius: calc(7.5px + .1vw);
+  text-align: center;
+  width: 120%;
+}
+
+.owners {
+  font-size: calc(10px + .2vw);
+  font-family: "Press Start 2P", cursive;
+  text-shadow: #fecc1794 .05em .05em .1em;
+  color: #310b1f;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-image: url('../pics&shit/synapticBattalion.png');
+  background-size: contain;
+}
+
 /*hall of fame items here */
 
 
@@ -544,4 +579,15 @@ footer,
 #navtri a, #navtri button, #navtri [role="button"], #navtri input[type="button"], #navtri input[type="submit"], #navtri input[type="reset"] {
   -webkit-tap-highlight-color: transparent;
   outline: none;
+}
+
+
+@keyframes pulse {
+  0% {
+  }
+  50% {
+    text-shadow: #310b22 0px 0px .4rem;
+  }
+  100% {
+  }
 }

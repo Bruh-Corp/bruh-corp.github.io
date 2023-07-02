@@ -94,6 +94,7 @@ body {
 }
 
 
+
 @media only screen and (max-width: 767px) and (orientation: portrait) {
 
   .box3 {
@@ -389,4 +390,14 @@ footer,
 #navtri a, #navtri button, #navtri [role="button"], #navtri input[type="button"], #navtri input[type="submit"], #navtri input[type="reset"] {
   -webkit-tap-highlight-color: transparent;
   outline: none;
+}
+
+@keyframes pulse {
+  0% {
+  }
+  50% {
+    text-shadow: #310b22 0px 0px .4rem;
+  }
+  100% {
+  }
 }
