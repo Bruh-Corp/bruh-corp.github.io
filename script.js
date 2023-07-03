@@ -1,3 +1,4 @@
+
 const toggleButton = document.getElementById("toggleButton");
 //const box2 = document.getElementById('box2');
 const aboutBox = document.getElementById("about");
@@ -45,3 +46,4 @@ function playSound(fileName) {
   var snd = new Audio(fileName);
   snd.play();
 }
+

@@ -368,7 +368,7 @@ body {
   box-shadow:  inset #00000080 0px 0px 6px 6px;
 }
 .sandr img {
-  width: 100%;
+  max-width: 100%;
   border-radius: calc(7.5px + .1vw);
   height: auto;
 }
@@ -409,7 +409,7 @@ p {
 
 
 .mitsi img {
-  width: 6em;
+  max-width: 6em;
   border-radius: calc(7.5px + .1vw);
   height: auto;
 }
@@ -435,12 +435,12 @@ p {
 }
 
 .ferrari-logo {
-  width: 60%;
+  max-width: 60%;
   height: auto;
 }
 
 .ferrari-499p {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -481,14 +481,14 @@ p {
 }
 
 .kenM {
-  width: 30%;
+  max-width: 30%;
   margin-bottom: 1em;
   border-radius: calc(7.5px + .1vw);
   height: auto;
 }
 
 .fordgt {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 

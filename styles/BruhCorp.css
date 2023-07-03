@@ -39,8 +39,9 @@ body {
   overflow: hidden;
   justify-content: center;
   width: 100%;
-  max-height: 100vh
+  max-height: 100vh;
 }
+
 /* ! NOT USING AS OF NOW
 .box2 {
   position: absolute;
@@ -96,6 +97,10 @@ body {
   transform: translateX(-150%) rotateX(100deg);
 }
 
+#about h1 {
+  margin: 2em;
+}
+
 #about p {
   width: 95%;
   border-radius: calc(7.5px + 0.1vw);
@@ -109,6 +114,13 @@ body {
   background-color: #a8cd231c;
   padding: calc(10px + 0.1vw);
   
+}
+
+#about a {
+  color: #fecd17;
+  text-decoration: none;
+  font-style: oblique;
+  text-shadow: #fecc1794 1px 1px 3px;
 }
 
 /* ! TF IS THIS */
