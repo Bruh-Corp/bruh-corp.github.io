@@ -525,6 +525,11 @@ p {
   background-image: url('../pics&shit/mars_why.jpg');
   background-size: cover;
   background-position: 50%;
+  box-shadow:  inset #00000082 0px 0px 5px 3px;
+}
+
+.mars:hover {
+  box-shadow:  inset #D78963 0px 0px 5px 3px; 
 }
 
 .mars p {
@@ -537,6 +542,32 @@ p {
   -webkit-backdrop-filter: blur(.7em);
   backdrop-filter: blur(.7em);
   background-color: #310b1f92;
+}
+
+.wreck {
+  background-image: linear-gradient(to top, #002951, #0795DA);
+  box-shadow:  inset #00000082 0px 0px 5px 3px;
+}
+
+.wreck:hover {
+  box-shadow:  inset black 0px 0px 5px 3px; 
+}
+
+.wreck p {
+  color: #F0714F;
+  text-shadow: black .105em .105em .07em;
+  font-weight: 500;
+}
+
+.wreck span  {
+  font-style: oblique;
+  font-weight: 900;
+  text-shadow: black .125em .125em .07em;
+  user-select: text;
+}
+
+.wreck img {
+  margin-bottom: -16px;
 }
 
 footer {
