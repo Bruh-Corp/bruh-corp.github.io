@@ -359,6 +359,14 @@ body {
   margin-left: -.5em;
 }
 
+.sandr {
+  background-color: #202428;
+  box-shadow:  inset #00000089 0px 0px 4px 4px;
+}
+
+.sandr:hover {
+  box-shadow:  inset #00000080 0px 0px 6px 6px;
+}
 .sandr img {
   width: 100%;
   border-radius: calc(7.5px + .1vw);
@@ -444,6 +452,42 @@ p {
   background-color: #310b1fc2;
 }
 
+
+.ken {
+  background-image: linear-gradient(to top, black, #B3E2FC);
+  box-shadow:  inset rgb(0, 0, 0) 0px 0px 5px 3px; 
+}
+
+.ken p {
+  color: white;
+  font-weight: 400;
+  background-color: #f76300;
+  text-shadow: black .105em .105em .07em;
+  border-radius: calc(7.5px + .1vw);
+  padding: .5em;
+  box-shadow:  #00000042 9px 9px 10px;
+
+}
+
+.ken:hover {
+  box-shadow:  inset #f76300 0px 0px 5px 3px; 
+}
+
+
+.ken > #ref {
+  margin: 0;
+}
+
+.kenM {
+  width: 30%;
+  margin-bottom: 1em;
+  border-radius: calc(7.5px + .1vw);
+
+}
+
+.fordgt {
+  width: 100%;
+}
 
 .badgediv {
   position: absolute;
