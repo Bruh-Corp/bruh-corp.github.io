@@ -370,7 +370,7 @@ body {
 .sandr img {
   width: 100%;
   border-radius: calc(7.5px + .1vw);
-
+  height: auto;
 }
 
 .sandr span {
@@ -411,7 +411,7 @@ p {
 .mitsi img {
   width: 6em;
   border-radius: calc(7.5px + .1vw);
-
+  height: auto;
 }
 
 .mitsi {
@@ -436,10 +436,12 @@ p {
 
 .ferrari-logo {
   width: 60%;
+  height: auto;
 }
 
 .ferrari-499p {
   width: 100%;
+  height: auto;
 }
 
 
@@ -482,11 +484,12 @@ p {
   width: 30%;
   margin-bottom: 1em;
   border-radius: calc(7.5px + .1vw);
-
+  height: auto;
 }
 
 .fordgt {
   width: 100%;
+  height: auto;
 }
 
 .badgediv {
@@ -546,7 +549,7 @@ p {
 
 .wreck {
   background-image: linear-gradient(to top, #002951, #0795DA);
-  box-shadow:  inset #00000082 0px 0px 5px 3px;
+  box-shadow:  inset #000000d1 0px 0px 5px 3px;
 }
 
 .wreck:hover {
