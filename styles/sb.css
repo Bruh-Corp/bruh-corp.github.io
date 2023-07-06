@@ -36,7 +36,6 @@ body {
   font-size: calc(18px + .4vw);
   transition: transform 1s cubic-bezier(.2, 0, .001, 1); 
   width: fit-content;
-
 }
 
 #navtri:hover {
@@ -59,7 +58,6 @@ body {
   font-size: calc(7px + .4vw);
   text-shadow: #fecc1794 1px 1px 3px;
 }
-
 
 
 
@@ -94,7 +92,6 @@ body {
 }
 
 
-
 @media only screen and (max-width: 767px) and (orientation: portrait) {
 
   .box3 {
@@ -115,7 +112,6 @@ body {
   }
 
 }
-
 
 .btn {
   padding: calc(8px + .5vw) calc(30px + .5vw) calc(3.5px + .5vw) calc(30px + .5vw);
@@ -167,7 +163,6 @@ body {
   box-shadow: #a8cd2356 0 0 100px 50px;
 }
 
-
 .navtitle {
   padding: calc(3px + .5vw) 0px calc(3px + .5vw) calc(3px + .5vw);  
   user-select: none;
@@ -214,13 +209,13 @@ body {
 }
 
 #logo {
-  padding: calc(30px + 1.6vw);
+  padding: calc(20px + 1.3vw);
   user-select: none;
   align-items: center;
   justify-content: center;
   font-family: "Press Start 2P", cursive;
-  font-size: calc(30px + 3vw);
-  color: #a8cd23;
+  font-size: calc(20px + 3vw);
+  color: #6ecce1;
   box-shadow:  inset 
   #310b22 12px 12px 10px,  
   #310b22 12px 12px 10px;
@@ -233,8 +228,8 @@ body {
 #logo:hover {
   transition-duration: 190ms;
   transform: scale(1.04);
-  text-shadow: black 1px 1px 2px, #a8cd23 2px 2px 2px, black 6px 6px 2px, #a8cd23 8px 8px 2px, black 10px 10px 2px,
-    #a8cd23 12px 12px 2px;
+  text-shadow: black 1px 1px 2px, #6ecce1 2px 2px 2px, black 6px 6px 2px, #6ecce1 8px 8px 2px, black 10px 10px 2px,
+    #6ecce1 12px 12px 2px;
 }
 
 
@@ -243,21 +238,65 @@ body {
 }
 
 
+
+@keyframes pulse {
+    0% {
+    }
+    50% {
+      text-shadow: #310b22 0px 0px .4rem;
+    }
+    100% {
+    }
+  }
+  
+
+@keyframes pulse2 {
+    0% {
+    }
+    50% {
+      text-shadow: #4c1140 0px 0px .4rem;
+    }
+    100% {
+    }
+  }
+  
+
 .colhead {
-  width: 90%;
+  width: 70%;
   border-radius: calc(7.5px + .1vw);
-  font-family: "Press Start 2P", cursive;
-  font-size: calc(10px + .5vw);
+  font-family: 'Roboto Mono', monospace;
+  font-size: calc(12px + .3vw);
   line-height: 150%;
   color: #a8cd23;
   margin: auto 0 0 0;
-  text-align:  center;
-  text-shadow: #fecc1794 1px 1px 3px;
+  text-align:  left;
   background-color: #310b1f;
-  padding: calc(10px + .1vw);
+  padding: 0 calc(10px + .1vw) calc(10px + .1vw) calc(10px + .1vw);
   box-shadow:  #00000042 9px 9px 10px;
   margin: 2em;
+  margin-top: 0;
+  line-height: 150%;
 }
+
+.colhead span {
+    font-family: "Press Start 2P", cursive;
+    background-color: #fecc17;
+    color: #310b1f;
+    padding: .55em .4em .4em .4em;
+    font-size: calc(6px + .3vw);
+    border-radius: calc(7.5px + .1vw);
+}
+
+.colhead.synaba {
+    width: fit-content;
+    padding: 0;
+}
+
+.sblogo {
+    width: 20em;
+    margin: 2em;
+}
+
 #col {
   display: flex;
   flex-wrap: wrap;
@@ -281,19 +320,30 @@ body {
   height: fit-content;
   padding: calc(25px + 1.2vw);
   margin: 20px 40px 20px 40px;
-  color: #a8cd23;
-  border: #a8cd2350 20px ;
-  font-size: calc(12px + .3vw);
   transition-duration: 150ms;
   border-radius: calc(7.5px + .1vw);
   box-shadow:  inset #310b229a 0px 0px 8px 8px;
   user-select: none;
   font-family: "Press Start 2P", cursive;
-  font-size: calc(20px + 1.5vw);
+  font-size: calc(20px + .7vw);
   color: #a8cd23;
   text-align: center;
   text-decoration: none;
   line-height: 120%;
+  color: #a8cd23;
+  border: #a8cd2350 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.colcon:nth-child(1) {
+ background-image: url('../pics&shit/cringebridge.png');
+ background-repeat: no-repeat;
+ background-size: 7.5%;
+ background-position: 95% 90%;  
 }
 
 
@@ -309,6 +359,7 @@ body {
   box-shadow: inset #2c0a23 0 0 250px 250px, #2c0a23 6px 6px 10px;
 
 }
+
 
 footer {
   align-items: center;
@@ -355,16 +406,13 @@ footer,
   font-size: px;
 }
 
-@media only screen and (max-width: 600px) {
-
-}
-
+  
 
 #secret {
   color: #a8cd23;
   font-family: "Press Start 2P", cursive;
   width: auto;
-  font-size: 30px;
+  font-size: 10px;
   max-block-size: 40px;
   position: absolute;
   top: 10px;
@@ -385,14 +433,4 @@ footer,
 #navtri a, #navtri button, #navtri [role="button"], #navtri input[type="button"], #navtri input[type="submit"], #navtri input[type="reset"] {
   -webkit-tap-highlight-color: transparent;
   outline: none;
-}
-
-@keyframes pulse {
-  0% {
-  }
-  50% {
-    text-shadow: #310b22 0px 0px .4rem;
-  }
-  100% {
-  }
 }
