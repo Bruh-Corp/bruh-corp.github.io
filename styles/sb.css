@@ -290,11 +290,12 @@ body {
 .colhead.synaba {
     width: fit-content;
     padding: 0;
+    background: none;
+    box-shadow: none;
 }
 
 .sblogo {
     width: 20em;
-    margin: 2em;
 }
 
 #col {
