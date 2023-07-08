@@ -269,11 +269,10 @@ body {
   font-size: calc(12px + .3vw);
   line-height: 150%;
   color: #a8cd23;
-  text-align:  left;
+  text-align:  center;
   background-color: #310b1f;
-  padding: calc(10px + .1vw) calc(10px + .1vw) calc(10px + .16vw) calc(10px + .1vw);
+  padding: calc(20px + .1vw);
   box-shadow:  #00000042 9px 9px 10px;
-  margin: 2em 0 0em 0;
   line-height: 150%;
   position: relative;
 }
@@ -305,15 +304,20 @@ body {
 
 }
 
+.colhead.para {
+  width: 90%;
+}
 
-.colhead.talhaijaz, .abbanfahim, .fasam {
-    width: 95%;
-    margin: 0em 0 2em 0;
+.colhead {
+    width: 21em;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-repeat: no-repeat;
     transition: 1s;
+    margin: 2em;
 }
 
 .talhaijaz {
@@ -335,17 +339,15 @@ body {
 
 .colhead h1 {
     font-family: "Press Start 2P", cursive;
-    font-size: calc(5px + 1.5vw);
-    margin: 0em 1em 0em 1em;
+    font-size: calc(1.2em + .4vw);
     line-height: 150%;
 }
 
 .colhead h1 > q {
-  font-size: calc(7px + .5vw);
+  font-size: calc(.6em + .1vw);
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
-  margin: 0;
-  position: absolute;
+  line-height: 1;
 }
 
 .colhead span {
@@ -360,9 +362,10 @@ body {
     color: transparent;
     background-image: url('../pics&shit/synapticBattalion.png');
     background-size: contain;
-    text-shadow: #fecc1794 .5px .5px 1.5px;
+    text-shadow: #fecc1794 0 0 1px;
     text-align: center;
     text-transform: uppercase;
+    background-size: contain;
 }
 
 .fasam span {
@@ -390,13 +393,11 @@ body {
 }
 
 .colhead img {
-    height: calc(3.5em + 2.5vw);
+    height: 10em;
     border-radius: calc(7.5px + .1vw);
-    margin: auto 0 auto 0;
 }
 
 .attributes {
-  margin: auto 0 auto auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -404,6 +405,7 @@ body {
   background-color: #a8cd2332;
   border-radius: calc(7.5px + .1vw);
   padding: 5px;
+  width: 100%;
 }
 
 .attributes h1 {
@@ -413,13 +415,6 @@ body {
   color: #FECD17;
 }
 
-.colhead.talhaijaz img, .colhead.fasam img {
-    height: calc(7em + 0.1vw);
-}
-
-.colhead.abbanfahim img {
-  margin: 1em 0 1em 0;
-}
 
 .colhead q {
   width: 40%;

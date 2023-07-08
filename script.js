@@ -1,6 +1,5 @@
 
 const toggleButton = document.getElementById("toggleButton");
-//const box2 = document.getElementById('box2');
 const aboutBox = document.getElementById("about");
 const tri = document.querySelector("#toggleButton>h1");
 toggleButton.addEventListener("click", function () {
@@ -8,6 +7,15 @@ toggleButton.addEventListener("click", function () {
   aboutBox.classList.toggle("hidden");
   tri.classList.toggle("rotate");
 });
+
+const toggleButtonNew = document.getElementById("toggleButtonNew");
+const updates = document.getElementById("updates");
+const updatesH1 = document.querySelector("#toggleButtonNew>h1");
+toggleButtonNew.addEventListener("click", function () {
+  updates.classList.toggle("visible");
+  updatesH1.classList.toggle("rotate");
+});
+
 
 const contactButton = document.querySelector('#contactToggleButton');
 const contactH1 = contactButton.querySelector('h1');

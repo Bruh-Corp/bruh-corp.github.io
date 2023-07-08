@@ -71,11 +71,11 @@ body {
 */
 
 /* * About section on left */
-#about {
+#about, #updates  {
   position: absolute;
   height: 60%;
-  width: 19em;
-  overflow: hidden;
+  max-width: 19em;
+  overflow-x: hidden;
   background-color: #310b1f;
   box-shadow: #00000042 9px 9px 10px;
   margin: 1.2em;
@@ -88,20 +88,42 @@ body {
   padding: calc(15px + 0.3vw);
   background-size: 120%;
   left: 0;
-  transform: translateX(0) rotateX(0deg);
 }
 
+#updates {
+  justify-content:unset;
+  overflow-y: scroll;
+  scrollbar-color: var(--dark-green) #310b1f;
+  transform: translateX(-150%) rotateX(100deg);
+}
+
+#updates img {
+  width: 6.5em;
+  height: 6.5em;
+  margin-right: 1em;
+}
 
 #about.hidden {
   left: 0;
   transform: translateX(-150%) rotateX(100deg);
 }
+#updates.visible {
+  transform: translateX(0) rotateX(0deg);
 
+}
 #about h1 {
   margin: 2em;
 }
 
-#about p {
+#updates h1 {
+  font-family: "Press Start 2P", cursive;
+  color: var(--green);
+  width: 100%;
+  font-size: calc(1em + .5vw);
+  margin-top: 0;
+}
+
+#about p, #updates p {
   width: 95%;
   border-radius: calc(7.5px + 0.1vw);
   font-family: "Press Start 2P", cursive;
@@ -112,15 +134,51 @@ body {
   text-align: left;
   text-shadow: #fecc1794 1px 1px 3px;
   background-color: #a8cd231c;
-  padding: calc(10px + 0.1vw);
-  
+  padding: calc(10px + 0.1vw); 
 }
 
-#about a {
+#updates p {
+  margin: 0;
+  background-color: transparent;
+  padding: 0; 
+
+}
+
+.updatecard {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a8cd231c;
+  padding: calc(10px + 0.1vw); 
+  border-radius: calc(7.5px + 0.1vw); 
+  margin: .5em;
+}
+
+.dater {
+  font-family: 'Roboto Mono', monospace;
+  color: var(--green);
+  margin: .3em;
+  width: 100%;
+  font-weight: 900;
+}
+
+#about a, #updates a {
   color: #fecd17;
   text-decoration: none;
   font-style: oblique;
   text-shadow: #fecc1794 1px 1px 3px;
+}
+
+#updates a {
+  font-size: calc(1em + 0.06vw);
+  line-height: 300%;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+#updates a:hover {
+  text-decoration: underline;
 }
 
 /* ! TF IS THIS */
@@ -233,11 +291,11 @@ nav h2 {
   transform: rotateX(-180deg);
 }
 
-#toggleButton, #contactToggleButton {
+#toggleButton, #contactToggleButton, #toggleButtonNew {
   padding: calc(4px + 0.15vw) calc(4px + 0.15vw) calc(4px + 0.15vw) calc(30px + 2vw);
   position: absolute;
   left: -10px;
-  top: 3vh;
+  top: 2%;
   width: fit-content;
   background-color: #310b1f;
   box-shadow: #310b22ad 6px 6px 10px;
@@ -245,7 +303,7 @@ nav h2 {
 }
 
 #contactToggleButton {
-  top: 8vh;
+  top: 6%;
   display: none;
 }
 
@@ -264,7 +322,7 @@ nav h2 {
   outline: none;
 }
 
-#toggleButton h1, #contactToggleButton h1 {
+#toggleButton h1, #contactToggleButton h1, #toggleButtonNew h1 {
   position: relative;
   cursor: pointer;
   font-family: "Press Start 2P", cursive;
@@ -278,16 +336,20 @@ nav h2 {
   font-size: calc(7px + 0.2vw);
 }
 
-#toggleButton h1.rotate, #contactToggleButton.rotate {
+#toggleButton h1.rotate, #contactToggleButton h1.rotate, #toggleButtonNew h1.rotate {
   transform: rotate(-360deg);
 }
-#toggleButton h1:hover, #contactToggleButton:hover {
+#toggleButton h1:hover, #contactToggleButton:hover, #toggleButtonNew:hover {
   text-shadow: #fecd17 0 0 7.5px;
   scale: 1.01;
 }
-#toggleButton h1:active, #contactToggleButton:active {
+#toggleButton h1:active, #contactToggleButton:active, #toggleButtonNew:active {
   text-shadow: #fecd17 0 0 10px;
   scale: 0.98;
+}
+
+#toggleButtonNew {
+  top: 8%;
 }
 
 /* ! TF IS THIS */
@@ -660,7 +722,7 @@ footer img:hover {
     bottom: 5%;
   }
 
-  #toggleButton h1{
+  #toggleButton h1, #toggleButtonNew h1{
     position: relative;
     cursor: pointer;
     font-family: "Press Start 2P", cursive;
@@ -669,16 +731,13 @@ footer img:hover {
     transition: transform 1s var(--smooth-anim);
   }
 
-  #toggleButton h1.rotate  {
-    transform: rotate(180deg);
-  }
 
-  #toggleButton h1:hover  {
+  #toggleButton h1:hover,  #toggleButtonNew h1:hover {
     text-shadow: #fecd17 0 0 7.5px;
     scale: 1.01;
   }
 
-  #toggleButton h1:active {
+  #toggleButton h1:active, #toggleButtonNew h1:active {
     text-shadow: #fecd17 0 0 10px;
     scale: 0.98;
   }
@@ -701,6 +760,16 @@ footer img:hover {
   #contacts.visible {
     transform: translateX(0) translateY(0) rotateX(00deg);
     left: 0;
+  }
+
+  #toggleButton {
+    top: 1%;
+  }
+  #contactToggleButton{
+    top: 5.5%;
+  }
+  #toggleButtonNew {
+    top: 9.7%;
   }
 }
 
