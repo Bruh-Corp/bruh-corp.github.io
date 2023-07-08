@@ -8,6 +8,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
+::-webkit-scrollbar-track {
+  background-color: #310b1f;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a8cd23af;
+}
+
 /* * Main html styles */
 :root {
   --smooth-anim: cubic-bezier(0.2, 0, 0.001, 1);
@@ -23,6 +31,7 @@ html {
   -ms-touch-action: manipulation;
   touch-action: manipulation;
   font-family: "Hubot Sans";
+  scrollbar-color: #a8cd23af #4c1140;
 }
 
 body {
@@ -93,7 +102,7 @@ body {
 #updates {
   justify-content:unset;
   overflow-y: scroll;
-  scrollbar-color: var(--dark-green) #310b1f;
+  scrollbar-color: #a8cd23af #310b1f;
   transform: translateX(-150%) rotateX(100deg);
 }
 
@@ -349,7 +358,7 @@ nav h2 {
 }
 
 #toggleButtonNew {
-  top: 8%;
+  top: 9%;
 }
 
 /* ! TF IS THIS */
@@ -766,10 +775,10 @@ footer img:hover {
     top: 1%;
   }
   #contactToggleButton{
-    top: 5.5%;
+    top: 7%;
   }
   #toggleButtonNew {
-    top: 9.7%;
+    top: 12%;
   }
 }
 

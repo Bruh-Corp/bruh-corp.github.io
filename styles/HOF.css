@@ -7,6 +7,20 @@
   font-stretch: 75% 125%;
 }
 
+
+::-webkit-scrollbar-track {
+  background-color: #310b1f;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a8cd23af;
+}
+
+html {
+  scrollbar-color: #a8cd23af #4c1140;
+}
+
+
 * {
     user-select: none;
 }
