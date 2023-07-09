@@ -186,7 +186,7 @@ body {
   margin-bottom: 0;
 }
 
-#updates a:hover {
+#updates a:hover, #about a:hover {
   text-decoration: underline;
 }
 
@@ -301,7 +301,7 @@ nav h2 {
 }
 
 #toggleButton, #contactToggleButton, #toggleButtonNew {
-  padding: calc(4px + 0.15vw) calc(4px + 0.15vw) calc(4px + 0.15vw) calc(30px + 2vw);
+  padding: 0 calc(4px + 0.15vw) 0 calc(30px + 2vw);
   position: absolute;
   left: -10px;
   top: 2%;
@@ -339,6 +339,7 @@ nav h2 {
   font-size: calc(10px + 0.3vw);
   transition: transform 1s var(--smooth-anim);
   display: block;
+  padding: calc(4px + 0.15vw);
 }
 
 #contactToggleButton h1 {
