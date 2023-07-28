@@ -517,44 +517,29 @@ nav h2 {
   user-select: none;
   font-family: "Press Start 2P", cursive;
   font-size: calc(20px + 0.2vw);
-  color: var(--green);
-  width: 50%;
-  text-align: center;
-  margin: 10px 0 10px 0;
-  border-radius: calc(7.5px + 0.1vw);
-  border: var(--dark-green) 1px solid;
-  background-color: #310b1f;
-  transition: 50ms;
-  background-image: url("../pics&shit/latroll.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 140%;
+  color: #fecd17;
+  text-shadow: .1em .1em .2em black;
+  width: 90%;
+  margin: 10px 0 10px 0;  
+
 }
 .btn a {
   font-family: "Press Start 2P", cursive;
   font-size: calc(20px + 0.2vw);
-  text-align: center;
+  text-align: left;
   text-decoration: none;
-  color: var(--green);
+  color: #fecd17;
 }
 .btn:nth-child(1) {
   margin-top: auto;
 }
 
-.btn:hover {
-  width: 100%;
-  color: #a8cd23;
-  scale: 1.9;
-  text-shadow: #fecc1794 0 0 20px, black 0.4px 0.4px 0.8px, #a8cd23 0.8px 0.8px 0.8px, black 3.6px 3.6px 0.8px, #a8cd23 4.8px 4.8px 0.8px, black 6px 6px 0.8px, #a8cd23 7.2px 7.2px 0.8px;
-  background-position: 70%;
+.btn a:hover {
+  text-decoration: underline;
 }
 
-.btn:active {
-  scale: 1.83;
-  width: 100%;
-  color: #a8cd23;
-  border: #a8cd23 1px solid;
-  box-shadow: #a8cd2356 0 0 100px 50px;
+.btn a:active {
+  text-shadow: .1em .1em .2em black, #fecc1794 0 0 .5em;
 }
 
 
