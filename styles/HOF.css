@@ -50,7 +50,29 @@ body {
 
 }
 
+.navigate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #FECD17;
+  margin: 1em;
+  font-family: "Press Start 2P", cursive;
+  font-size: calc(.3em + .7vw);
+}
 
+.navigate a {
+  color: #FECD17;
+  text-shadow: .15em .15em .1em black;
+  text-decoration: none;
+}
+
+.navigate a:hover {
+  text-decoration: underline;
+}
+
+.navigate a:active {
+  text-shadow: .1em .1em .2em black, #fecc1794 0 0 .5em;
+}
 
 #navtri  {
   position: relative;
@@ -504,6 +526,26 @@ p {
   right: -3em;
   background-color: #252525;
   transform: rotate(45deg);
+}
+
+.synapse {
+  background-color: black;
+  box-shadow:  inset #ffffff00 0px 0px 5px 3px;
+}
+
+.synapse:hover {
+  box-shadow:  inset white 0px 0px 5px 3px;
+}
+
+.synapse p {
+  color: white;
+  font-family: "Hubot Sans";
+  font-stretch: 105%;
+  font-weight: 400;
+}
+
+.synapse img {
+  width: 12em;
 }
 
 #ref {

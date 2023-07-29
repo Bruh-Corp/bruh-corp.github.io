@@ -191,6 +191,7 @@ body {
 
 #proj a {
   line-height: normal;
+  margin: 0;
 }
 
 #updates a:hover, #about a:hover {
