@@ -303,11 +303,15 @@ body {
 
 .colhead span {
     font-family: "Press Start 2P", cursive;
-    background-color: #fecc17;
+    background-color: #a8cd23;
     color: #310b1f;
     padding: .55em .4em .4em .4em;
     font-size: calc(6px + .3vw);
     border-radius: calc(7.5px + .1vw);
+}
+
+.colhead span:hover {
+  text-decoration: underline;
 }
 
 .colhead.synaba {

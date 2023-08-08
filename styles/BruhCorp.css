@@ -52,7 +52,9 @@ body {
   justify-content: center;
   width: 100%;
   max-height: 100vh;
+  flex-direction: column;
 }
+
 
 /* ! NOT USING AS OF NOW
 .box2 {
@@ -102,6 +104,23 @@ body {
   left: 0;
 }
 
+#abouthome {
+  height: 30em;
+  max-width: 19em;
+  overflow-x: hidden;
+  background-color: #310b1f;
+  box-shadow: #00000042 9px 9px 10px;
+  margin: 1.2em;
+  border-radius: calc(7.5px + 0.1vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 1s var(--smooth-anim);
+  padding: calc(15px + 0.3vw);
+  background-size: 120%;
+}
+
 #updates {
   justify-content:unset;
   overflow-y: scroll;
@@ -135,7 +154,7 @@ body {
   margin-top: 0;
 }
 
-#about p, #updates p {
+#about p, #updates p, #abouthome p {
   width: 95%;
   border-radius: calc(7.5px + 0.1vw);
   font-family: "Press Start 2P", cursive;
@@ -175,7 +194,7 @@ body {
   font-weight: 900;
 }
 
-#about a, #updates a {
+#about a, #updates a, #abouthome a {
   color: #fecd17;
   text-decoration: none;
   font-style: oblique;
