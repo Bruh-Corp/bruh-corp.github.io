@@ -316,17 +316,18 @@ body {
   font-size: calc(12px + .3vw);
   transition: 90ms;
   border-radius: calc(7.5px + .1vw);
-  box-shadow:  inset #310b229a 0px 0px 8px 8px;
+  box-shadow:  inset #0000002d 0px 0px 8px 8px;
   overflow: hidden;
   align-items: center;
   display: flex;
   flex-direction: column;
   position: relative;
+  background-color: #310b1f7f;
 }
 
 
 .colcon:hover {
-  box-shadow:  inset #310b22d8 0px 0px 8px 8px;
+  box-shadow:  inset #03010274 0px 0px 8px 8px;
 }
 
 .colTitle {
@@ -339,7 +340,7 @@ body {
   background-color: #310b1f;
   width: 70%;
   border-radius: 8px;
-  box-shadow:  #00000042 9px 9px 10px;
+  box-shadow:  #00000051 9px 9px 7px;
   padding: 5px;
 }
 
@@ -528,9 +529,28 @@ p {
   transform: rotate(45deg);
 }
 
+.boxwrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120%;
+
+}
+
+.boxwrap img {
+  margin: 0;
+  margin-bottom: -15px;
+  width: 50%;
+  display: none;
+}
+
 .synapse {
   background-color: black;
   box-shadow:  inset #ffffff00 0px 0px 5px 3px;
+  background-image: url('../pics&shit/sbfooter.png'), url('../pics&shit/sbfooter2.png');
+  background-size: 50%, 50%;
+  background-repeat: no-repeat;
+  background-position: 0% 88%, 100% 88%;
 }
 
 .synapse:hover {
@@ -544,10 +564,9 @@ p {
   font-weight: 400;
 }
 
-.synapse img {
+.sbL {
   width: 12em;
 }
-
 
 .bosnian.big {
   width: 10em;
