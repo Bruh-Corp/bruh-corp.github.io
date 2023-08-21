@@ -548,6 +548,11 @@ p {
   width: 12em;
 }
 
+
+.bosnian.big {
+  width: 10em;
+}
+
 #ref {
   user-select: none;
   font-family: "Press Start 2P", cursive;
