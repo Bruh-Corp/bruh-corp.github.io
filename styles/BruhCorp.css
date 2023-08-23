@@ -327,11 +327,15 @@ nav h2 {
   transform: rotateX(-180deg);
 }
 
-#toggleButton, #contactToggleButton, #toggleButtonNew {
-  padding: 0 calc(4px + 0.15vw) 0 calc(30px + 2vw);
+.toggleBtns {
   position: absolute;
   left: -10px;
   top: 2%;
+}
+
+#toggleButton, #contactToggleButton, #toggleButtonNew {
+  padding-left: 2em;
+  font-size: calc(1.1em + .4vw);
   width: fit-content;
   background-color: #310b1f;
   box-shadow: #310b22ad 6px 6px 10px;
@@ -339,7 +343,6 @@ nav h2 {
 }
 
 #contactToggleButton {
-  top: 6%;
   display: none;
 }
 
@@ -363,25 +366,27 @@ nav h2 {
   cursor: pointer;
   font-family: "Press Start 2P", cursive;
   color: #fecd17;
-  font-size: calc(10px + 0.3vw);
+  font-size: calc(.6em + .2vw);
   transition: transform 1s var(--smooth-anim);
   display: block;
-  padding: calc(4px + 0.15vw);
+  padding: .1em;
+  margin: .5em;
+  padding-top: .2em;
 }
 
-#contactToggleButton h1 {
-  font-size: calc(7px + 0.2vw);
-}
 
-#toggleButton h1.rotate, #contactToggleButton h1.rotate, #toggleButtonNew h1.rotate {
-  transform: rotate(-360deg);
+#toggleButton h1.rotate::after, #contactToggleButton h1.rotate::after, #toggleButtonNew h1.rotate::after {
+  content: ">";
+  color: #fecc17;
+  font-size: 1em;
+  position: absolute;
+  left: -1em;
 }
 #toggleButton h1:hover, #contactToggleButton:hover, #toggleButtonNew:hover {
-  text-shadow: #fecd17 0 0 7.5px;
-  scale: 1.01;
+  text-shadow: #fecc1774 0 0 3px;
 }
 #toggleButton h1:active, #contactToggleButton:active, #toggleButtonNew:active {
-  text-shadow: #fecd17 0 0 10px;
+  text-shadow: #fecc1789 0 0 10px;
   scale: 0.98;
 }
 
@@ -621,7 +626,7 @@ nav h2 {
   margin: 0 auto;
 }
 
-#logo {
+/* #logo {
   padding: calc(30px + 1.6vw);
   user-select: none;
   align-items: center;
@@ -642,6 +647,46 @@ nav h2 {
 }
 #logo:active {
   box-shadow: inset #2c0a23 0 0 500px 500px, #2c0a23 12px 12px 10px;
+} */
+
+
+
+#logo {
+  padding: 0;
+  user-select: none;
+  align-items: center;
+  justify-content: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: calc(4em + 1.6vw);
+  color: var(--green);
+  transition-duration: 250ms;
+  border: none;
+  text-shadow: black 1.5px 1.5px 1px, black 3px 3px 1px, #a8cd23 5px 5px 1px, black 7px 7px 1px, #a8cd23 9px 9px 1px, black 11px 11px 1px, #a8cd23 13px 13px 1px, black 13px 13px 10px, black 0px 0px 20px;
+}
+
+#logo::after {
+  content: '.';
+  text-shadow: black 0.75px 0.75px 0.5px, black 1.5px 1.5px 0.5px, #a8cd23 2.5px 2.5px 0.5px, black 3.5px 3.5px 0.5px, #a8cd23 4.5px 4.5px 0.5px, black 5.5px 5.5px 0.5px, #a8cd23 6.5px 6.5px 0.5px, black 6.5px 6.5px 5px, black 0px 0px 10px;
+  color: var(--green);
+  position: absolute;
+}
+
+.updateBCL {
+  padding: 0;
+  user-select: none;
+  align-items: center;
+  justify-content: center;
+  font-family: "Press Start 2P", cursive;
+  color: var(--green);
+  font-size: 2em;
+  transition-duration: 250ms;
+  border: none;
+  text-shadow: black 0.75px 0.75px 0.5px, black 1.5px 1.5px 0.5px, #a8cd23 2.5px 2.5px 0.5px, black 3.5px 3.5px 0.5px, #a8cd23 4.5px 4.5px 0.5px, black 5.5px 5.5px 0.5px, #a8cd23 6.5px 6.5px 0.5px, black 6.5px 6.5px 5px, black 0px 0px 10px;
+
+}
+
+.nobg {
+  background-color: transparent;
 }
 
 /* * Top link */
@@ -743,35 +788,11 @@ footer img:hover {
     left: 0;
     bottom: 5%;
   }
-
-  #toggleButton h1, #toggleButtonNew h1{
-    position: relative;
-    cursor: pointer;
-    font-family: "Press Start 2P", cursive;
-    color: #fecd17;
-    font-size: 10px;
-    transition: transform 1s var(--smooth-anim);
-  }
-
-
-  #toggleButton h1:hover,  #toggleButtonNew h1:hover {
-    text-shadow: #fecd17 0 0 7.5px;
-    scale: 1.01;
-  }
-
-  #toggleButton h1:active, #toggleButtonNew h1:active {
-    text-shadow: #fecd17 0 0 10px;
-    scale: 0.98;
-  }
-
   
   #contactToggleButton {
     display: block;
   }
 
-  #contactToggleButton h1.rotate {
-    transform: rotate(-360deg);
-  }
 
   #contacts {
     transform: translateX(-150%) translateY(0) rotateX(100deg);
@@ -782,16 +803,6 @@ footer img:hover {
   #contacts.visible {
     transform: translateX(0) translateY(0) rotateX(00deg);
     left: 0;
-  }
-
-  #toggleButton {
-    top: 1%;
-  }
-  #contactToggleButton{
-    top: 7%;
-  }
-  #toggleButtonNew {
-    top: 12%;
   }
 }
 
