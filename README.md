@@ -4,6 +4,8 @@ Bruh Corp. An entity of [tal{1}](https://bruh-corp.github.io/pages/tal-doc.html)
 
 # Attributes @ BC.
 
-## 1. Synaptic Battalion
+## Synaptic Battalion
 
 Synaptic Battalion (SB.) is an attribute of Bruh Corp. dedicated to editorial and journalistic content. Writers at Synaptic Battalion aim to provide the utmost quality of topical journalism SB. is a publishing site for aspiring individuals accentuating and evincing their writing skills.
+
+## coming soon..
