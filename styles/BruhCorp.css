@@ -652,17 +652,19 @@ nav h2 {
 
 
 #logo {
-  padding: 0;
+  padding: .5em;
   user-select: none;
   align-items: center;
   justify-content: center;
+  border-radius: .2em;
   font-family: "Press Start 2P", cursive;
-  font-size: calc(4em + 1.6vw);
+  font-size: calc(2.5em + 4vw);
   color: var(--green);
   transition-duration: 250ms;
   border: none;
   text-shadow: black 1.5px 1.5px 1px, black 3px 3px 1px, #a8cd23 5px 5px 1px, black 7px 7px 1px, #a8cd23 9px 9px 1px, black 11px 11px 1px, #a8cd23 13px 13px 1px, rgba(0, 0, 0, 0.399) 13px 13px 10px, rgba(0, 0, 0, 0.399) 0px 0px 20px;
 }
+
 
 #logo::after {
   content: '.';
