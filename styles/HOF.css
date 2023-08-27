@@ -521,6 +521,7 @@ p {
   height: auto;
 }
 
+
 .badgediv {
   position: absolute;
   top: 1em;
@@ -568,8 +569,23 @@ p {
   width: 12em;
 }
 
-.bosnian.big {
-  width: 10em;
+.bosnian {
+  box-shadow:  inset #000000 0px 0px 8px 2px;
+  background-image: linear-gradient(to top, #cbc8bdd0 , rgba(255, 255, 255, 0));
+}
+
+.bosnian:hover {
+  box-shadow:  inset #000000 0px 0px 8px 4px;
+}
+
+.bosnian > .tonk {
+  margin-right: -3em;
+  z-index: -1;
+  position: absolute;
+}
+
+.bosnian.tank {
+  width: 20em;
 }
 
 #ref {

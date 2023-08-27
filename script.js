@@ -1,4 +1,3 @@
-
 const toggleButton = document.getElementById("toggleButton");
 const aboutBox = document.getElementById("about");
 const tri = document.querySelector("#toggleButton>h1");
@@ -25,13 +24,13 @@ contactButton.addEventListener("click", function () {
    contactH1.classList.toggle("rotate");
  });
 
- 
- const boxtouch = document.getElementById("contacts");
- const touchContact = document.getElementById("touchListener")
 
-  touchContact.addEventListener("click", function () {
-    boxtouch.classList.toggle("visi");
-  });
+const boxtouch = document.getElementById("contacts");
+const touchContact = document.getElementById("touchListener")
+
+touchContact.addEventListener("click", function () {
+  boxtouch.classList.toggle("visi");
+});
 
 const contactsBoxSeeker = document.getElementById("contacts")
 document.addEventListener('click', function(event) {
