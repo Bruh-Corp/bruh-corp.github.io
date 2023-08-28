@@ -582,6 +582,8 @@ p {
   margin-right: -3em;
   z-index: -1;
   position: absolute;
+  width: 30em;
+  bottom: 20%;
 }
 
 .bosnian.tank {
