@@ -1,9 +1,8 @@
 
-const navbar = document.getElementById('navbar');
-const box3 = document.getElementById('box3');
-const navtri = document.getElementById('navtri');
-
-navtri.addEventListener('click', function() {
- box3.classList.toggle('visible');
-  navtri.classList.toggle('rotate');
+const navbar = document.querySelector("nav");
+const navList = document.getElementById("nav-list");
+const arrow = document.getElementById("arrow");
+arrow.addEventListener("click", function () {
+  navList.classList.toggle("visible");
+  arrow.classList.toggle("rotate");
 });
