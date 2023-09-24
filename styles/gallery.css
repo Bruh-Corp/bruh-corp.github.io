@@ -29,25 +29,97 @@ body {
     flex-direction: column;
 }
 
+    
 #logo {
   margin: 30vh 0 20vh 0;
 }
 
+@keyframes pulse {
+    0% {
+    }
+    50% {
+      text-shadow: #310b22 0px 0px .4rem;
+    }
+    100% {
+    }
+  }
+  
+
+@keyframes pulse2 {
+    0% {
+    }
+    50% {
+      text-shadow: #4c1140 0px 0px .4rem;
+    }
+    100% {
+    }
+  }
+  
+
 .colhead {
-  width: 90%;
-  border-radius: calc(7.5px + .1vw);
-  font-family: "Press Start 2P", cursive;
-  font-size: calc(10px + .5vw);
-  line-height: 150%;
-  color: #a8cd23;
-  margin: auto 0 0 0;
-  text-align:  center;
-  text-shadow: #fecc1794 1px 1px 3px;
-  background-color: #310b1f;
-  padding: calc(10px + .1vw);
-  box-shadow:  #00000042 9px 9px 10px;
-  margin: 2em;
+    width: fit-content;
+    border-radius: calc(7.5px + .1vw);
+    font-family: 'Roboto Mono', monospace;
+    font-size: calc(12px + .3vw);
+    line-height: 150%;
+    color: #a8cd23;
+    margin: auto 0 0 0;
+    text-align:  left;
+    background-color: #310b1f;
+    padding: calc(10px + .1vw) calc(10px + .1vw) calc(10px + .16vw) calc(10px + .1vw);
+    box-shadow:  #00000042 9px 9px 10px;
+    margin: 2em;
+    line-height: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+.colhead span {
+    font-family: "Press Start 2P", cursive;
+    background-color: #a8cd23;
+    color: #310b1f;
+    padding: .55em .4em .4em .4em;
+    font-size: calc(6px + .3vw);
+    border-radius: calc(7.5px + .1vw);
+}
+
+.colhead span:hover {
+  text-decoration: underline;
+}
+
+.colhead img {
+    margin: 2em;
+}
+.log {
+    height: 15em;
+}
+
+.hen {
+    height: 12em;
+}
+
+.wallpaper {
+    width: 70%;
+}
+.second {
+    background-image: none;
+    padding: calc(10px + .1vw);
+    width: fit-content;
+}
+  
+.second p {
+    text-shadow: #fecc1794 1px 1px 3px;
+    background-color: #a8cd231c;
+    padding: calc(10px + 0.1vw);
+    border-radius: calc(7.5px + .1vw);
+    font-family: "Press Start 2P", cursive;
+    margin: 0;
+    font-size: 1.5em;
+}
+  
+
 #col {
   display: flex;
   flex-wrap: wrap;
@@ -87,54 +159,6 @@ body {
 
 a {
     text-decoration: none;
-}
-
-.colcon:nth-child(1) {
- background-image: url('../pics&shit/cringebridge.png');
- background-repeat: no-repeat;
- background-size: 8.5%;
- background-position: 95% 90%;  
-}
-
-
-.colcon:nth-child(2) {
-  background-image: url('../pics&shit/working.png');
-  background-repeat: no-repeat;
-  background-size: 95%;
-  background-position: 50% 95%;  
-  color: #FECD17;
- }
- 
-.colcon:nth-child(2):hover {
-  text-shadow: black 0.6px 0.6px 1.2px, 
-  #FECD17 1.2px 1.2px 1.2px, 
-  black 3.6px 3.6px 1.2px, 
-  #FECD17 4.8px 4.8px 1.2px, 
-  black 6px 6px 1.2px, 
-  #FECD17 7.2px 7.2px 1.2px;
-}
-
- .colcon:nth-child(2) img {
-  width: 5em;
-}
-
-
-.sb img {
-  width: 10em;
-  margin-top: 1em;
-}
-
-.colcon:hover {
-    transition-duration: 120ms;
-    transform: scale(1.04);
-    text-shadow: black 0.6px 0.6px 1.2px, #a8cd23 1.2px 1.2px 1.2px, black 3.6px 3.6px 1.2px, #a8cd23 4.8px 4.8px 1.2px, black 6px 6px 1.2px, #a8cd23 7.2px 7.2px 1.2px;
-    background-color: transparent;
-}
-
-.colcon:active {
-  transform: scale(1.02);
-  box-shadow: inset #2c0a23 0 0 250px 250px, #2c0a23 6px 6px 10px;
-
 }
 
 
@@ -183,16 +207,13 @@ footer,
   font-size: px;
 }
 
-@media only screen and (max-width: 600px) {
-
-}
-
+  
 
 #secret {
   color: #a8cd23;
   font-family: "Press Start 2P", cursive;
   width: auto;
-  font-size: 30px;
+  font-size: 10px;
   max-block-size: 40px;
   position: absolute;
   top: 10px;
@@ -207,10 +228,4 @@ footer,
   transition: 120ms;
   text-shadow: #a8cd23 2px 2px 4px, black 3px 3px 2px;
   transform: skew(15deg, 0deg);
-}
-
-
-#navtri a, #navtri button, #navtri [role="button"], #navtri input[type="button"], #navtri input[type="submit"], #navtri input[type="reset"] {
-  -webkit-tap-highlight-color: transparent;
-  outline: none;
 }

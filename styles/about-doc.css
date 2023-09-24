@@ -31,35 +31,12 @@ body {
 }
   
 #logo {
-  padding: calc(30px + 1.6vw);
-  user-select: none;
-  align-items: center;
-  justify-content: center;
-  font-family: "Press Start 2P", cursive;
-  font-size: calc(30px + 4vw);
-  color: #a8cd23;
-  box-shadow:  inset 
-  #310b22 12px 12px 10px,  
-  #310b22 12px 12px 10px;
-  border-radius: calc(7.5px + .1vw);
-  transition-duration: 250ms;
   margin: 30vh 0 20vh 0;
-  text-align: center;
 }
 
-#logo:hover {
-  transition-duration: 190ms;
-  transform: scale(1.04);
-  text-shadow: black 1px 1px 2px, #a8cd23 2px 2px 2px, black 6px 6px 2px, #a8cd23 8px 8px 2px, black 10px 10px 2px,
-    #a8cd23 12px 12px 2px;
+#logo::after {
+  content: '.';
 }
-
-
-#logo:active {
-  box-shadow: inset #2c0a23 0 0 500px 500px, #2c0a23 12px 12px 10px;
-}
-
-
 
 @keyframes pulse {
     0% {
@@ -100,8 +77,35 @@ body {
 
 .colhead.note {
     width: 100%;
-    margin: 0 0 0 0;
+    margin: 2em;
     height: fit-content;
+}
+
+.note p, .para p {
+  margin: 0;
+}
+
+#ref {
+  user-select: none;
+  font-family: "Press Start 2P", cursive;
+  color: #a8cd236e;
+  font-size: 15px;
+  width: fit-content;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center  ;
+  transition-duration: 50ms;
+  margin-top: 15px;
+  background-color: #310b22;
+  width: 140%;
+  padding: 2px;
+
+}
+
+
+#ref:hover {
+  scale: 1.25;
+  color: #a8cd23;
 }
 
 .colTitle {
@@ -130,15 +134,23 @@ body {
 }
 
 .colhead {
-    width: 21em;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    transition: 1s;
-    margin: 2em;
+  width: 22em;
+  height: fit-content;
+  padding: 20px;
+  margin: 20px 20px 20px 20px;
+  color: #a8cd23;
+  font-family: 'Roboto Mono', monospace;
+  border: #a8cd2350 20px ;
+  font-size: calc(12px + .3vw);
+  transition: 90ms;
+  border-radius: calc(7.5px + .1vw);
+  box-shadow:  inset #0000002d 0px 0px 8px 8px;
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #310b1f7f;
 }
 
 .talhaijaz {
@@ -164,8 +176,14 @@ body {
     line-height: 150%;
 }
 
+.subhead {
+  font-family: "Press Start 2P", cursive;
+  font-size: calc(.6em + .4vw);
+  line-height: 150%;
+}
+
 .colhead h1 > q {
-  font-size: calc(.6em + .1vw);
+  font-size: calc(12px + .3vw);
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   line-height: 1;
@@ -174,7 +192,7 @@ body {
 .colhead span {
     font-family: "Press Start 2P", cursive;
     text-shadow: #fecc1794 1px 1px 3px;
-    font-size: calc(5px + 0.9vw);
+    font-size: calc(12px + .3vw);
     color: #310b1f;
     padding: 5px;
     -webkit-background-clip: text;
@@ -189,7 +207,7 @@ body {
     background-size: contain;
 }
 
-.fasam span {
+.fasam span, alias span {
   text-shadow: none;
   background-image: none;
   color: #a8cd23;
@@ -223,11 +241,12 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #a8cd2332;
   border-radius: calc(7.5px + .1vw);
   padding: 5px;
   width: 100%;
+  display: none;
 }
+
 
 .attributes h1 {
   margin: .2em;
@@ -396,8 +415,19 @@ footer,
 }
 
 
-#navtri a, #navtri button, #navtri [role="button"], #navtri input[type="button"], #navtri input[type="submit"], #navtri input[type="reset"] {
-  -webkit-tap-highlight-color: transparent;
-  outline: none;
+.label {
+  font-family: "Hubot Sans";
+  font-size: calc(15px + .2vw);
+  color: #a8cd23;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: -20px;
+  font-weight: 500;
+  font-stretch: 75%;
+  text-transform: uppercase;
+  background-color: #310b1f;
+  padding: calc(7px + .1vw);
+  border-radius: calc(7.5px + .1vw);
+  text-align: center;
+  width: 120%;
 }
-

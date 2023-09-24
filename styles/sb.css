@@ -29,36 +29,9 @@ body {
     flex-direction: column;
 }
 
-
 #logo {
-  padding: calc(10px + 1.2vw);
-  user-select: none;
-  align-items: center;
-  justify-content: center;
-  font-family: "Press Start 2P", cursive;
-  font-size: calc(20px + 3vw);
-  color: white;
-  box-shadow:  inset 
-  #310b22 12px 12px 10px,  
-  #310b22 12px 12px 10px;
-  border-radius: calc(7.5px + .1vw);
-  transition-duration: 250ms;
   margin: 30vh 0 20vh 0;
-  text-align: center;
 }
-
-#logo:hover {
-  transition-duration: 190ms;
-  transform: scale(1.04);
-  text-shadow: black 1px 1px 2px, white 2px 2px 2px, black 6px 6px 2px, white 8px 8px 2px, black 10px 10px 2px,
-    white 12px 12px 2px;
-}
-
-
-#logo:active {
-  box-shadow: inset #2c0a23 0 0 500px 500px, #2c0a23 12px 12px 10px;
-}
-
 
 
 @keyframes pulse {

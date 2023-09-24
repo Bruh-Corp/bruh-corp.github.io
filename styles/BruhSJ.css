@@ -30,72 +30,10 @@ html {
   }
 
   
-#toggleButton {
-  padding: calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw) calc(30px + 2vw);
-  position: absolute;
-  left: -10px;
-  top: 10vh;
-  width: fit-content;
-  background-color: #310b1f;
-  box-shadow: #310b22ad 6px 6px 10px;
-  border-radius: 10px;
-}
-
-#tri  {
-  position: relative;
-  cursor: pointer;
-  font-family: "Press Start 2P", cursive;
-  color: #FECD17;
-  font-size: calc(10px + .1vw);
-  transition: transform 1s cubic-bezier(.2, 0, .001, 1); 
-  text-decoration: none;
-
-}
-
-
-  
   #logo {
-    margin: 30vh 0 40vh 0;
-    padding: calc(30px + 1.6vw);
-    user-select: none;
-    display: flex;
-    align-items: center;
-    font-family: "Press Start 2P", cursive;
-    font-size: calc(30px + 3vw);
-    color: #a8cd23;
-    box-shadow:  inset 
-    #310b22 12px 12px 10px,  
-    #310b22 12px 12px 10px;
-    border-radius: 1%;
-    transition-duration: 250ms;
-    text-align: center;
+    margin: 30vh 0 20vh 0;
   }
-  
-  #logo:hover {
-    transition-duration: 190ms;
-    transform: scale(1.04);
-    text-shadow: 
-    black 1px 1px 1px, 
-    #a8cd23 2px 2px 1px, 
-    black 6px 6px 2px, 
-    #a8cd23 8px 8px 1px, 
-    black 10px 10px 1px,
-    #a8cd23 12px 12px 2px;
-  }
-  
-  /*
-      #61BB46 0 0 0 7px, 
-      #FDB827 0 0 0 12px, 
-      #F5821F 0 0 0 17px, 
-      #E03A3E 0 0 0 22px, 
-      #963D97 0 0 0 27px, 
-      #009DDC 0 0 0 32px;
-  */
-  
-  #logo:active {
-    box-shadow: inset #2c0a23 0 0 500px 500px, #2c0a23 12px 12px 10px;
-  }
-  
+
   .colhead {
     width: 90%;
     padding: calc(10px + 1.6vw);
@@ -413,3 +351,4 @@ html {
     }
   
   }
+

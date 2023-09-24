@@ -30,50 +30,10 @@ body {
     flex-direction: column;
 }
 
-
   
-#toggleButton {
-  padding: calc(3px + .5vw) calc(3px + .5vw) calc(3px + .5vw) calc(30px + 2vw);
-  position: fixed;
-  left: -10px;
-  top: 10vh;
-  width: fit-content;
-  background-color: #310b1f;
-  box-shadow: #310b22ad 6px 6px 10px;
-  border-radius: calc(7.5px + .1vw);
-}
-
-
 #logo {
-  padding: calc(20px + 1.3vw);
-  user-select: none;
-  align-items: center;
-  justify-content: center;
-  font-family: "Press Start 2P", cursive;
-  font-size: calc(30px + 4vw);
-  color: #FECD17;
-  box-shadow:  inset 
-  #310b22 12px 12px 10px,  
-  #310b22 12px 12px 10px;
-  border-radius: calc(7.5px + .1vw);
-  transition-duration: 250ms;
   margin: 30vh 0 20vh 0;
-  text-align: center;
 }
-
-#logo:hover {
-  transition-duration: 190ms;
-  transform: scale(1.04);
-  text-shadow: black 1px 1px 2px, #FECD17 2px 2px 2px, black 6px 6px 2px, #FECD17 8px 8px 2px, black 10px 10px 2px,
-    #FECD17 12px 12px 2px;
-}
-
-
-#logo:active {
-  box-shadow: inset #2c0a23 0 0 500px 500px, #2c0a23 12px 12px 10px;
-}
-
-
 
 @keyframes pulse {
     0% {
