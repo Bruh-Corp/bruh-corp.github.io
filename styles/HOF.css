@@ -323,6 +323,7 @@ p {
   background-size: 50%, 50%;
   background-repeat: no-repeat;
   background-position: 0% 88%, 100% 88%;
+  
 }
 
 .synapse:hover {
@@ -364,7 +365,14 @@ p {
 
 .framework {
   text-shadow: black .105em .105em .07em;
-  background-image: linear-gradient(to top, orange, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(to top, orange,#1f1f1f);
+}
+
+.framework p {
+  background-color: #0000001c;
+  padding: .5em;
+  border-radius: calc(7.5px + .1vw);
+
 }
 
 #ref {
