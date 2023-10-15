@@ -31,6 +31,7 @@ body {
 
 #logo {
   margin: 30vh 0 20vh 0;
+  font-size: calc(1.4em + 4vw);
 }
 
 .colhead {

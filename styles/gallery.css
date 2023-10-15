@@ -32,6 +32,8 @@ body {
     
 #logo {
   margin: 30vh 0 20vh 0;
+  font-size: calc(2em + 4vw);
+
 }
 
 @keyframes pulse {
