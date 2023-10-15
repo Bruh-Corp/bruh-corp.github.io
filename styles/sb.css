@@ -84,7 +84,12 @@ body {
 }
 
 .colhead span:hover {
-  text-decoration: underline;
+  box-shadow: #a8cd23 0 0 10px 0px;
+}
+
+
+.colhead span:active {
+  box-shadow: #a8cd23 0 0 7px 0px;
 }
 
 .colhead.synaba {

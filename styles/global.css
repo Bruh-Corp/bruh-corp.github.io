@@ -48,6 +48,9 @@
     -moz-backdrop-filter: blur(1em);
     -webkit-backdrop-filter: blur(1em);
     backdrop-filter: blur(1em);
+    /* background-image: url('../pics&shit/cupheadrun.gif');
+    background-repeat: no-repeat;
+    background-position: 70% 50%; */
 }
 
 #nav-list.visible {
@@ -202,7 +205,8 @@ nav h2 {
   }
   
   #logo::after {
-    text-shadow: black 0.75px 0.75px 0.5px, black 1.5px 1.5px 0.5px, #a8cd23 2.5px 2.5px 0.5px, black 3.5px 3.5px 0.5px, #a8cd23 4.5px 4.5px 0.5px, black 5.5px 5.5px 0.5px, #a8cd23 6.5px 6.5px 0.5px, black 6.5px 6.5px 5px, black 0px 0px 10px;
+    text-shadow: black 1.5px 1.5px 1px, black 3px 3px 1px, #a8cd23 5px 5px 1px, black 7px 7px 1px, #a8cd23 9px 9px 1px, black 11px 11px 1px, #a8cd23 13px 13px 1px, rgba(0, 0, 0, 0.399) 13px 13px 10px, rgba(0, 0, 0, 0.399) 0px 0px 20px;
+
     color: var(--green);
     position: absolute;
   }

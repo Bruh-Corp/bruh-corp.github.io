@@ -207,7 +207,7 @@ body {
     background-size: contain;
 }
 
-.fasam span, alias span {
+.fasam span, .alias span {
   text-shadow: none;
   background-image: none;
   color: #a8cd23;
@@ -254,7 +254,6 @@ body {
   text-transform: uppercase;
   color: #FECD17;
 }
-
 
 .colhead q {
   width: 40%;

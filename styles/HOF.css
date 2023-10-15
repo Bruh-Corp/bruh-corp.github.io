@@ -344,7 +344,7 @@ p {
 .bosnian {
   text-shadow: black .105em .105em .07em;
   box-shadow:  inset #000000 0px 0px 8px 2px;
-  background-image: linear-gradient(to top, #cbc8bdd0 , rgba(255, 255, 255, 0));
+  background-image: linear-gradient(to top, #cbc8bd96 , rgba(255, 255, 255, 0));
 }
 
 .bosnian:hover {
