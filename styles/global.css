@@ -80,8 +80,8 @@
 }
 
 nav {
-    padding: calc(30px + 0.5vw) calc(5px + 0.25vw) calc(5px + 0.25vw) calc(5px + 0.25vw);
-    position: absolute;
+    padding: calc(30px + 0.5vw) calc(5px + 0.25vw) calc(1px + 0.25vw) calc(5px + 0.25vw);
+    position: fixed;
     right: 5vw;
     top: -10px;
     width: fit-content;

@@ -39,10 +39,11 @@ html {
 
 body {
   background-color: #4c1140;
-  overflow: hidden;
+  overflow-x: hidden;
   background-repeat: no-repeat;
   background-position: 5%;
   background-size: 12%;
+
 }
 
 .wrapper {
@@ -51,7 +52,6 @@ body {
   overflow: hidden;
   justify-content: center;
   width: 100%;
-  max-height: 100vh;
   flex-direction: column;
 }
 
@@ -86,6 +86,7 @@ body {
 
 /* * About section on left */
 #about, #updates  {
+  top: 15%;
   position: absolute;
   height: 60%;
   max-width: 19em;
@@ -319,7 +320,7 @@ body {
 
 /* * Contacts box in bottom left */
 #contacts {
-  position: absolute;
+  position: fixed;
   height: fit-content;
   width: calc(11em + 8vw);
   overflow: hidden;
@@ -352,7 +353,7 @@ body {
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-shadow: #310b22 0px 0px .2rem;
+  text-shadow: #310b22 0px 0px .4rem;
   background-color: var(--green);
   margin: 0;
   animation: pulse 1.3s infinite;
@@ -481,7 +482,7 @@ body {
 }
 
 
-#about h1 {
+#abouthome h1 {
   padding: calc(3px + 0.5vw) 0px calc(3px + 0.5vw) calc(3px + 0.5vw);
   user-select: none;
   width: fit-content;
@@ -533,9 +534,9 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
   width: fit-content;
   margin: 0 auto;
+  height: fit-content;
 }
 
 /* #logo {
@@ -551,6 +552,7 @@ body {
   transition-duration: 250ms;
 }
 
+
 #logo:hover {
   transition-duration: 190ms;
   transform: scale(1.04);
@@ -560,6 +562,11 @@ body {
 #logo:active {
   box-shadow: inset #2c0a23 0 0 500px 500px, #2c0a23 12px 12px 10px;
 } */
+
+#logo {
+  margin: 30vh 0 10vh 0;
+
+}
 
 #logo::after {
   content: '.';
@@ -614,7 +621,6 @@ footer {
   margin-top: 20px;
   width: 120px;
   bottom: 5px;
-  position: absolute;
 }
 footer,
  .footerTitle {
@@ -666,6 +672,7 @@ footer img:hover {
     background-repeat: no-repeat;
     background-size: 30%;
     background-position: bottom;
+    position: fixed;
   }
   #contacts {
     position: absolute;
