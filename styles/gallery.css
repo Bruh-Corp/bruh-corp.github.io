@@ -29,6 +29,10 @@ body {
     flex-direction: column;
 }
 
+#box {
+  overflow: visible;
+}
+
     
 #logo {
   margin: 30vh 0 20vh 0;

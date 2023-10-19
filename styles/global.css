@@ -32,8 +32,8 @@
     position: fixed;
     top: 50%; 
     left: 50%;
-    transform: translate(-50%, -170%) rotateY(100deg) rotateX(00deg);
-    height: 90vh;
+    transform: translate(-50%, -200%) rotateY(110deg) rotateX(00deg);
+    height: 70vh;
     width: 60%;
     background-color: #310b1fd2;
     box-shadow:  #00000067 0px 0px 12px 7px;
@@ -69,7 +69,7 @@
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: #310b22 0px 0px .2rem;
+    text-shadow: #310b22 0px 0px .4rem;
     background-color: var(--green);
     margin: auto 10px 0 10px;
     bottom: 0;
@@ -120,6 +120,65 @@ nav h2 {
 }
 #arrow.rotate {
     transform: rotateX(-180deg);    
+}
+
+@keyframes gobrr {
+  0% 
+    {
+      text-shadow: 
+      #4c1140 0px 0px 10px,
+      #4c1140 0px 0px 10px,
+      #4c1140 100px 150px 10px,
+      #4c1140 -120px 120px 10px,
+      #4c1140 140px -120px 10px,
+      #4c1140 0px 130px 10px,
+      #4c1140 0px -140px 10px,
+      #4c1140 150px 130px 10px,
+      #4c1140 -120px -120px 10px;
+    
+    }
+      50% {
+    text-shadow: 
+    rgba(0, 0, 0, 0.749) 0px 0px 10px,
+    #d1ff2ce8 0px 0px 100px,
+    #d1ff2ce8 0px 0px 100px,
+    #61BB46 0px 0px 0,
+    #963D97 0px 0px 0,
+    #F5821F 0px 0px 0,
+    #E03A3E 0px 0px 0,
+    #FDB827 0px 0px 0,
+    #009DDC 0px 0px 0; 
+  }
+/*     
+  50% {
+    text-shadow: 
+    rgba(0, 0, 0, 0.462) 0px 0px 10px,
+    rgba(0, 0, 0, 0.906) 0px 0px 30px,
+    #d1ff2cba 0px 0px 100px,
+    #d1ff2cba 0px 0px 100px,
+  #d1ff2cba 0px 0px 100px,
+  #d1ff2c8f 0px 0px 100px,
+  #d1ff2cba 0px 0px 100px,
+  #d1ff2cba 0px 0px 100px,
+  #d1ff2cba 0px 0px 100px;
+
+  } */
+
+  100% 
+     {
+      text-shadow: 
+      black 1.5px 1.5px 1px, 
+      black 3px 3px 1px, 
+      #a8cd23 5px 5px 1px, 
+      black 7px 7px 1px, 
+      #a8cd23 9px 9px 1px, 
+      black 11px 11px 1px, 
+      #a8cd23 13px 13px 1px, 
+      rgba(0, 0, 0, 0.399) 13px 13px 10px, 
+      rgba(0, 0, 0, 0.399) 0px 0px 20px;
+        }
+  
+  
 }
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {
@@ -187,8 +246,6 @@ nav h2 {
   .navigate a:active {
     text-shadow: .1em .1em .2em black, #fecc1794 0 0 .5em;
   }
-  
-
 
   #logo {
     padding: .5em;
@@ -201,15 +258,17 @@ nav h2 {
     color: var(--green);
     transition-duration: 250ms;
     border: none;
+    animation: gobrr 2s cubic-bezier(0.2, 0, 0.001, 1);
     text-shadow: black 1.5px 1.5px 1px, black 3px 3px 1px, #a8cd23 5px 5px 1px, black 7px 7px 1px, #a8cd23 9px 9px 1px, black 11px 11px 1px, #a8cd23 13px 13px 1px, rgba(0, 0, 0, 0.399) 13px 13px 10px, rgba(0, 0, 0, 0.399) 0px 0px 20px;
   }
   
   #logo::after {
     text-shadow: black 1.5px 1.5px 1px, black 3px 3px 1px, #a8cd23 5px 5px 1px, black 7px 7px 1px, #a8cd23 9px 9px 1px, black 11px 11px 1px, #a8cd23 13px 13px 1px, rgba(0, 0, 0, 0.399) 13px 13px 10px, rgba(0, 0, 0, 0.399) 0px 0px 20px;
-
     color: var(--green);
-    position: absolute;
+    animation: gobrr 2s cubic-bezier(0.2, 0, 0.001, 1);
+
   }
+
 /*   
 
 LEGACY BRUH CORP LOGO
