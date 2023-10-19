@@ -127,22 +127,20 @@ nav h2 {
     {
       text-shadow: 
       #4c1140 0px 0px 10px,
-      #4c1140 0px 0px 10px,
-      #4c1140 100px 150px 10px,
-      #4c1140 -120px 120px 10px,
-      #4c1140 140px -120px 10px,
-      #4c1140 0px 130px 10px,
-      #4c1140 0px -140px 10px,
-      #4c1140 150px 130px 10px,
-      #4c1140 -120px -120px 10px;
+      #4c1140 0px 0px 0px,
+      #4c1140 -120px 120px 1px,
+      #4c1140 140px -120px 1px,
+      #4c1140 0px 130px 1px,
+      #4c1140 0px -140px 1px,
+      #4c1140 150px 130px 1px,
+      #4c1140 -120px -120px 1px;
     
     }
       50% {
     text-shadow: 
-    rgba(0, 0, 0, 0.749) 0px 0px 10px,
-    #d1ff2ce8 0px 0px 100px,
-    #d1ff2ce8 0px 0px 100px,
-    #61BB46 0px 0px 0,
+    rgb(0, 0, 0) 0px 0px 10px,
+    #d1ff2ce8 0px 0px 50px,
+    #61bb46 0px 0px 0,
     #963D97 0px 0px 0,
     #F5821F 0px 0px 0,
     #E03A3E 0px 0px 0,
@@ -258,7 +256,7 @@ nav h2 {
     color: var(--green);
     transition-duration: 250ms;
     border: none;
-    animation: gobrr 2s cubic-bezier(0.2, 0, 0.001, 1);
+    /* animation: gobrr 2s cubic-bezier(0.2, 0, 0.001, 1); */
     text-shadow: black 1.5px 1.5px 1px, black 3px 3px 1px, #a8cd23 5px 5px 1px, black 7px 7px 1px, #a8cd23 9px 9px 1px, black 11px 11px 1px, #a8cd23 13px 13px 1px, rgba(0, 0, 0, 0.399) 13px 13px 10px, rgba(0, 0, 0, 0.399) 0px 0px 20px;
   }
   
