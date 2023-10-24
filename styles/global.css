@@ -128,12 +128,12 @@ nav h2 {
       text-shadow: 
       #4c1140 0px 0px 10px,
       #4c1140 0px 0px 0px,
-      #4c1140 -120px 120px 1px,
-      #4c1140 140px -120px 1px,
-      #4c1140 0px 130px 1px,
-      #4c1140 0px -140px 1px,
-      #4c1140 150px 130px 1px,
-      #4c1140 -120px -120px 1px;
+      #4c1140 -120px 120px 20px,
+      #4c1140 140px -120px 20px,
+      #4c1140 0px 130px 20px,
+      #4c1140 0px -140px 20px,
+      #4c1140 150px 130px 20px,
+      #4c1140 -120px -120px 20px;
     
     }
       50% {
@@ -245,27 +245,29 @@ nav h2 {
     text-shadow: .1em .1em .2em black, #fecc1794 0 0 .5em;
   }
 
-  #logo {
-    padding: .5em;
-    user-select: none;
-    align-items: center;
-    justify-content: center;
-    border-radius: .2em;
-    font-family: "Press Start 2P", cursive;
-    font-size: calc(2.5em + 4vw);
-    color: var(--green);
-    transition-duration: 250ms;
-    border: none;
-    /* animation: gobrr 2s cubic-bezier(0.2, 0, 0.001, 1); */
-    text-shadow: black 1.5px 1.5px 1px, black 3px 3px 1px, #a8cd23 5px 5px 1px, black 7px 7px 1px, #a8cd23 9px 9px 1px, black 11px 11px 1px, #a8cd23 13px 13px 1px, rgba(0, 0, 0, 0.399) 13px 13px 10px, rgba(0, 0, 0, 0.399) 0px 0px 20px;
-  }
+#logo {
+  padding: .5em;
+  user-select: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: .2em;
+  font-family: "Press Start 2P", cursive;
+  font-size: calc(2.5em + 4vw);
+  color: var(--green);
+  transition-duration: 250ms;
+  border: none;
+  /* animation: gobrr 2s cubic-bezier(0.2, 0, 0.001, 1); */
+  text-shadow: black 1.5px 1.5px 1px, black 3px 3px 1px, #a8cd23 5px 5px 1px, black 7px 7px 1px, #a8cd23 9px 9px 1px, black 11px 11px 1px, #a8cd23 13px 13px 1px, rgba(0, 0, 0, 0.399) 13px 13px 10px, rgba(0, 0, 0, 0.399) 0px 0px 20px;
+}
   
-  #logo::after {
-    text-shadow: black 1.5px 1.5px 1px, black 3px 3px 1px, #a8cd23 5px 5px 1px, black 7px 7px 1px, #a8cd23 9px 9px 1px, black 11px 11px 1px, #a8cd23 13px 13px 1px, rgba(0, 0, 0, 0.399) 13px 13px 10px, rgba(0, 0, 0, 0.399) 0px 0px 20px;
-    color: var(--green);
-    animation: gobrr 2s cubic-bezier(0.2, 0, 0.001, 1);
+#logo::after {
+  text-shadow: black 1.5px 1.5px 1px, black 3px 3px 1px, #a8cd23 5px 5px 1px, black 7px 7px 1px, #a8cd23 9px 9px 1px, black 11px 11px 1px, #a8cd23 13px 13px 1px, rgba(0, 0, 0, 0.399) 13px 13px 10px, rgba(0, 0, 0, 0.399) 0px 0px 20px;
+  color: var(--green);
+  animation: gobrr 2s cubic-bezier(0.2, 0, 0.001, 1);
 
-  }
+}
+
+
 
 /*   
 
