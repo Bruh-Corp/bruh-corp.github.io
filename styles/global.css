@@ -24,6 +24,9 @@
     --smooth-anim: cubic-bezier(0.2, 0, 0.001, 1);
     --green: #a8cd23;
     --dark-green: #a8cd23af;
+    --base-shadow: .005em;
+    --screen-factor: 2;
+    --reduction-factor: 0.7;
   }
 
 #nav-list {
@@ -253,15 +256,34 @@ nav h2 {
   border-radius: .2em;
   font-family: "Press Start 2P", cursive;
   font-size: calc(2.5em + 4vw);
-  color: var(--green);
+  color: #a8cd23;
   transition-duration: 250ms;
   border: none;
   /* animation: gobrr 2s cubic-bezier(0.2, 0, 0.001, 1); */
-  text-shadow: black 1.5px 1.5px 1px, black 3px 3px 1px, #a8cd23 5px 5px 1px, black 7px 7px 1px, #a8cd23 9px 9px 1px, black 11px 11px 1px, #a8cd23 13px 13px 1px, rgba(0, 0, 0, 0.399) 13px 13px 10px, rgba(0, 0, 0, 0.399) 0px 0px 20px;
+  text-shadow: 
+  black 1.5px .005em,
+  black 3px 3px .005em,
+  #a8cd23 5px 5px .005em,
+  black 7px 7px .005em,
+  #a8cd23 9px 9px .005em,
+  black 11px 11px .005em,
+  #a8cd23 13px 13px .005em,
+  rgba(0, 0, 0, 0.399) 13px 13px .005em,
+  rgba(0, 0, 0, 0.399) 0px 0px 0.25em;
+
 }
   
 #logo::after {
-  text-shadow: black 1.5px 1.5px 1px, black 3px 3px 1px, #a8cd23 5px 5px 1px, black 7px 7px 1px, #a8cd23 9px 9px 1px, black 11px 11px 1px, #a8cd23 13px 13px 1px, rgba(0, 0, 0, 0.399) 13px 13px 10px, rgba(0, 0, 0, 0.399) 0px 0px 20px;
+  text-shadow: 
+  black 1.5px 1.5px .005em,
+  black 3px 3px .005em,
+  #a8cd23 5px 5px .005em,
+  black 7px 7px .005em,
+  #a8cd23 9px 9px .005em,
+  black 11px 11px .005em,
+  #a8cd23 13px 13px .005em,
+  rgba(0, 0, 0, 0.399) 13px 13px .005em,
+  rgba(0, 0, 0, 0.399) 0px 0px 0.25em;
   color: var(--green);
   animation: gobrr 2s cubic-bezier(0.2, 0, 0.001, 1);
 
