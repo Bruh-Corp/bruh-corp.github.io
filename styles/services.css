@@ -90,7 +90,7 @@ a {
     text-decoration: none;
 }
 
-.colcon:nth-child(1) {
+.colcon.mcq {
  background-image: url('../pics&shit/cringebridge.png');
  background-repeat: no-repeat;
  background-size: 8.5%;
@@ -98,15 +98,17 @@ a {
 }
 
 
-.colcon:nth-child(2) {
+.colcon.eos, .colcon.cms {
   background-image: url('../pics&shit/working.png');
   background-repeat: no-repeat;
   background-size: 95%;
   background-position: 50% 95%;  
+}
+.colcon.eos {
   color: #FECD17;
- }
- 
-.colcon:nth-child(2):hover {
+
+}
+.colcon.eos:hover {
   text-shadow: black 0.6px 0.6px 1.2px, 
   #FECD17 1.2px 1.2px 1.2px, 
   black 3.6px 3.6px 1.2px, 
@@ -115,10 +117,13 @@ a {
   #FECD17 7.2px 7.2px 1.2px;
 }
 
- .colcon:nth-child(2) img {
+ .colcon.eos img {
   width: 5em;
 }
 
+.cms {
+  opacity: .7;
+}
 
 .sb img {
   width: 10em;

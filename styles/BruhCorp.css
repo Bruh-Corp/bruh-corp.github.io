@@ -219,7 +219,7 @@ body {
   margin: 0;
 }
 
-#updates a:hover, #about a:hover {
+#updates a:hover, #about a:hover, #abouthome a:hover {
   text-decoration: underline;
 }
 
