@@ -72,14 +72,22 @@ body {
     margin: auto 0 0 0;
     text-align:  left;
     background-color: #310b1f;
-    padding: calc(10px + .1vw) calc(10px + .1vw) calc(10px + .16vw) calc(10px + .1vw);
     box-shadow:  #00000042 9px 9px 10px;
+    padding: calc(10px + .1vw) calc(10px + .1vw) calc(10px + .16vw) calc(10px + .1vw);
     margin: 2em;
     line-height: 150%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+.row {
+  perspective: 120px;
+  transition: 200ms cubic-bezier(0.2, 0, 0.001, 1);
 }
 
 .colhead span {
@@ -97,22 +105,52 @@ body {
 
 .colhead img {
     margin: 2em;
+    box-shadow:  #0000005f 5px 5px 14px;
+    transition: 200ms cubic-bezier(0.2, 0, 0.001, 1);
+    position: relative;
 }
-.log {
-    height: 15em;
+
+.colhead .loge {
+  box-shadow: none;
+}
+
+.log, .loge {
+    height: 7em;
 }
 
 .hen {
-    height: 12em;
+    height: 7em;
 }
 
 .wallpaper {
-    width: 70%;
+    width: 20em;
+}
+
+
+.row img:hover {
+  rotate: y 1deg;
+  translate: 0 -3px;
+  box-shadow:  #0000005f 5px 5px 9px;
+}
+
+.row img:active {
+  rotate: y 2deg;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 .second {
     background-image: none;
     padding: calc(10px + .1vw);
     width: fit-content;
+    background-color: #310b1f;
+    box-shadow:  #00000042 9px 9px 10px;
+    border-radius: calc(7.5px + .1vw);
 }
   
 .second p {
@@ -123,9 +161,8 @@ body {
     font-family: "Press Start 2P", cursive;
     margin: 0;
     font-size: 1.5em;
+    
 }
-  
-
 #col {
   display: flex;
   flex-wrap: wrap;
