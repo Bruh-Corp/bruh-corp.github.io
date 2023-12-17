@@ -44,7 +44,7 @@ body {
   background-position: 5%;
   background-size: 12%;
   margin: 0;
-
+  
 }
 
 .wrapper {
@@ -142,10 +142,10 @@ body {
 
 #about.hidden {
   left: 0;
-  transform: translateX(-150%) rotateX(100deg);
+  transform: translateX(-150%) rotateX(100deg) translateZ(0);
 }
 #updates.visible {
-  transform: translateX(0) rotateX(0deg);
+  transform: translateX(0) rotateX(0deg) translateZ(0);
 
 }
 #about h1 {

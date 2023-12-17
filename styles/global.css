@@ -30,12 +30,13 @@
   }
 
 #nav-list {
+    will-change: transform;
     z-index: 100;
     overflow: hidden;
     position: fixed;
     top: 50%; 
     left: 50%;
-    transform: translate(-50%, -200%) rotateY(110deg) rotateX(00deg);
+    transform: translate(-50%, -200%) rotateY(110deg) rotateX(00deg) translateZ(0);
     height: 70vh;
     width: 60%;
     background-color: #310b1fd2;
@@ -58,13 +59,13 @@
 
 #nav-list.visible {
     inset: 50%;
-    transform: translate(-50%, -50%) rotateY(0deg) rotateX(0deg);
+    transform: translate(-50%, -50%) rotateY(0deg) rotateX(0deg) translateZ(0);
     transition: transform 1s cubic-bezier(.2, 0, .001, 1);
 
 }
 
 #nav-list h1 {
-    padding: calc(3px + 0.5vw) 0px calc(3px + 0.5vw) calc(3px + 0.5vw);
+    padding: calc(3px + 0.5vw) 0px calc(3px + 0.5vw) calc(3px + 0.5vw) translateZ(0);
     user-select: none;
     font-family: "Press Start 2P", cursive;
     font-size: calc(30px + 0.2vw);
@@ -79,7 +80,6 @@
     animation: pulse 1.3s infinite;
     z-index: 1000000;
     font-weight: lighter;
-
 }
 
 nav {
