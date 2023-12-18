@@ -93,8 +93,8 @@ body {
   max-width: 19em;
   overflow-x: hidden;
   background-color: #310b1f;
-  box-shadow: #00000042 9px 9px 10px;
-  margin: 1.2em;
+  box-shadow: #000000a3 4px 4px 12px;
+  margin: 1em;
   border-radius: calc(7.5px + 0.1vw);
   display: flex;
   justify-content: center;
@@ -111,7 +111,7 @@ body {
   max-width: 19em;
   overflow-x: hidden;
   background-color: #310b1f;
-  box-shadow: #00000042 9px 9px 10px;
+  box-shadow: #000000a3 4px 4px 12px;
   margin: 1.2em;
   border-radius: calc(7.5px + 0.1vw);
   display: flex;
@@ -145,7 +145,7 @@ body {
   transform: translateX(-150%) rotateX(100deg) translateZ(0);
 }
 #updates.visible {
-  transform: translateX(0) rotateX(0deg) translateZ(0);
+  transform: translateX(0%) rotateX(0deg) translateZ(0);
 
 }
 #about h1 {
@@ -249,7 +249,7 @@ body {
   font-size: calc(1.1em + .4vw);
   width: fit-content;
   background-color: #310b1f;
-  box-shadow: #310b22ad 6px 6px 10px;
+  box-shadow: #0000007e 3px 3px 7px;
   border-radius: calc(5px + 0.2vw);
 }
 
@@ -331,25 +331,29 @@ body {
   flex-direction: column;
   transition: transform 1s var(--smooth-anim);
   padding: calc(10px + 0.5vw);
+  padding-top: 0;
   right: 0;
   transition: transform 0.6s var(--smooth-anim);
   background-color: #310b1f;
-  box-shadow: #00000042 9px 9px 10px;
+  box-shadow: #000000a3 4px 4px 12px;
   bottom: 0;
   transform: translateY(90%);
   border-radius: calc(7.5px + 0.1vw);
+  border-top-left-radius: 12em 6em;
+  border-top-right-radius: 12em 6em;
+
 }
 #contacts:hover {
   bottom: 0;
   transform: translateY(0);
 }
 #contacts h1 {
-  padding: 10px 10px 10px 10px;
+  padding: .22em;
   user-select: none;
   text-align: center;
   width: 100%;
   font-family: "Press Start 2P", cursive;
-  font-size: 30px;
+  font-size: 3em;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -497,7 +501,7 @@ body {
   text-shadow: #310b22 0px 0px .4rem;
   background-color: var(--green); */
   color: #a8cd23;
-  text-shadow: black 0.75px 0.75px 0.5px, black 1.5px 1.5px 0.5px, #a8cd23 2.5px 2.5px 0.5px, black 3.5px 3.5px 0.5px, #a8cd23 4.5px 4.5px 0.5px, black 5.5px 5.5px 0.5px, #a8cd23 6.5px 6.5px 0.5px, black 6.5px 6.5px 5px, black 0px 0px 10px;
+  text-shadow: black 0.75px 0.75px 0.5px, black 1.5px 1.5px 0.5px, #a8cd23 2.5px 2.5px 0.5px, black 3.5px 3.5px 0.5px, #a8cd23 4.5px 4.5px 0.5px, black 5.5px 5.5px 0.5px, #a8cd23 6.5px 6.5px 0.5px;
   margin: auto 0 0 0;
   transition-duration: 190ms;
   animation: bruhoverthetime 7s infinite;
@@ -632,7 +636,7 @@ footer,
   text-decoration: none;
   text-transform: capitalize;
   text-align: center;
-  transition-duration: 100ms;
+  transition: 70ms;
 }
 
 .footerTitle {
@@ -643,6 +647,7 @@ footer,
   opacity: 1;
 }
 .footerTitle:active {
+  scale: .95;
   text-shadow: var(--green) 12em 0 2px, var(--green) -12em 0 2px, var(--green) 0 -4em 2px;
 }
 
@@ -671,8 +676,8 @@ footer img:hover {
   nav {
     background-image: url("../pics&shit/latroll.png");
     background-repeat: no-repeat;
-    background-size: 30%;
-    background-position: bottom;
+    background-size: 25%;
+    background-position: 0% 50%;
     position: fixed;
   }
   #contacts {
@@ -688,7 +693,7 @@ footer img:hover {
     transition: transform 1s var(--smooth-anim);
     padding: calc(5px + 0.5vw);
     background-color: #310b1f;
-    box-shadow: #310b1fd8 9px 9px 10px;
+    box-shadow: #000000a3 4px 4px 12px;
     transform: translateY(0);
     left: 0;
     bottom: 5%;

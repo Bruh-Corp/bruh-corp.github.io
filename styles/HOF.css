@@ -134,7 +134,7 @@ body {
 .owners {
   font-size: calc(10px + .2vw);
   font-family: "Press Start 2P", cursive;
-  text-shadow: #fecc1794 .05em .05em .1em;
+  text-shadow: #fecc175d .0em .0em .1em;
   color: #310b1f;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -195,7 +195,7 @@ p {
 .badge {
   font-size: 1em;
   font-family: "Press Start 2P", cursive;
-  text-shadow: #fecc1794 .05em .05em .1em;
+  text-shadow: #fecc175d .0em .0em .1em;
   color: #310b1f;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -386,9 +386,10 @@ p {
   text-align: center  ;
   transition-duration: 50ms;
   margin-top: 15px;
-  background-color: #310b22;
+  background-color: #310b1f;
   width: 140%;
   padding: 2px;
+  text-shadow: black .105em .105em .07em;
 
 }
 

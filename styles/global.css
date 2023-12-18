@@ -40,7 +40,7 @@
     height: 70vh;
     width: 60%;
     background-color: #310b1fd2;
-    box-shadow:  #00000067 0px 0px 12px 7px;
+    box-shadow: #000000b9 2px 2px 12px;
     border-radius: calc(7.5px + .1vw);
     border: #310b1f .12em solid;
     display: flex;
@@ -89,7 +89,7 @@ nav {
     top: 0;
     width: fit-content;
     background-color: #310b1f;
-    box-shadow: #310b22ad 6px 6px 10px;
+    box-shadow: #00000079 5px 5px 9px;
     border-radius: calc(5px + 0.1vw);
     z-index: 10000;
     display: flex;
@@ -118,22 +118,20 @@ nav h2 {
     font-family: "Press Start 2P", cursive;
     color: #fecd17;
     font-size: calc(18px + 0.4vw);
-    transition: 1s var(--smooth-anim);
+    transition: transform 1s var(--smooth-anim);
     width: fit-content;
-    translate: 0 -1px;
+    transform: translateY(-1px);
 }
 #arrow:hover {
-    text-shadow: #fecd17 0 0 10px;
-    scale: 1.01;
+    text-shadow: #fecd17 0 0 5px;
+    scale: 1.02;
 }
 #arrow:active {
     text-shadow: #fecd17 0 0 15px;
-    scale: 0.98;
+    scale: 0.95;
 }
 #arrow.rotate {
-    transform: rotateX(-180deg);
-    translate: 0 -5px;
-    
+    transform: rotateX(-180deg) translateY(5px);    
 }
 
 @keyframes gobrr {
@@ -152,7 +150,7 @@ nav h2 {
     }
       50% {
     text-shadow: 
-    rgb(0, 0, 0) 0px 0px 10px,
+    rgba(0, 0, 0, 0) 0px 0px 10px,
     #d1ff2ce8 0px 0px 50px,
     #61bb46 0px 0px 0,
     #963D97 0px 0px 0,
@@ -176,6 +174,18 @@ nav h2 {
 
   } */
 
+  75% 
+  {
+   text-shadow: 
+   black 1.5px 1.5px 1px, 
+   black 3px 0px 1px, 
+   #a8cd23 5px 0 1px, 
+   black 7px 0 1px, 
+   #a8cd23 9px 0 1px, 
+   black 11px 0px 1px, 
+   #a8cd23 13px 0px 1px;
+     }
+
   100% 
      {
       text-shadow: 
@@ -185,41 +195,35 @@ nav h2 {
       black 7px 7px 1px, 
       #a8cd23 9px 9px 1px, 
       black 11px 11px 1px, 
-      #a8cd23 13px 13px 1px, 
-      rgba(0, 0, 0, 0.399) 13px 13px 10px, 
-      rgba(0, 0, 0, 0.399) 0px 0px 20px;
+      #a8cd23 13px 13px 1px;
         }
   
   
 }
 
 @keyframes roo {
-  from {
+  0% {
     rotate: y 00deg;
     text-shadow: 
-    black 0px .005em,
+    black 0px 0px .005em,
     black 0px 0px .005em,
     #a8cd23 0px 0px .005em,
     black 0px 0px .005em,
     #a8cd23 0px 0px .005em,
     black 0px 0px .005em,
-    #a8cd23 0px 0px .005em,
-    rgba(0, 0, 0, 0.399) 0px 0px .005em,
-    rgba(0, 0, 0, 0.399) 0px 0px 0.25em;
+    #a8cd23 0px 0px .005em;
   }
 
-  to {
+  100% {
     rotate: y 360deg;
     text-shadow: 
-    black 1.5px .005em,
+    black 1.5px 1.5px .005em,
     black 3px 3px .005em,
     #a8cd23 5px 5px .005em,
     black 7px 7px .005em,
     #a8cd23 9px 9px .005em,
     black 11px 11px .005em,
-    #a8cd23 13px 13px .005em,
-    rgba(0, 0, 0, 0.399) 13px 13px .005em,
-    rgba(0, 0, 0, 0.399) 0px 0px 0.25em;
+    #a8cd23 13px 13px .005em;
   }
 }
 
@@ -241,7 +245,7 @@ nav h2 {
     font-family: "Press Start 2P", cursive;
     font-size: calc(20px + 0.2vw);
     color: #fecd17;
-    text-shadow: .1em .1em .2em black;
+    text-shadow: .15em .15em .05em black;
     width: 90%;
     margin: 10px 0 10px 0;
   
@@ -259,6 +263,7 @@ nav h2 {
   
   .btn a:hover {
     text-decoration: underline;
+    text-decoration-thickness: .1em;
   }
   
   .btn a:active {
@@ -307,9 +312,7 @@ nav h2 {
   black 7px 7px .005em,
   #a8cd23 9px 9px .005em,
   black 11px 11px .005em,
-  #a8cd23 13px 13px .005em,
-  rgba(0, 0, 0, 0.399) 13px 13px .005em,
-  rgba(0, 0, 0, 0.399) 0px 0px 0.25em;
+  #a8cd23 13px 13px .005em;
 }
   
 #logo::after {
@@ -320,9 +323,7 @@ nav h2 {
   black 7px 7px .005em,
   #a8cd23 9px 9px .005em,
   black 11px 11px .005em,
-  #a8cd23 13px 13px .005em,
-  rgba(0, 0, 0, 0.399) 13px 13px .005em,
-  rgba(0, 0, 0, 0.399) 0px 0px 0.25em;
+  #a8cd23 13px 13px .005em;
   color: var(--green);
   animation: gobrr 4s cubic-bezier(0.2, 0, 0.001, 1);
 }
