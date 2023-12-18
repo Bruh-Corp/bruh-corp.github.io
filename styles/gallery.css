@@ -137,7 +137,7 @@ body {
   rotate: y 2deg;
 }
 
-.row {
+.row, .roa {
   display: flex;
   justify-content: center;
   align-items: center;

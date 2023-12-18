@@ -31,7 +31,7 @@
 
 #nav-list {
     will-change: transform;
-    z-index: 100;
+    z-index: 1000000;
     overflow: hidden;
     position: fixed;
     top: 50%; 
@@ -271,13 +271,14 @@ nav h2 {
   }
 
   .navigate {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     color: #FECD17;
     margin: 1em;
     font-family: "Press Start 2P", cursive;
     font-size: calc(.3em + .7vw);
+    z-index: 10000;
   }
   
   .navigate a {
