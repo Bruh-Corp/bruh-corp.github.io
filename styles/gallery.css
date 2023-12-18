@@ -130,7 +130,7 @@ body {
 .row img:hover {
   rotate: y 1deg;
   translate: 0 -3px;
-  box-shadow:  #0000005f 5px 5px 9px;
+  box-shadow:  #0000005f 8px 8px 14px;
 }
 
 .row img:active {
@@ -271,4 +271,13 @@ footer,
   transition: 120ms;
   text-shadow: #a8cd23 2px 2px 4px, black 3px 3px 2px;
   transform: skew(15deg, 0deg);
+}
+
+
+@media (hover: none) {
+
+  .row img:focus {
+    rotate: y 2deg;
+    box-shadow:  #0000005f 8px 8px 14px;
+  }
 }

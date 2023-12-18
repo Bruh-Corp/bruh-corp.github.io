@@ -377,3 +377,10 @@ LEGACY BRUH CORP LOGO
 #logo:active {
   rotate: y 5deg;
 }
+
+
+@media (hover: none) {
+  #logo:focus {
+    rotate: y 5deg;
+  }
+}
