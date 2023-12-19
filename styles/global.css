@@ -260,6 +260,12 @@ nav h2 {
   }
 }
 
+@media only screen and (max-width: 560px) and (orientation: portrait) {
+  /* .navigate {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.604), transparent);
+    border-bottom-right-radius: 1em;
+  } */
+}
 @media only screen and (max-width: 767px) and (orientation: portrait) {
     #nav-list {
       width: 90%;
@@ -308,7 +314,8 @@ nav h2 {
     top: 0;
     left: 0;
     color: #FECD17;
-    margin: 1em;
+    margin: 0;
+    padding: 1em;
     font-family: "Press Start 2P", cursive;
     font-size: calc(.3em + .7vw);
     z-index: 10000;
