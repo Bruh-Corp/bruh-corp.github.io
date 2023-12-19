@@ -177,25 +177,25 @@ nav h2 {
   75% 
   {
    text-shadow: 
-   black 1.5px 1.5px 1px, 
-   black 3px 0px 1px, 
-   #a8cd23 5px 0 1px, 
-   black 7px 0 1px, 
-   #a8cd23 9px 0 1px, 
-   black 11px 0px 1px, 
-   #a8cd23 13px 0px 1px;
+   black 1.5px 0px.005em, 
+   black 3px 0px.005em, 
+   #a8cd23 5px 0px 0.005em, 
+   black 7px 0px 0.005em, 
+   #a8cd23 9px 0px 0.005em, 
+   black 11px 0px.005em, 
+   #a8cd23 13px 0px.005em;
      }
 
   100% 
      {
       text-shadow: 
-      black 1.5px 1.5px 1px, 
-      black 3px 3px 1px, 
-      #a8cd23 5px 5px 1px, 
-      black 7px 7px 1px, 
-      #a8cd23 9px 9px 1px, 
-      black 11px 11px 1px, 
-      #a8cd23 13px 13px 1px;
+      black 1.5px 1.5px.005em, 
+      black 3px 3px.005em, 
+      #a8cd23 5px 5px.005em, 
+      black 7px 7px.005em, 
+      #a8cd23 9px 9px.005em, 
+      black 11px 11px.005em, 
+      #a8cd23 13px 13px.005em;
         }
   
   
@@ -216,6 +216,39 @@ nav h2 {
 
   100% {
     rotate: y 360deg;
+    text-shadow: 
+    black 1.5px 1.5px .005em,
+    black 3px 3px .005em,
+    #a8cd23 5px 5px .005em,
+    black 7px 7px .005em,
+    #a8cd23 9px 9px .005em,
+    black 11px 11px .005em,
+    #a8cd23 13px 13px .005em;
+  }
+}
+
+@keyframes weewoo {
+  0% {
+    text-shadow: 
+    black 1.5px 1.5px .005em,
+    black 3px 3px .005em,
+    #a8cd23 5px 5px .005em,
+    black 7px 7px .005em,
+    #a8cd23 9px 9px .005em,
+    black 11px 11px .005em,
+    #a8cd23 13px 13px .005em;
+  }
+  50% {
+    text-shadow: 
+    #61bb46 3px 3px 0,
+    #963D97 6px 6px 0,
+    #F5821F 9px 9px 0,
+    #E03A3E 12px 12px 0,
+    #FDB827 15px 15px 0,
+    #009DDC 18px 18px 0;
+  }
+
+  100% {
     text-shadow: 
     black 1.5px 1.5px .005em,
     black 3px 3px .005em,
@@ -307,7 +340,7 @@ nav h2 {
   transition-duration: 250ms;
   border: none;
   text-shadow: 
-  black 1.5px .005em,
+  black 1.5px 1.5px .005em,
   black 3px 3px .005em,
   #a8cd23 5px 5px .005em,
   black 7px 7px .005em,
@@ -368,6 +401,7 @@ LEGACY BRUH CORP LOGO
   rotate: x 00deg;
   animation: roo 2s cubic-bezier(0.2, 0, 0.001, 1);
   transition: 200ms cubic-bezier(0.2, 0, 0.001, 1);
+
 }
 
 #logo:hover {

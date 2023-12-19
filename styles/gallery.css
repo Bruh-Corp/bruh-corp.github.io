@@ -90,6 +90,88 @@ body {
   transition: 200ms cubic-bezier(0.2, 0, 0.001, 1);
 }
 
+h2 {
+  font-family: "Press Start 2P", cursive;
+  color: #a8cd23;
+  font-size: 4em;
+  margin: 1em .2em .5em .2em;
+}
+
+.classic {
+  text-shadow: 
+  black 1.5px 1.5px .005em,
+  black 3px 3px .005em,
+  #a8cd23 5px 5px .005em,
+  black 7px 7px .005em,
+  #a8cd23 9px 9px .005em,
+  black 11px 11px .005em,
+  #a8cd23 13px 13px .005em;
+}
+
+.colr {
+  text-shadow: 
+  #61bb46 3px 3px 0,
+  #963D97 6px 6px 0,
+  #F5821F 9px 9px 0,
+  #E03A3E 12px 12px 0,
+  #FDB827 15px 15px 0,
+  #009DDC 18px 18px 0;
+}
+.purpleglow {
+  text-shadow: 
+  #3F211F 3px 3px 3px,
+  #310b1f 6px 6px 0,
+  #3F211F 9px 9px 3px,
+  #310b1f 12px 12px 0,
+  #3F211F 15px 15px 3px,
+  #310b1f 18px 18px 0;
+}  
+.purple {
+  font-size: 5em;
+  text-shadow: 
+  #3F211F 3px 3px 0,
+  #310b1f 6px 6px 0,
+  #3F211F 9px 9px 0px,
+  #310b1f 12px 12px 0,
+  #3F211F 15px 15px 0px,
+  #310b1f 18px 18px 0;
+}  
+.wowcolr {
+  text-shadow: 
+  black 3px 3px 0, 
+  #61bb46 5px 5px 0,
+  black 7px 7px 0, 
+  #963D97 9px 9px 0,
+  black 11px 11px 0, 
+  #F5821F 13px 13px 0,
+  black 15px 15px 0, 
+  #E03A3E 17px 17px 0,
+  black 19px 19px 0, 
+  #FDB827 21px 21px 0,
+  black 23px 23px 0;  
+}
+
+.pall {
+  width: 0.01em;
+  height: .01em;
+  background-color: #2c0a1c;
+  margin: 2.5em;
+  border-radius: 50%;
+  box-shadow: 
+  0 0 0 3px black,
+  0 0 0 5px #61bb46,
+  0 0 0 7px black,
+  0 0 0 9px #963D97,
+  0 0 0 11px black,
+  0 0 0 13px #F5821F,
+  0 0 0 15px black,
+  0 0 0 17px #E03A3E,
+  0 0 0 19px black,
+  0 0 0 21px #FDB827,
+  0 0 0 23px black;
+
+}
+
 .colhead span {
     font-family: "Press Start 2P", cursive;
     background-color: #a8cd23;
