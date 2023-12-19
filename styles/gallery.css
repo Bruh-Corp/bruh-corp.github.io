@@ -86,7 +86,7 @@ body {
 
 
 .row {
-  perspective: 120px;
+  perspective: 200px;
   transition: 200ms cubic-bezier(0.2, 0, 0.001, 1);
 }
 
@@ -127,16 +127,35 @@ body {
 }
 
 
-.row img:hover {
+.left:hover {
   rotate: y 1deg;
-  translate: 0 -3px;
+  translate: 0 -4px;
   box-shadow:  #0000005f 8px 8px 14px;
 }
 
-.row img:active {
+.left:active {
   rotate: y 2deg;
 }
 
+.middle:hover {
+  rotate: y 0deg;
+  translate: 0 -4px;
+  box-shadow:  #0000005f 8px 8px 14px;
+}
+
+.middle:active {
+  rotate: x -2deg;
+}
+
+.right:hover {
+  rotate: y -1deg;
+  translate: 0 -4px;
+  box-shadow:  #0000005f 8px 8px 14px;
+}
+
+.right:active {
+  rotate: y -2deg;
+}
 .row, .roa {
   display: flex;
   justify-content: center;
@@ -276,8 +295,23 @@ footer,
 
 @media (hover: none) {
 
-  .row img:focus {
+  .left:focus {
     rotate: y 2deg;
+    translate: 0 -4px;
     box-shadow:  #0000005f 8px 8px 14px;
   }
+  
+  .middle:focus {
+    rotate: x -2deg;
+    translate: 0 -4px;
+    box-shadow:  #0000005f 8px 8px 14px;
+  }
+
+  
+  .right:focus {
+    rotate: y -2deg;
+    translate: 0 -4px;
+    box-shadow:  #0000005f 8px 8px 14px;
+  }
+
 }
