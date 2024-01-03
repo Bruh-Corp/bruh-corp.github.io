@@ -120,7 +120,7 @@ nav h2 {
     font-size: calc(18px + 0.4vw);
     transition: transform 1s var(--smooth-anim);
     width: fit-content;
-    transform: translateY(-1px);
+    transform: translateY(-1px) rotateX(0deg);
 }
 #arrow:hover {
     text-shadow: #fecd17 0 0 5px;
