@@ -142,7 +142,7 @@ html {
     line-height: 150%;
     font-size: calc(10px + 0.6vw);
     transition: 150ms;
-    border-radius: 6% / 4%;
+    border-radius: 1.5em;
     background-image: -webkit-linear-gradient(top, #61bb4643,#FDB82743,#F5821F43,#E03A3E43,#963D9743, #009DDC43); 
     animation: border-anime 7s infinite;
     /* box-shadow:  inset #2f0b31 0px 0px 8px 8px, pink 0 0 8px 8px; */
