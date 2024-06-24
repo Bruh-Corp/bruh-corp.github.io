@@ -25,3 +25,84 @@ document.addEventListener("click", function(event) {
     console.log("state: ", isNav)
   }
 });
+
+// const toggleButtonNew = document.getElementById("toggleButtonNew");
+// const updates = document.getElementById("updates");
+// const updatesH1 = document.querySelector("#toggleButtonNew>h1");
+// toggleButtonNew.addEventListener("click", function () {
+//   updates.classList.toggle("visible");
+//   updatesH1.classList.toggle("rotate");
+// });
+const navrange = document.getElementById("navrange");
+const navbtn = document.getElementById("newbutton")
+var text = document.getElementsByClassName("h1")
+navrange.addEventListener("mouseenter", function(){
+  let i = 0;
+
+const spinInterval = setInterval(() => {
+  i++;
+  orbit(centerElement, orbitingElements, 95, i);
+
+  if (i >= 1) {
+      clearInterval(spinInterval);
+  }
+}, 120);
+    orbit(centerElement, orbitingElements, 150, i);
+});
+navrange.addEventListener("mouseleave", function(){
+  for (var i = 0; i < text.length; i++)
+    text[i].style.transform = `translate(-5em, -2em)`;        
+})
+
+function orbit(center, elements, radius, spin) {
+  const centerX = center.offsetLeft + center.offsetWidth / 2;
+  const centerY = center.offsetTop + center.offsetHeight / 2;
+
+  for (let i = 0; i < elements.length; i++) {
+      const angle = (i / elements.length) * 1.2 * Math.PI + spin + 3.7;
+      const x = centerX + radius * Math.cos(angle) - elements[i].offsetWidth / 2 - 80;
+      const y = centerY + radius * Math.sin(angle) - elements[i].offsetHeight / 2 - 7;
+      setTimeout(() => {
+        elements[i].style.transform = `translate(${x}px, ${y}px)`;        
+      }, 0);
+      
+  }
+}
+
+const centerElement = document.getElementById('newbutton');
+const orbitingElements = [
+  document.getElementById('stuff2'),
+  document.getElementById('stuff3'),
+  document.getElementById('stuff1'),
+  document.getElementById('stuff4'),
+  document.getElementById('stuff5'),
+  document.getElementById('stuff6'),
+
+
+];
+
+const updates = document.getElementById('updates');
+const openubox = document.getElementById('stuff1');
+let isUpdateOpen = false
+openubox.addEventListener("click", function () {
+  event.stopPropagation();
+  updates.classList.toggle("visible");
+  isUpdateOpen = !isUpdateOpen;
+
+});
+
+const closeubox = document.getElementById('close');
+closeubox.addEventListener("click", function() {
+  updates.classList.remove("visible");
+});
+
+document.addEventListener("click", function(event) {
+  const updatecard = document.getElementById("updates");
+  const target = event.target;
+  const isupdatecard = target === updatecard || updatecard.contains(target);
+  console.log("state: ", isUpdateOpen);
+  if (!isupdatecard && isUpdateOpen) {
+    updatecard.classList.remove("visible");
+    isUpdateOpen = false;
+  }
+});
