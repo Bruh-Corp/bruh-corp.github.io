@@ -585,19 +585,41 @@ LEGACY BRUH CORP LOGO
   background-clip: text;
   color: transparent;
   text-shadow: #310b22 0px 0px .4rem; */
-  color: #fecc17;
-  margin: auto 10px 0 10px;
+  color: #a8cd23;
   bottom: 0;
-  animation: pulse 1.3s infinite;
   font-family: "Press Start 2P", cursive;
   position: absolute;
   z-index: 10000;
-  margin-left: -5em;
-  font-size: 1.5;
+  margin: auto 0 auto -.65em;
+  font-size: 1.4em;
   line-height: 145%;
   letter-spacing: -.1em;
+  width: fit-content;
+  transform: translateY(3px);
+  top: 0;
+  text-shadow:
+  rgba(0, 0, 0, 0.6) 1.5px 0 .005em,
+  rgba(168, 205, 35, 0.6) 3px 0 .005em,
+  rgba(0, 0, 0, 0.4) 5px 0 .005em,
+  rgba(168, 205, 35, 0.4) 7px 0 .005em,
+  rgba(0, 0, 0, 0.2) 9px 0 .005em,
+  rgba(168, 205, 35, 0.2) 11px 0 .005em,
+  rgba(0, 0, 0, 0.1) 13px 0 .005em,
+  rgba(168, 205, 35, 0.1) 15px 0 .005em;
 }
 
+.bc a:active {
+  text-shadow:
+  rgba(0, 0, 0, 0.6) 0.75px 0 .005em,
+  rgba(168, 205, 35, 0.6) 1.5px 0 .005em,
+  rgba(0, 0, 0, 0.4) 2.5px 0 .005em,
+  rgba(168, 205, 35, 0.4) 3.5px 0 .005em,
+  rgba(0, 0, 0, 0.2) 4.5px 0 .005em,
+  rgba(168, 205, 35, 0.2) 5.5px 0 .005em,
+  rgba(0, 0, 0, 0.1) 6.5px 0 .005em,
+  rgba(168, 205, 35, 0.1) 7.5px 0 .005em;
+
+}
 
 @media (hover: none) {
   #logo:focus {

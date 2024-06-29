@@ -59,8 +59,8 @@ function orbit(center, elements, radius, spin) {
   const centerY = center.offsetTop + center.offsetHeight / 2;
 
   for (let i = 0; i < elements.length; i++) {
-      const angle = (i / elements.length) * 1.2 * Math.PI + spin + 3.7;
-      const x = centerX + radius * Math.cos(angle) - elements[i].offsetWidth / 2 - 80;
+    const angle = (i / elements.length) * 1 * Math.PI + spin + 3.96;
+    const x = centerX + radius * Math.cos(angle) - elements[i].offsetWidth / 2 - 80;
       const y = centerY + radius * Math.sin(angle) - elements[i].offsetHeight / 2 - 7;
       setTimeout(() => {
         elements[i].style.transform = `translate(${x}px, ${y}px)`;        
